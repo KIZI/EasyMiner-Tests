@@ -1,0 +1,2209 @@
+Is adult male,Age,Class/Dept,Fare,Joined,Job,Survived
+FALSE,29.0,1st Class,16300,Southampton,,TRUE
+FALSE,0.9,1st Class,11700,Southampton,,TRUE
+FALSE,2.0,1st Class,11700,Southampton,,FALSE
+TRUE,30.0,1st Class,11700,Southampton,Businessman,FALSE
+FALSE,25.0,1st Class,11700,Southampton,,FALSE
+TRUE,47.0,1st Class,2050,Southampton,Stockbroker,TRUE
+FALSE,62.0,1st Class,6020,Cherbourg,,TRUE
+TRUE,39.0,1st Class,,Belfast,Shipbuilder,FALSE
+FALSE,53.0,1st Class,3980,Southampton,,TRUE
+TRUE,71.0,1st Class,3820,Cherbourg,Businessman,FALSE
+FALSE,47.0,1st Class,19100,Cherbourg,Property Developer / Real Estate,FALSE
+FALSE,18.0,1st Class,19100,Cherbourg,,TRUE
+FALSE,24.0,1st Class,5350,Cherbourg,Singer,TRUE
+FALSE,26.0,1st Class,6090,Southampton,Personal Maid,TRUE
+TRUE,47.0,1st Class,2320,Southampton,Justice of the Peace,TRUE
+TRUE,60.0,1st Class,2000,Cherbourg,Businessman,FALSE
+TRUE,24.0,1st Class,19100,Cherbourg,,FALSE
+FALSE,50.0,1st Class,19100,Cherbourg,,TRUE
+FALSE,36.0,1st Class,5890,Cherbourg,Personal Maid,TRUE
+TRUE,36.0,1st Class,5810,Southampton,Landowner,FALSE
+TRUE,37.0,1st Class,4060,Southampton,,TRUE
+FALSE,46.0,1st Class,4060,Southampton,,TRUE
+TRUE,26.0,1st Class,2320,Cherbourg,,TRUE
+FALSE,39.0,1st Class,4890,Cherbourg,Personal Maid,TRUE
+FALSE,46.0,1st Class,19100,Cherbourg,Personal Maid,TRUE
+FALSE,31.0,1st Class,17100,Southampton,Personal Maid,TRUE
+TRUE,24.0,1st Class,2010,Cherbourg,,FALSE
+TRUE,25.0,1st Class,7030,Cherbourg,,TRUE
+FALSE,19.0,1st Class,7030,Cherbourg,,TRUE
+TRUE,28.0,1st Class,2050,Southampton,Businessman,TRUE
+TRUE,45.0,1st Class,2740,Southampton,,FALSE
+TRUE,39.0,1st Class,2390,Cherbourg,Jeweller,TRUE
+FALSE,30.0,1st Class,12700,Southampton,,TRUE
+FALSE,61.0,1st Class,2050,Southampton,,TRUE
+TRUE,42.0,1st Class,2050,Southampton,Property Developer / Real Estate,FALSE
+FALSE,45.0,1st Class,20300,Cherbourg,Governess,TRUE
+FALSE,22.0,1st Class,4250,Southampton,,TRUE
+TRUE,41.0,1st Class,2360,Southampton,,FALSE
+TRUE,48.0,1st Class,3900,Cherbourg,,FALSE
+TRUE,37.0,1st Class,2050,Southampton,,TRUE
+FALSE,45.0,1st Class,3060,Cherbourg,,FALSE
+FALSE,59.0,1st Class,3980,Southampton,,TRUE
+FALSE,44.0,1st Class,2140,Cherbourg,,TRUE
+FALSE,59.0,1st Class,5890,Cherbourg,,TRUE
+FALSE,41.0,1st Class,10400,Cherbourg,Nursemaid,TRUE
+FALSE,46.0,1st Class,2050,Southampton,Military,FALSE
+TRUE,,1st Class,2390,Southampton,Servant,FALSE
+TRUE,42.0,1st Class,2030,Southampton,,TRUE
+FALSE,52.0,1st Class,2120,Cherbourg,,TRUE
+TRUE,36.0,1st Class,39600,Cherbourg,Gentleman,TRUE
+FALSE,58.0,1st Class,39600,Cherbourg,,TRUE
+TRUE,33.0,1st Class,386,Southampton,,FALSE
+TRUE,31.0,1st Class,3640,Southampton,,FALSE
+TRUE,17.0,1st Class,3640,Southampton,,FALSE
+FALSE,11.0,1st Class,9270,Southampton,,TRUE
+FALSE,13.0,1st Class,9270,Southampton,,TRUE
+TRUE,36.0,1st Class,9270,Southampton,,TRUE
+FALSE,36.0,1st Class,9270,Southampton,,TRUE
+TRUE,49.0,1st Class,2010,Southampton,,FALSE
+FALSE,36.0,1st Class,2140,Cherbourg,,TRUE
+TRUE,36.0,1st Class,6090,Southampton,,FALSE
+FALSE,25.0,1st Class,6090,Southampton,,TRUE
+TRUE,46.0,1st Class,4720,Southampton,,FALSE
+FALSE,47.0,1st Class,4720,Southampton,,TRUE
+TRUE,27.0,1st Class,4100,Southampton,,TRUE
+FALSE,32.0,1st Class,4100,Southampton,,TRUE
+FALSE,36.0,1st Class,20300,Cherbourg,Personal Maid,TRUE
+FALSE,30.0,1st Class,6680,Southampton,Of Independent Means,TRUE
+TRUE,45.0,1st Class,2290,Cherbourg,Sculptor,TRUE
+FALSE,48.0,1st Class,4250,Southampton,Of Independent Means,TRUE
+TRUE,40.0,1st Class,,Belfast,Draughtsman,FALSE
+TRUE,27.0,1st Class,10600,Cherbourg,,FALSE
+FALSE,26.0,1st Class,10600,Cherbourg,,TRUE
+FALSE,22.0,1st Class,11700,Southampton,Nursemaid,TRUE
+TRUE,40.0,1st Class,4020,Southampton,,FALSE
+TRUE,37.0,1st Class,1980,Southampton,,FALSE
+FALSE,39.0,1st Class,6420,Cherbourg,,TRUE
+TRUE,37.0,1st Class,6420,Cherbourg,,FALSE
+FALSE,64.0,1st Class,6420,Cherbourg,,TRUE
+FALSE,55.0,1st Class,1990,Southampton,,TRUE
+TRUE,59.0,1st Class,2050,Southampton,Businessman,FALSE
+FALSE,70.0,1st Class,5480,Southampton,,FALSE
+FALSE,39.0,1st Class,2050,Southampton,,TRUE
+FALSE,64.0,1st Class,5480,Southampton,,TRUE
+TRUE,39.0,1st Class,5500,Cherbourg,,FALSE
+FALSE,35.0,1st Class,5500,Cherbourg,,TRUE
+TRUE,51.0,1st Class,2050,Southampton,Businessman,TRUE
+TRUE,27.0,1st Class,2360,Southampton,,TRUE
+FALSE,33.0,1st Class,11700,Southampton,Personal Maid,TRUE
+TRUE,31.0,1st Class,4020,Cherbourg,,FALSE
+FALSE,27.0,1st Class,4020,Cherbourg,,TRUE
+TRUE,31.0,1st Class,4400,Southampton,,TRUE
+FALSE,17.0,1st Class,4400,Southampton,,TRUE
+FALSE,52.0,1st Class,6320,Southampton,Politician,TRUE
+FALSE,4.0,1st Class,6320,Southampton,,TRUE
+FALSE,34.0,1st Class,6320,Southampton,,TRUE
+TRUE,50.0,1st Class,8220,Cherbourg,,FALSE
+FALSE,48.0,1st Class,8220,Cherbourg,,TRUE
+FALSE,27.0,1st Class,19100,Cherbourg,,TRUE
+FALSE,48.0,1st Class,4400,Cherbourg,Dressmaker / Couturi®re,TRUE
+FALSE,49.0,1st Class,3060,Cherbourg,Landowner,TRUE
+TRUE,39.0,1st Class,2290,Cherbourg,,FALSE
+FALSE,23.0,1st Class,6420,Cherbourg,Of Independent Means,TRUE
+FALSE,39.0,1st Class,19100,Cherbourg,Nurse,TRUE
+FALSE,54.0,1st Class,6040,Cherbourg,,TRUE
+FALSE,36.0,1st Class,2450,Cherbourg,,FALSE
+TRUE,57.0,1st Class,17100,Southampton,Servant,FALSE
+FALSE,48.0,1st Class,2450,Cherbourg,,TRUE
+FALSE,42.0,1st Class,8560,Cherbourg,Personal Maid,TRUE
+TRUE,36.0,1st Class,2030,Southampton,,TRUE
+TRUE,30.0,1st Class,2140,Southampton,,FALSE
+FALSE,24.0,1st Class,20300,Southampton,,TRUE
+FALSE,28.0,1st Class,20300,Southampton,,TRUE
+FALSE,23.0,1st Class,20300,Southampton,,TRUE
+TRUE,19.0,1st Class,20300,Southampton,,FALSE
+TRUE,64.0,1st Class,20300,Southampton,,FALSE
+FALSE,60.0,1st Class,20300,Southampton,,TRUE
+TRUE,60.0,1st Class,6120,Cherbourg,,TRUE
+FALSE,48.0,1st Class,6120,Cherbourg,,TRUE
+FALSE,22.0,1st Class,3820,Cherbourg,,TRUE
+FALSE,31.0,1st Class,4400,Cherbourg,Secretary,TRUE
+TRUE,37.0,1st Class,2050,Southampton,,FALSE
+FALSE,49.0,1st Class,10300,Cherbourg,Doctor,TRUE
+TRUE,43.0,1st Class,2140,Cherbourg,,TRUE
+FALSE,42.0,1st Class,10300,Cherbourg,,TRUE
+TRUE,39.0,1st Class,,Southampton,Servant,FALSE
+TRUE,37.0,1st Class,4100,Southampton,Writer,FALSE
+FALSE,35.0,1st Class,4100,Southampton,,TRUE
+TRUE,47.0,1st Class,2970,Southampton,,FALSE
+FALSE,22.0,1st Class,4590,Cherbourg,,TRUE
+FALSE,44.0,1st Class,4590,Cherbourg,,TRUE
+FALSE,35.0,1st Class,16300,Southampton,Personal Maid,TRUE
+TRUE,24.0,1st Class,6120,Cherbourg,Servant,FALSE
+TRUE,47.0,1st Class,6880,Cherbourg,,TRUE
+FALSE,40.0,1st Class,6880,Cherbourg,,TRUE
+TRUE,71.0,1st Class,2680,Cherbourg,,FALSE
+FALSE,53.0,1st Class,2200,Southampton,Writer,TRUE
+FALSE,19.0,1st Class,11900,Southampton,,TRUE
+TRUE,38.0,1st Class,2320,Southampton,Sales Manager,FALSE
+FALSE,59.0,1st Class,11900,Southampton,,TRUE
+TRUE,23.0,1st Class,4890,Cherbourg,,TRUE
+FALSE,45.0,1st Class,4890,Cherbourg,,TRUE
+TRUE,46.0,1st Class,6120,Cherbourg,Businessman,FALSE
+TRUE,25.0,1st Class,4280,Cherbourg,Businessman,TRUE
+FALSE,21.0,1st Class,4280,Cherbourg,,TRUE
+TRUE,48.0,1st Class,5930,Cherbourg,Of Independent Means,TRUE
+FALSE,49.0,1st Class,5930,Cherbourg,,TRUE
+TRUE,37.0,1st Class,3270,Southampton,Servant,FALSE
+TRUE,45.0,1st Class,6450,Southampton,Theatre Manager,FALSE
+FALSE,35.0,1st Class,6450,Southampton,,TRUE
+TRUE,45.0,1st Class,,Southampton,Secretary,FALSE
+TRUE,27.0,1st Class,5930,Cherbourg,Servant,TRUE
+TRUE,45.0,1st Class,2320,Southampton,Sales Manager,TRUE
+FALSE,24.0,1st Class,6420,Cherbourg,,TRUE
+TRUE,55.0,1st Class,7220,Southampton,Businessman,FALSE
+FALSE,52.0,1st Class,7220,Southampton,,TRUE
+TRUE,42.0,1st Class,3280,Southampton,Politician,FALSE
+TRUE,44.0,1st Class,4000,Southampton,Buyer,FALSE
+TRUE,55.0,1st Class,3860,Southampton,Manufacturer,FALSE
+FALSE,17.0,1st Class,4480,Cherbourg,,TRUE
+FALSE,44.0,1st Class,4480,Cherbourg,,TRUE
+FALSE,51.0,1st Class,6020,Cherbourg,Of Independent Means,TRUE
+TRUE,42.0,1st Class,4020,Southampton,,FALSE
+FALSE,35.0,1st Class,4020,Southampton,,TRUE
+TRUE,40.0,1st Class,2050,Southampton,Gambler,TRUE
+TRUE,38.0,1st Class,7720,Southampton,,TRUE
+TRUE,42.0,1st Class,2370,Cherbourg,Businessman,FALSE
+FALSE,31.0,1st Class,7720,Southampton,,TRUE
+FALSE,38.0,1st Class,6180,Southampton,Personal Maid,TRUE
+FALSE,50.0,1st Class,2220,Cherbourg,,FALSE
+TRUE,49.0,1st Class,,Southampton,Shipowner,TRUE
+TRUE,46.0,1st Class,2010,Southampton,Estate Manager,FALSE
+TRUE,50.0,1st Class,2010,Southampton,Metallurgist,FALSE
+TRUE,33.0,1st Class,16300,Southampton,Servant,FALSE
+TRUE,58.0,1st Class,2290,Cherbourg,Architect,FALSE
+TRUE,41.0,1st Class,4000,Southampton,,FALSE
+FALSE,31.0,1st Class,4000,Southampton,,TRUE
+TRUE,42.0,1st Class,4060,Southampton,,TRUE
+FALSE,45.0,1st Class,4060,Southampton,,TRUE
+TRUE,,1st Class,2050,Southampton,Businessman,FALSE
+FALSE,29.0,1st Class,16300,Southampton,Personal Maid,TRUE
+TRUE,,1st Class,2700,Southampton,Businessman,FALSE
+FALSE,49.0,1st Class,2000,Southampton,Doctor,TRUE
+FALSE,27.0,1st Class,8220,Cherbourg,Personal Maid,TRUE
+TRUE,35.0,1st Class,39600,Cherbourg,Servant,TRUE
+TRUE,31.0,1st Class,2140,Cherbourg,Jeweller,FALSE
+TRUE,42.0,1st Class,2050,Southampton,Businessman,FALSE
+FALSE,55.0,1st Class,2140,Cherbourg,,TRUE
+FALSE,16.0,1st Class,3040,Cherbourg,,TRUE
+FALSE,50.0,1st Class,3040,Cherbourg,,TRUE
+TRUE,29.0,1st Class,2320,Southampton,,FALSE
+FALSE,21.0,1st Class,6020,Cherbourg,,TRUE
+TRUE,30.0,1st Class,3510,Southampton,,FALSE
+FALSE,59.0,1st Class,11300,Cherbourg,Personal Maid,TRUE
+FALSE,16.0,1st Class,16300,Southampton,,TRUE
+TRUE,30.0,1st Class,2010,Southampton,,FALSE
+FALSE,19.0,1st Class,6680,Southampton,Personal Maid,TRUE
+TRUE,28.0,1st Class,2290,Cherbourg,Aviator,TRUE
+TRUE,18.0,1st Class,4100,Southampton,Of Independent Means,FALSE
+FALSE,18.0,1st Class,4100,Southampton,,TRUE
+FALSE,24.0,1st Class,3820,Cherbourg,Singer,TRUE
+TRUE,46.0,1st Class,5810,Southampton,Banker,FALSE
+TRUE,54.0,1st Class,4000,Southampton,Buyer,FALSE
+TRUE,35.0,1st Class,2030,Southampton,Buyer,TRUE
+TRUE,28.0,1st Class,6350,Cherbourg,Mechanical Engineer,FALSE
+FALSE,25.0,1st Class,6350,Cherbourg,,TRUE
+TRUE,65.0,1st Class,2050,Cherbourg,Artist,FALSE
+FALSE,44.0,1st Class,6950,,Merchant,FALSE
+FALSE,33.0,1st Class,6950,,,TRUE
+FALSE,37.0,1st Class,6950,,,TRUE
+TRUE,30.0,1st Class,4460,Cherbourg,,TRUE
+TRUE,55.0,1st Class,2360,Southampton,Businessman,FALSE
+TRUE,47.0,1st Class,3270,Southampton,Businessman,FALSE
+TRUE,36.0,1st Class,2290,Cherbourg,,FALSE
+FALSE,31.0,1st Class,8750,Cherbourg,,TRUE
+FALSE,23.0,1st Class,8750,Cherbourg,,TRUE
+TRUE,58.0,1st Class,8750,Cherbourg,,FALSE
+FALSE,19.0,1st Class,2030,Southampton,,TRUE
+TRUE,64.0,1st Class,2010,Southampton,,FALSE
+TRUE,20.0,1st Class,1070,Cherbourg,Gentleman,TRUE
+FALSE,39.0,1st Class,8410,Cherbourg,Personal Maid,TRUE
+TRUE,29.0,1st Class,1990,Cherbourg,Dealer,TRUE
+FALSE,22.0,1st Class,4790,Southampton,,TRUE
+TRUE,64.0,1st Class,4790,Southampton,Jeweller,FALSE
+TRUE,36.0,1st Class,2140,Cherbourg,Merchant,FALSE
+TRUE,29.0,1st Class,,Belfast,Electrician,FALSE
+TRUE,40.0,1st Class,2200,Southampton,Stockbroker,FALSE
+TRUE,22.0,1st Class,7220,Southampton,Clerk,FALSE
+TRUE,24.0,1st Class,8410,Cherbourg,Of Independent Means,FALSE
+FALSE,22.0,1st Class,8410,Cherbourg,Of Independent Means,TRUE
+TRUE,29.0,1st Class,5140,Southampton,Of Independent Means,FALSE
+FALSE,22.0,1st Class,5140,Southampton,,TRUE
+FALSE,33.0,1st Class,7220,Southampton,Personal Maid,TRUE
+FALSE,52.0,1st Class,2360,Southampton,,TRUE
+TRUE,46.0,1st Class,4020,Southampton,,FALSE
+FALSE,56.0,1st Class,6420,Cherbourg,,TRUE
+TRUE,38.0,1st Class,,Cherbourg,,FALSE
+TRUE,36.0,1st Class,3060,Cherbourg,,TRUE
+TRUE,22.0,1st Class,10500,Cherbourg,Servant,FALSE
+TRUE,42.0,1st Class,19100,Cherbourg,Servant,FALSE
+FALSE,43.0,1st Class,16300,Southampton,Of Independent Means,TRUE
+TRUE,31.0,1st Class,3900,Southampton,Of Independent Means,FALSE
+TRUE,45.0,1st Class,2050,Southampton,,TRUE
+TRUE,38.0,1st Class,3860,Southampton,,FALSE
+FALSE,34.0,1st Class,2140,Cherbourg,Journalist,TRUE
+TRUE,46.0,1st Class,6120,Cherbourg,Merchant,FALSE
+TRUE,36.0,1st Class,3100,Southampton,,FALSE
+FALSE,33.0,1st Class,6680,Southampton,Of Independent Means,TRUE
+TRUE,46.0,1st Class,4590,Cherbourg,,FALSE
+FALSE,54.0,1st Class,4590,Cherbourg,,TRUE
+TRUE,59.0,1st Class,2050,Southampton,Landowner,FALSE
+FALSE,13.0,1st Class,20300,Cherbourg,,TRUE
+FALSE,18.0,1st Class,20300,Cherbourg,,TRUE
+FALSE,21.0,1st Class,20300,Cherbourg,,TRUE
+TRUE,61.0,1st Class,20300,Cherbourg,,FALSE
+FALSE,48.0,1st Class,20300,Cherbourg,,TRUE
+FALSE,24.0,1st Class,5350,Cherbourg,Personal Maid,TRUE
+TRUE,47.0,1st Class,2360,Southampton,Businessman,TRUE
+TRUE,43.0,1st Class,2010,Cherbourg,Businessman,TRUE
+FALSE,35.0,1st Class,4460,Cherbourg,,TRUE
+FALSE,30.0,1st Class,2390,Southampton,Personal Maid,TRUE
+TRUE,34.0,1st Class,2050,Southampton,Lawyer,TRUE
+FALSE,40.0,1st Class,11900,Southampton,Governess,TRUE
+TRUE,35.0,1st Class,2030,Southampton,,TRUE
+TRUE,50.0,1st Class,4320,Cherbourg,,FALSE
+FALSE,39.0,1st Class,4320,Cherbourg,,TRUE
+TRUE,56.0,1st Class,2740,Southampton,Banker,TRUE
+TRUE,28.0,1st Class,2740,Southampton,Stockbroker,TRUE
+TRUE,56.0,1st Class,2050,Southampton,,FALSE
+TRUE,56.0,1st Class,2370,Cherbourg,Military,FALSE
+TRUE,24.0,1st Class,4630,Cherbourg,,FALSE
+TRUE,,1st Class,2010,Southampton,,FALSE
+FALSE,18.0,1st Class,4630,Cherbourg,,TRUE
+TRUE,24.0,1st Class,6350,Southampton,,TRUE
+FALSE,23.0,1st Class,6350,Southampton,,TRUE
+FALSE,6.0,1st Class,10400,Cherbourg,,TRUE
+TRUE,45.0,1st Class,10400,Cherbourg,,TRUE
+FALSE,39.0,1st Class,10400,Cherbourg,,TRUE
+TRUE,57.0,1st Class,11300,Cherbourg,,FALSE
+FALSE,45.0,1st Class,11300,Cherbourg,,TRUE
+FALSE,32.0,1st Class,2360,Southampton,Lawyer,TRUE
+TRUE,62.0,1st Class,2050,Southampton,Journalist,FALSE
+TRUE,54.0,1st Class,4280,Cherbourg,Businessman,TRUE
+FALSE,44.0,1st Class,4280,Cherbourg,,TRUE
+FALSE,52.0,1st Class,6040,Cherbourg,,TRUE
+TRUE,54.0,1st Class,2140,Cherbourg,Businessman,FALSE
+FALSE,62.0,1st Class,6180,Southampton,,TRUE
+TRUE,67.0,1st Class,17100,Southampton,Businessman,FALSE
+FALSE,63.0,1st Class,17100,Southampton,,FALSE
+TRUE,61.0,1st Class,2500,Southampton,Property Developer / Real Estate,FALSE
+FALSE,46.0,1st Class,2000,Southampton,,TRUE
+FALSE,18.0,1st Class,6150,Southampton,,TRUE
+TRUE,52.0,1st Class,6150,Southampton,,FALSE
+FALSE,39.0,1st Class,6150,Southampton,,TRUE
+TRUE,48.0,1st Class,4020,Southampton,Manufacturer,TRUE
+FALSE,49.0,1st Class,4020,Southampton,,TRUE
+TRUE,49.0,1st Class,8560,Cherbourg,Businessman,FALSE
+TRUE,17.0,1st Class,8560,Cherbourg,Scholar,TRUE
+FALSE,39.0,1st Class,8560,Cherbourg,,TRUE
+FALSE,38.0,1st Class,6190,Cherbourg,,TRUE
+TRUE,31.0,1st Class,2200,Cherbourg,,TRUE
+FALSE,39.0,1st Class,2140,Cherbourg,Lawyer,FALSE
+TRUE,61.0,1st Class,2590,Belfast,Businessman,FALSE
+TRUE,48.0,1st Class,2640,Southampton,,FALSE
+FALSE,38.0,1st Class,39600,Cherbourg,Personal Maid,TRUE
+TRUE,63.0,1st Class,5810,Cherbourg,,FALSE
+FALSE,60.0,1st Class,5810,Cherbourg,,TRUE
+FALSE,59.0,1st Class,2050,Southampton,Military,FALSE
+TRUE,54.0,1st Class,5970,Southampton,Manufacturer,FALSE
+TRUE,21.0,1st Class,5970,Southampton,,FALSE
+FALSE,55.0,1st Class,10500,Cherbourg,,TRUE
+FALSE,31.0,1st Class,12700,Southampton,,TRUE
+TRUE,57.0,1st Class,12700,Southampton,,FALSE
+FALSE,45.0,1st Class,12700,Southampton,,TRUE
+TRUE,50.0,1st Class,16300,Southampton,Banker,FALSE
+TRUE,27.0,1st Class,16300,Southampton,Bibliophile,FALSE
+FALSE,50.0,1st Class,16300,Southampton,,TRUE
+FALSE,21.0,1st Class,2050,Southampton,,TRUE
+TRUE,51.0,1st Class,4740,Cherbourg,Lawyer,FALSE
+TRUE,21.0,1st Class,4740,Cherbourg,Sportsman,TRUE
+FALSE,31.0,1st Class,10400,Cherbourg,Personal Maid,TRUE
+TRUE,45.0,1st Class,2740,Southampton,Businessman,TRUE
+TRUE,62.0,1st Class,2050,Southampton,Businessman,FALSE
+FALSE,36.0,1st Class,10500,Cherbourg,,TRUE
+TRUE,30.0,2nd Class,1850,Cherbourg,,FALSE
+FALSE,28.0,2nd Class,1850,Cherbourg,,TRUE
+TRUE,30.0,2nd Class,1000,Southampton,Chauffeur,FALSE
+TRUE,17.0,2nd Class,888,Southampton,,FALSE
+TRUE,25.0,2nd Class,811,Southampton,Miner,FALSE
+TRUE,32.0,2nd Class,2010,Southampton,,FALSE
+FALSE,36.0,2nd Class,2010,Southampton,,TRUE
+TRUE,57.0,2nd Class,1000,Southampton,,FALSE
+TRUE,15.0,2nd Class,888,Southampton,Butcher's Assistant,FALSE
+TRUE,23.0,2nd Class,811,Southampton,Horse Trainer,FALSE
+FALSE,36.0,2nd Class,1000,Southampton,,TRUE
+TRUE,28.0,2nd Class,811,Southampton,Miner,FALSE
+FALSE,51.0,2nd Class,967,Southampton,Priest / Minister,FALSE
+TRUE,32.0,2nd Class,2010,Southampton,,TRUE
+FALSE,19.0,2nd Class,2010,Southampton,,TRUE
+TRUE,28.0,2nd Class,2010,Southampton,,FALSE
+FALSE,1.0,2nd Class,3010,Southampton,,TRUE
+FALSE,4.0,2nd Class,3010,Southampton,,TRUE
+FALSE,12.0,2nd Class,3010,Southampton,,TRUE
+FALSE,35.0,2nd Class,3010,Southampton,,TRUE
+TRUE,34.0,2nd Class,1000,Southampton,Teacher,TRUE
+FALSE,19.0,2nd Class,1000,Southampton,,TRUE
+TRUE,23.0,2nd Class,1000,Southampton,,FALSE
+TRUE,25.0,2nd Class,1000,Southampton,,FALSE
+TRUE,42.0,2nd Class,1000,Southampton,Merchant,FALSE
+TRUE,29.0,2nd Class,1000,Southampton,Stockman,FALSE
+TRUE,24.0,2nd Class,,Southampton,Musician,FALSE
+TRUE,20.0,2nd Class,,Southampton,Musician,FALSE
+TRUE,32.0,2nd Class,1000,Southampton,,FALSE
+FALSE,18.0,2nd Class,1000,Southampton,Cook (Personal),TRUE
+FALSE,15.0,2nd Class,3010,Southampton,Scholar,TRUE
+TRUE,60.0,2nd Class,3010,Southampton,Hotelier,FALSE
+FALSE,40.0,2nd Class,3010,Southampton,,TRUE
+FALSE,20.0,2nd Class,2010,Southampton,,TRUE
+TRUE,25.0,2nd Class,2010,Southampton,,FALSE
+FALSE,36.0,2nd Class,1000,Southampton,,TRUE
+TRUE,25.0,2nd Class,1000,Southampton,Mechanical Engineer,FALSE
+FALSE,42.0,2nd Class,1000,Southampton,Priest / Minister,FALSE
+FALSE,42.0,2nd Class,1000,Southampton,,TRUE
+FALSE,0.0,2nd Class,2240,Southampton,,TRUE
+TRUE,26.0,2nd Class,2240,Southampton,,TRUE
+FALSE,28.0,2nd Class,2240,Southampton,,TRUE
+FALSE,35.0,2nd Class,1620,Southampton,,TRUE
+TRUE,21.0,2nd Class,,Belfast,,FALSE
+TRUE,19.0,2nd Class,1000,Southampton,Miner,FALSE
+FALSE,54.0,2nd Class,2010,Southampton,Priest / Minister,FALSE
+FALSE,45.0,2nd Class,2010,Southampton,,FALSE
+TRUE,52.0,2nd Class,1040,Southampton,,FALSE
+TRUE,36.0,2nd Class,2010,Southampton,Farmer,FALSE
+FALSE,28.0,2nd Class,2010,Southampton,,FALSE
+FALSE,25.0,2nd Class,2320,Southampton,,TRUE
+FALSE,45.0,2nd Class,2320,Southampton,,TRUE
+TRUE,29.0,2nd Class,2010,Southampton,Dairy Worker,FALSE
+TRUE,30.0,2nd Class,,Southampton,Musician,FALSE
+FALSE,28.0,2nd Class,2080,Southampton,,TRUE
+TRUE,29.0,2nd Class,811,Southampton,Advertising Consultant,FALSE
+TRUE,27.0,2nd Class,1000,Southampton,,FALSE
+TRUE,25.0,2nd Class,811,Southampton,,TRUE
+FALSE,8.0,2nd Class,2030,Southampton,,TRUE
+TRUE,31.0,2nd Class,2030,Southampton,Grocer,FALSE
+FALSE,31.0,2nd Class,2030,Southampton,,TRUE
+FALSE,22.0,2nd Class,811,Southampton,,TRUE
+FALSE,30.0,2nd Class,1000,Southampton,Musician,FALSE
+FALSE,30.0,2nd Class,1620,Southampton,,FALSE
+TRUE,20.0,2nd Class,888,Southampton,Carpenter / Joiner,FALSE
+TRUE,21.0,2nd Class,,Belfast,Fitter,FALSE
+FALSE,8.0,2nd Class,2840,Southampton,,TRUE
+TRUE,21.0,2nd Class,5680,Southampton,,FALSE
+FALSE,48.0,2nd Class,2840,Southampton,,TRUE
+FALSE,28.0,2nd Class,1000,Southampton,,TRUE
+TRUE,20.0,2nd Class,5680,Southampton,,FALSE
+TRUE,29.0,2nd Class,2140,Cherbourg,,FALSE
+FALSE,24.0,2nd Class,2140,Cherbourg,,TRUE
+TRUE,25.0,2nd Class,2430,Southampton,,FALSE
+TRUE,18.0,2nd Class,5680,Southampton,,FALSE
+FALSE,18.0,2nd Class,1780,Southampton,,TRUE
+FALSE,34.0,2nd Class,1780,Southampton,,TRUE
+TRUE,55.0,2nd Class,2010,Southampton,Quarryman,FALSE
+FALSE,8.0,2nd Class,2510,Southampton,,TRUE
+TRUE,42.0,2nd Class,2510,Southampton,,FALSE
+FALSE,34.0,2nd Class,2510,Southampton,,TRUE
+FALSE,27.0,2nd Class,1070,Cherbourg,,TRUE
+FALSE,30.0,2nd Class,1070,Cherbourg,,TRUE
+TRUE,23.0,2nd Class,1000,Southampton,,FALSE
+TRUE,21.0,2nd Class,1000,Southampton,,FALSE
+TRUE,18.0,2nd Class,1000,Southampton,,FALSE
+TRUE,40.0,2nd Class,2010,Southampton,,FALSE
+TRUE,18.0,2nd Class,811,Southampton,Painter & Decorator,FALSE
+TRUE,38.0,2nd Class,1000,Southampton,,FALSE
+TRUE,37.0,2nd Class,,Belfast,Fitter,FALSE
+FALSE,38.0,2nd Class,1000,Southampton,Missionary,FALSE
+TRUE,35.0,2nd Class,2010,Southampton,,FALSE
+TRUE,38.0,2nd Class,1620,Southampton,Miner,FALSE
+TRUE,33.0,2nd Class,1620,Southampton,Miner,FALSE
+FALSE,34.0,2nd Class,1000,Southampton,,TRUE
+TRUE,16.0,2nd Class,2010,Southampton,,FALSE
+TRUE,26.0,2nd Class,811,Southampton,,FALSE
+TRUE,47.0,2nd Class,811,Southampton,,FALSE
+TRUE,21.0,2nd Class,888,Southampton,Carpenter / Joiner,FALSE
+TRUE,20.0,2nd Class,888,Southampton,Carpenter / Joiner,FALSE
+TRUE,24.0,2nd Class,1040,Southampton,,FALSE
+TRUE,24.0,2nd Class,1000,Southampton,Chauffeur,FALSE
+TRUE,34.0,2nd Class,1000,Southampton,Clerk,FALSE
+TRUE,30.0,2nd Class,1000,Southampton,,FALSE
+TRUE,52.0,2nd Class,1000,Southampton,,FALSE
+FALSE,0.0,2nd Class,1120,Southampton,,TRUE
+FALSE,23.0,2nd Class,1120,Southampton,,TRUE
+TRUE,30.0,2nd Class,1000,Southampton,Gardener,FALSE
+TRUE,44.0,2nd Class,1000,Southampton,Cinematographer,FALSE
+FALSE,6.0,2nd Class,2550,Southampton,,TRUE
+FALSE,39.0,2nd Class,2550,Southampton,Priest / Minister,FALSE
+TRUE,62.0,2nd Class,811,Southampton,,TRUE
+TRUE,30.0,2nd Class,811,Southampton,,FALSE
+FALSE,7.0,2nd Class,2030,Southampton,,TRUE
+TRUE,47.0,2nd Class,2030,Southampton,Builder,FALSE
+FALSE,48.0,2nd Class,2030,Southampton,,TRUE
+TRUE,33.0,2nd Class,,Southampton,Musician,FALSE
+FALSE,24.0,2nd Class,5020,Southampton,,TRUE
+FALSE,24.0,2nd Class,5020,Southampton,,TRUE
+TRUE,49.0,2nd Class,5020,Southampton,Farmer,FALSE
+FALSE,48.0,2nd Class,5020,Southampton,,TRUE
+FALSE,56.0,2nd Class,1240,Southampton,,TRUE
+TRUE,24.0,2nd Class,5680,Southampton,,FALSE
+TRUE,30.0,2nd Class,5680,Southampton,,FALSE
+TRUE,20.0,2nd Class,5680,Southampton,,FALSE
+FALSE,18.0,2nd Class,1000,Southampton,,FALSE
+FALSE,20.0,2nd Class,1780,Southampton,,TRUE
+TRUE,23.0,2nd Class,888,Southampton,Baker,FALSE
+TRUE,36.0,2nd Class,1000,Southampton,Painter & Decorator,FALSE
+FALSE,54.0,2nd Class,1780,Southampton,,TRUE
+TRUE,50.0,2nd Class,1000,Southampton,Musical Instrument Vendor,FALSE
+TRUE,44.0,2nd Class,2010,Southampton,Clerk,FALSE
+FALSE,29.0,2nd Class,2010,Southampton,,TRUE
+TRUE,22.0,2nd Class,5680,Southampton,,FALSE
+TRUE,41.0,2nd Class,1000,Southampton,Civil Servant,TRUE
+TRUE,63.0,2nd Class,2010,Southampton,Retired,FALSE
+FALSE,60.0,2nd Class,2010,Southampton,,FALSE
+TRUE,29.0,2nd Class,,Southampton,Musician,FALSE
+TRUE,33.0,2nd Class,948,Southampton,Gardener,FALSE
+FALSE,17.0,2nd Class,811,Southampton,,TRUE
+TRUE,40.0,2nd Class,2080,Southampton,,FALSE
+FALSE,24.0,2nd Class,2080,Southampton,,TRUE
+TRUE,47.0,2nd Class,1160,Southampton,Engineer,FALSE
+TRUE,24.0,2nd Class,2430,Southampton,,FALSE
+TRUE,22.0,2nd Class,2430,Southampton,,FALSE
+TRUE,32.0,2nd Class,811,Southampton,Miner,FALSE
+FALSE,23.0,2nd Class,1060,Cherbourg,,TRUE
+TRUE,34.0,2nd Class,2010,Southampton,,FALSE
+FALSE,24.0,2nd Class,2010,Southampton,,TRUE
+FALSE,28.0,2nd Class,1620,Southampton,,FALSE
+FALSE,46.0,2nd Class,954,Queenstown,,TRUE
+TRUE,35.0,2nd Class,954,Queenstown,,FALSE
+FALSE,45.0,2nd Class,1040,Southampton,,TRUE
+FALSE,52.0,2nd Class,954,Queenstown,Priest / Minister,FALSE
+TRUE,39.0,2nd Class,,Belfast,Fitter,FALSE
+TRUE,23.0,2nd Class,,Southampton,Musician,FALSE
+TRUE,31.0,2nd Class,811,Southampton,Mechanical Engineer,FALSE
+TRUE,36.0,2nd Class,994,Southampton,Chemist,FALSE
+FALSE,35.0,2nd Class,2010,Southampton,Priest / Minister,FALSE
+FALSE,34.0,2nd Class,2010,Southampton,,FALSE
+TRUE,30.0,2nd Class,827,Queenstown,Gentleman,FALSE
+FALSE,1.0,2nd Class,3210,Cherbourg,,TRUE
+FALSE,3.0,2nd Class,3210,Cherbourg,,TRUE
+TRUE,25.0,2nd Class,3210,Cherbourg,Engineer,FALSE
+FALSE,22.0,2nd Class,3210,Cherbourg,,TRUE
+FALSE,17.0,2nd Class,927,Cherbourg,,TRUE
+FALSE,31.0,2nd Class,2550,Southampton,,TRUE
+FALSE,34.0,2nd Class,811,Southampton,,TRUE
+TRUE,25.0,2nd Class,811,Southampton,Engineer,FALSE
+TRUE,61.0,2nd Class,954,Queenstown,Gentleman,FALSE
+TRUE,50.0,2nd Class,2010,Southampton,Saddler,FALSE
+FALSE,42.0,2nd Class,2010,Southampton,,TRUE
+FALSE,23.0,2nd Class,606,Southampton,,TRUE
+FALSE,57.0,2nd Class,811,Southampton,,FALSE
+TRUE,25.0,2nd Class,1160,Cherbourg,,FALSE
+FALSE,1.0,2nd Class,2860,Cherbourg,,TRUE
+TRUE,31.0,2nd Class,2860,Cherbourg,Merchant,FALSE
+FALSE,24.0,2nd Class,2860,Cherbourg,,TRUE
+TRUE,30.0,2nd Class,1200,Cherbourg,Clerk,FALSE
+TRUE,30.0,2nd Class,1000,Southampton,China Clay Worker,FALSE
+TRUE,36.0,2nd Class,1240,Southampton,Property Developer / Real Estate,FALSE
+TRUE,32.0,2nd Class,1040,Southampton,Engineer,FALSE
+TRUE,30.0,2nd Class,1000,Southampton,Oil Worker,FALSE
+TRUE,46.0,2nd Class,2010,Southampton,,FALSE
+FALSE,13.0,2nd Class,1510,Southampton,,TRUE
+FALSE,41.0,2nd Class,1510,Southampton,,TRUE
+TRUE,19.0,2nd Class,811,Southampton,Salesman,TRUE
+TRUE,31.0,2nd Class,1000,Southampton,Baker,FALSE
+TRUE,48.0,2nd Class,1000,Southampton,Machine Inspector,FALSE
+TRUE,71.0,2nd Class,811,Southampton,Coach Painter,FALSE
+FALSE,27.0,2nd Class,1000,Southampton,Priest / Minister,FALSE
+FALSE,54.0,2nd Class,1080,Southampton,Doctor,FALSE
+TRUE,38.0,2nd Class,2010,Southampton,Confectioner,FALSE
+TRUE,16.0,2nd Class,811,Southampton,,FALSE
+TRUE,63.0,2nd Class,748,Queenstown,Gentleman,FALSE
+TRUE,28.0,2nd Class,2320,Cherbourg,,FALSE
+FALSE,14.0,2nd Class,2320,Cherbourg,,TRUE
+FALSE,2.0,2nd Class,2010,Southampton,,TRUE
+FALSE,3.0,2nd Class,2010,Southampton,,TRUE
+TRUE,32.0,2nd Class,2010,Southampton,,FALSE
+TRUE,26.0,2nd Class,1000,Southampton,Electrician,FALSE
+TRUE,19.0,2nd Class,2840,Southampton,Miner,FALSE
+TRUE,28.0,2nd Class,1040,Southampton,Electrical Engineer,FALSE
+FALSE,29.0,2nd Class,811,Southampton,,TRUE
+TRUE,38.0,2nd Class,1000,Southampton,Stone Cutter,FALSE
+TRUE,22.0,2nd Class,811,Southampton,Mason,TRUE
+TRUE,26.0,2nd Class,1070,Cherbourg,Chauffeur,TRUE
+FALSE,23.0,2nd Class,811,Southampton,Doctor,FALSE
+TRUE,29.0,2nd Class,1070,Cherbourg,,TRUE
+TRUE,28.0,2nd Class,811,Southampton,Clerk,FALSE
+TRUE,18.0,2nd Class,,Belfast,Plumber,FALSE
+FALSE,59.0,2nd Class,2010,Southampton,,TRUE
+TRUE,19.0,2nd Class,811,Southampton,Miner,FALSE
+TRUE,39.0,2nd Class,1160,Cherbourg,Chauffeur,FALSE
+FALSE,41.0,2nd Class,1000,Southampton,Priest / Minister,FALSE
+FALSE,21.0,2nd Class,1620,Southampton,,TRUE
+FALSE,19.0,2nd Class,2010,Southampton,,TRUE
+TRUE,42.0,2nd Class,1620,Southampton,,FALSE
+FALSE,32.0,2nd Class,1000,Southampton,,TRUE
+TRUE,24.0,2nd Class,1000,Southampton,,FALSE
+TRUE,30.0,2nd Class,984,Cherbourg,,TRUE
+TRUE,27.0,2nd Class,1190,Cherbourg,,FALSE
+FALSE,2.0,2nd Class,2010,Southampton,,TRUE
+FALSE,8.0,2nd Class,2010,Southampton,,TRUE
+FALSE,33.0,2nd Class,2010,Southampton,,TRUE
+TRUE,36.0,2nd Class,811,Southampton,Carpenter / Joiner,FALSE
+TRUE,33.0,2nd Class,1620,Southampton,Carpenter / Joiner,FALSE
+FALSE,30.0,2nd Class,1620,Southampton,,TRUE
+FALSE,28.0,2nd Class,1000,Southampton,,TRUE
+TRUE,23.0,2nd Class,1160,Cherbourg,,FALSE
+FALSE,0.0,2nd Class,1450,Southampton,,TRUE
+FALSE,3.0,2nd Class,1450,Southampton,,TRUE
+FALSE,24.0,2nd Class,1450,Southampton,,TRUE
+FALSE,50.0,2nd Class,811,Southampton,,TRUE
+TRUE,18.0,2nd Class,811,Southampton,,FALSE
+FALSE,21.0,2nd Class,811,Southampton,,TRUE
+TRUE,26.0,2nd Class,1000,Southampton,,FALSE
+TRUE,25.0,2nd Class,1000,Southampton,,FALSE
+TRUE,27.0,2nd Class,2010,Southampton,,FALSE
+FALSE,25.0,2nd Class,2010,Southampton,,TRUE
+FALSE,17.0,2nd Class,1000,Southampton,,TRUE
+FALSE,20.0,2nd Class,2840,Southampton,,TRUE
+FALSE,30.0,2nd Class,1000,Southampton,,TRUE
+TRUE,59.0,2nd Class,1040,Southampton,,FALSE
+FALSE,30.0,2nd Class,954,Queenstown,,TRUE
+TRUE,35.0,2nd Class,811,Southampton,,FALSE
+FALSE,39.0,2nd Class,1000,Southampton,,TRUE
+TRUE,25.0,2nd Class,1000,Southampton,Quarryman,FALSE
+TRUE,42.0,2nd Class,1160,Cherbourg,,FALSE
+TRUE,25.0,2nd Class,811,Southampton,Bricklayer,FALSE
+TRUE,26.0,2nd Class,1000,Southampton,Chauffeur,FALSE
+TRUE,14.0,2nd Class,5020,Southampton,Farm Labourer,FALSE
+TRUE,32.0,2nd Class,,Southampton,Musician,FALSE
+FALSE,48.0,2nd Class,811,Southampton,Servant,TRUE
+TRUE,23.0,2nd Class,1000,Southampton,Shop Assistant,FALSE
+FALSE,26.0,2nd Class,977,Southampton,,TRUE
+FALSE,27.0,2nd Class,811,Southampton,,TRUE
+TRUE,29.0,2nd Class,1620,Southampton,Carpenter / Joiner,FALSE
+FALSE,27.0,2nd Class,1620,Southampton,Housewife,FALSE
+TRUE,40.0,2nd Class,1000,Southampton,,FALSE
+FALSE,36.0,2nd Class,1620,Southampton,,TRUE
+TRUE,45.0,2nd Class,1620,Southampton,,FALSE
+TRUE,23.0,2nd Class,811,Southampton,,FALSE
+FALSE,31.0,2nd Class,1620,Southampton,,TRUE
+TRUE,15.0,2nd Class,,Belfast,Apprentice Electrician,FALSE
+FALSE,12.0,2nd Class,1220,Southampton,,TRUE
+FALSE,40.0,2nd Class,1220,Southampton,,TRUE
+FALSE,37.0,2nd Class,1000,Southampton,,TRUE
+TRUE,28.0,2nd Class,2010,Southampton,,FALSE
+FALSE,37.0,2nd Class,2010,Southampton,,TRUE
+FALSE,2.0,2nd Class,1780,Southampton,,TRUE
+FALSE,4.0,2nd Class,1780,Southampton,,TRUE
+FALSE,29.0,2nd Class,1780,Southampton,,TRUE
+FALSE,0.0,2nd Class,2140,Southampton,,TRUE
+FALSE,4.0,2nd Class,2140,Southampton,,TRUE
+TRUE,36.0,2nd Class,2140,Southampton,,FALSE
+FALSE,33.0,2nd Class,2140,Southampton,,TRUE
+TRUE,66.0,2nd Class,811,Southampton,Farmer,FALSE
+TRUE,24.0,2nd Class,994,Southampton,Servant,FALSE
+TRUE,32.0,2nd Class,1000,Southampton,,TRUE
+FALSE,35.0,2nd Class,2010,Southampton,,TRUE
+TRUE,23.0,2nd Class,1000,Southampton,Sportsman,TRUE
+TRUE,32.0,2nd Class,,Southampton,Musician,FALSE
+FALSE,26.0,2nd Class,1040,Southampton,,TRUE
+FALSE,24.0,2nd Class,1000,Southampton,,FALSE
+TRUE,23.0,3rd Class,712,Southampton,General Labourer,FALSE
+TRUE,30.0,3rd Class,560,Southampton,General Labourer,FALSE
+FALSE,22.0,3rd Class,600,Southampton,,TRUE
+TRUE,42.0,3rd Class,583,Southampton,Blacksmith,FALSE
+TRUE,14.0,3rd Class,1560,Southampton,Scholar,FALSE
+TRUE,16.0,3rd Class,1560,Southampton,Jeweller,FALSE
+FALSE,39.0,3rd Class,1560,Southampton,,TRUE
+FALSE,16.0,3rd Class,591,Southampton,,TRUE
+TRUE,25.0,3rd Class,591,Southampton,Farmer,TRUE
+TRUE,20.0,3rd Class,612,Southampton,,TRUE
+FALSE,18.0,3rd Class,558,Cherbourg,,TRUE
+TRUE,26.0,3rd Class,622,Southampton,,FALSE
+FALSE,40.0,3rd Class,732,Southampton,,FALSE
+FALSE,0.8,3rd Class,722,Southampton,,TRUE
+FALSE,18.0,3rd Class,722,Southampton,,TRUE
+TRUE,26.0,3rd Class,1450,Cherbourg,,TRUE
+TRUE,23.0,3rd Class,609,Southampton,General Labourer,FALSE
+TRUE,19.0,3rd Class,612,Southampton,General Labourer,FALSE
+TRUE,24.0,3rd Class,544,Southampton,General Labourer,FALSE
+TRUE,25.0,3rd Class,544,Southampton,General Labourer,FALSE
+TRUE,35.0,3rd Class,622,Southampton,Tool Maker,FALSE
+TRUE,15.0,3rd Class,641,Southampton,Gardener,FALSE
+FALSE,19.0,3rd Class,606,Southampton,,TRUE
+TRUE,33.0,3rd Class,1740,Southampton,Engineer,FALSE
+FALSE,4.0,3rd Class,2420,Southampton,,FALSE
+FALSE,6.0,3rd Class,2420,Southampton,,FALSE
+FALSE,2.0,3rd Class,2420,Southampton,,FALSE
+FALSE,17.0,3rd Class,612,Southampton,,TRUE
+FALSE,38.0,3rd Class,600,Southampton,,FALSE
+FALSE,9.0,3rd Class,2420,Southampton,,FALSE
+FALSE,11.0,3rd Class,2420,Southampton,,FALSE
+TRUE,39.0,3rd Class,2420,Southampton,General Labourer,FALSE
+TRUE,26.0,3rd Class,600,Southampton,General Labourer,FALSE
+FALSE,39.0,3rd Class,2420,Southampton,,FALSE
+TRUE,20.0,3rd Class,606,Southampton,General Labourer,FALSE
+TRUE,26.0,3rd Class,610,Southampton,General Labourer,FALSE
+TRUE,25.0,3rd Class,1380,Southampton,General Labourer,FALSE
+FALSE,18.0,3rd Class,1380,Southampton,,FALSE
+TRUE,24.0,3rd Class,600,Southampton,General Labourer,FALSE
+TRUE,35.0,3rd Class,544,Southampton,General Labourer,FALSE
+FALSE,5.0,3rd Class,2420,Southampton,,FALSE
+FALSE,9.0,3rd Class,2420,Southampton,,FALSE
+FALSE,3.0,3rd Class,2420,Southampton,,TRUE
+FALSE,13.0,3rd Class,2420,Southampton,,FALSE
+FALSE,5.0,3rd Class,2420,Southampton,,TRUE
+TRUE,40.0,3rd Class,2420,Southampton,General Labourer,FALSE
+TRUE,23.0,3rd Class,602,Southampton,,TRUE
+FALSE,38.0,3rd Class,2420,Southampton,,TRUE
+FALSE,45.0,3rd Class,558,Cherbourg,,TRUE
+TRUE,23.0,3rd Class,544,Southampton,General Labourer,FALSE
+TRUE,27.0,3rd Class,558,Cherbourg,Journalist,FALSE
+FALSE,17.0,3rd Class,1120,Cherbourg,,FALSE
+TRUE,23.0,3rd Class,606,Southampton,General Labourer,FALSE
+FALSE,15.0,3rd Class,558,Cherbourg,,TRUE
+TRUE,20.0,3rd Class,558,Cherbourg,Farm Labourer,FALSE
+TRUE,32.0,3rd Class,1220,Southampton,General Labourer,FALSE
+FALSE,33.0,3rd Class,1220,Southampton,,TRUE
+FALSE,3.0,3rd Class,1490,Cherbourg,,TRUE
+FALSE,0.0,3rd Class,1490,Cherbourg,,TRUE
+FALSE,5.0,3rd Class,1490,Cherbourg,,TRUE
+FALSE,24.0,3rd Class,1490,Cherbourg,,TRUE
+FALSE,18.0,3rd Class,622,Southampton,Servant,TRUE
+TRUE,40.0,3rd Class,558,Cherbourg,Farmer,FALSE
+TRUE,26.0,3rd Class,610,Southampton,General Labourer,FALSE
+FALSE,31.0,3rd Class,671,Southampton,,TRUE
+FALSE,18.0,3rd Class,1120,Cherbourg,Housekeeper,FALSE
+FALSE,45.0,3rd Class,1120,Cherbourg,Housekeeper,FALSE
+FALSE,26.0,3rd Class,608,Queenstown,Housekeeper,FALSE
+TRUE,22.0,3rd Class,622,Southampton,General Labourer,FALSE
+TRUE,18.0,3rd Class,622,Southampton,General Labourer,FALSE
+TRUE,26.0,3rd Class,600,Southampton,General Labourer,FALSE
+TRUE,22.0,3rd Class,722,Southampton,General Labourer,FALSE
+TRUE,20.0,3rd Class,558,Cherbourg,Shoemaker,FALSE
+TRUE,32.0,3rd Class,4360,Southampton,Seaman,TRUE
+TRUE,21.0,3rd Class,600,Southampton,Seaman,FALSE
+TRUE,18.0,3rd Class,598,Southampton,General Labourer,FALSE
+TRUE,26.0,3rd Class,610,Southampton,General Labourer,FALSE
+FALSE,9.0,3rd Class,1180,Cherbourg,,FALSE
+FALSE,7.0,3rd Class,1180,Cherbourg,,FALSE
+FALSE,40.0,3rd Class,1180,Cherbourg,,FALSE
+FALSE,40.0,3rd Class,598,Queenstown,,FALSE
+TRUE,42.0,3rd Class,1200,Queenstown,Farmer,FALSE
+FALSE,32.0,3rd Class,1200,Queenstown,Housewife,FALSE
+TRUE,26.0,3rd Class,1240,Southampton,Pugilist,FALSE
+FALSE,22.0,3rd Class,597,Queenstown,,TRUE
+FALSE,20.0,3rd Class,606,Southampton,Servant,FALSE
+TRUE,29.0,3rd Class,583,Southampton,Farm Labourer,FALSE
+TRUE,22.0,3rd Class,560,Southampton,Ironmonger,FALSE
+TRUE,22.0,3rd Class,602,Southampton,Farm Labourer,FALSE
+TRUE,35.0,3rd Class,622,Southampton,Groom,FALSE
+FALSE,22.0,3rd Class,562,Queenstown,,FALSE
+TRUE,21.0,3rd Class,602,Queenstown,Farm Labourer,TRUE
+TRUE,19.0,3rd Class,521,Queenstown,Farm Labourer,FALSE
+FALSE,17.0,3rd Class,608,Queenstown,,FALSE
+FALSE,21.0,3rd Class,669,Southampton,Farm Labourer,FALSE
+FALSE,30.0,3rd Class,669,Southampton,Farm Labourer,FALSE
+TRUE,18.0,3rd Class,669,Southampton,Farmer,FALSE
+TRUE,38.0,3rd Class,669,Southampton,Farmer,FALSE
+TRUE,17.0,3rd Class,669,Southampton,,FALSE
+TRUE,17.0,3rd Class,669,Southampton,Farm Labourer,FALSE
+FALSE,22.0,3rd Class,598,Queenstown,,FALSE
+TRUE,21.0,3rd Class,598,Queenstown,General Labourer,FALSE
+TRUE,21.0,3rd Class,622,Southampton,Miner,FALSE
+TRUE,28.0,3rd Class,1120,Cherbourg,Merchant,FALSE
+FALSE,18.0,3rd Class,1120,Cherbourg,Housekeeper,FALSE
+TRUE,28.0,3rd Class,602,Southampton,Farmer,FALSE
+TRUE,24.0,3rd Class,606,Southampton,General Labourer,FALSE
+FALSE,45.0,3rd Class,598,Queenstown,,FALSE
+TRUE,28.0,3rd Class,560,Southampton,Seaman,FALSE
+TRUE,24.0,3rd Class,622,Southampton,Stoker,FALSE
+TRUE,20.0,3rd Class,597,Queenstown,General Labourer,FALSE
+TRUE,29.0,3rd Class,558,Cherbourg,General Labourer,FALSE
+TRUE,32.0,3rd Class,4360,Southampton,Seaman,TRUE
+TRUE,29.0,3rd Class,622,Southampton,Clerk,FALSE
+TRUE,26.0,3rd Class,1120,Cherbourg,General Labourer,FALSE
+TRUE,21.0,3rd Class,1120,Cherbourg,General Labourer,FALSE
+TRUE,20.0,3rd Class,544,Southampton,General Labourer,FALSE
+TRUE,18.0,3rd Class,622,Southampton,Printer / Compositor,TRUE
+TRUE,24.0,3rd Class,560,Queenstown,General Labourer,FALSE
+TRUE,24.0,3rd Class,610,Southampton,General Labourer,FALSE
+TRUE,36.0,3rd Class,610,Southampton,General Labourer,FALSE
+TRUE,31.0,3rd Class,597,Queenstown,General Labourer,FALSE
+TRUE,31.0,3rd Class,598,Queenstown,Farm Labourer,FALSE
+FALSE,35.0,3rd Class,589,Queenstown,,FALSE
+FALSE,23.0,3rd Class,598,Queenstown,,TRUE
+TRUE,66.0,3rd Class,598,Queenstown,Farm Labourer,FALSE
+TRUE,43.0,3rd Class,622,Southampton,Wood Carver,FALSE
+TRUE,35.0,3rd Class,610,Southampton,General Labourer,FALSE
+TRUE,27.0,3rd Class,610,Southampton,General Labourer,FALSE
+TRUE,19.0,3rd Class,610,Southampton,General Labourer,FALSE
+TRUE,30.0,3rd Class,622,Southampton,Upholsterer,FALSE
+FALSE,16.0,3rd Class,598,Queenstown,,TRUE
+FALSE,3.0,3rd Class,1230,Southampton,,TRUE
+FALSE,9.0,3rd Class,1230,Southampton,,TRUE
+FALSE,36.0,3rd Class,1230,Southampton,,TRUE
+TRUE,59.0,3rd Class,560,Southampton,Dealer,FALSE
+TRUE,19.0,3rd Class,630,Southampton,Tinsmith,FALSE
+FALSE,16.0,3rd Class,1240,Southampton,Shop Assistant,TRUE
+TRUE,44.0,3rd Class,1240,Southampton,Butler,FALSE
+TRUE,17.0,3rd Class,669,Southampton,,FALSE
+TRUE,28.0,3rd Class,558,Cherbourg,,FALSE
+TRUE,45.0,3rd Class,622,Southampton,Carpenter / Joiner,TRUE
+FALSE,22.0,3rd Class,812,Southampton,,FALSE
+TRUE,19.0,3rd Class,785,Southampton,General Labourer,FALSE
+FALSE,30.0,3rd Class,537,Queenstown,Housekeeper,TRUE
+TRUE,29.0,3rd Class,598,Queenstown,Farm Labourer,TRUE
+FALSE,0.0,3rd Class,1110,Southampton,,FALSE
+TRUE,34.0,3rd Class,1110,Southampton,General Labourer,FALSE
+FALSE,28.0,3rd Class,1110,Southampton,,FALSE
+TRUE,27.0,3rd Class,610,Southampton,General Labourer,FALSE
+TRUE,25.0,3rd Class,610,Southampton,General Labourer,FALSE
+TRUE,24.0,3rd Class,1860,Southampton,Caster,FALSE
+TRUE,22.0,3rd Class,622,Southampton,Miner,FALSE
+TRUE,21.0,3rd Class,1860,Southampton,Ironworker,FALSE
+TRUE,17.0,3rd Class,622,Southampton,Ironworker,FALSE
+TRUE,32.0,3rd Class,1240,Southampton,Blacksmith,FALSE
+FALSE,34.0,3rd Class,1240,Southampton,,TRUE
+TRUE,36.0,3rd Class,1340,Southampton,,TRUE
+FALSE,36.0,3rd Class,1340,Southampton,,TRUE
+TRUE,30.0,3rd Class,734,Southampton,,TRUE
+TRUE,16.0,3rd Class,734,Southampton,Farm Labourer,FALSE
+FALSE,1.0,3rd Class,1590,Southampton,,TRUE
+FALSE,0.0,3rd Class,1590,Southampton,,TRUE
+TRUE,25.0,3rd Class,1590,Southampton,Farmer,FALSE
+FALSE,32.0,3rd Class,1590,Southampton,,TRUE
+TRUE,25.0,3rd Class,610,Southampton,General Labourer,FALSE
+TRUE,30.0,3rd Class,610,Southampton,General Labourer,FALSE
+TRUE,22.0,3rd Class,560,Southampton,Farmer,FALSE
+TRUE,26.0,3rd Class,560,Southampton,Farmer,FALSE
+FALSE,19.0,3rd Class,608,Queenstown,,TRUE
+TRUE,17.0,3rd Class,610,Southampton,,FALSE
+TRUE,42.0,3rd Class,669,Southampton,,FALSE
+TRUE,43.0,3rd Class,610,Southampton,,FALSE
+FALSE,21.0,3rd Class,598,Queenstown,,FALSE
+TRUE,38.0,3rd Class,598,Queenstown,General Labourer,FALSE
+TRUE,18.0,3rd Class,622,Southampton,Groom,TRUE
+TRUE,22.0,3rd Class,653,Queenstown,,FALSE
+FALSE,31.0,3rd Class,963,Southampton,Housekeeper,TRUE
+FALSE,24.0,3rd Class,598,Queenstown,,FALSE
+TRUE,33.0,3rd Class,610,Cherbourg,General Labourer,FALSE
+FALSE,24.0,3rd Class,622,Southampton,Box Maker,TRUE
+TRUE,19.0,3rd Class,583,Southampton,Mason,TRUE
+TRUE,65.0,3rd Class,598,Queenstown,Farm Labourer,FALSE
+TRUE,23.0,3rd Class,1070,Southampton,General Labourer,FALSE
+FALSE,22.0,3rd Class,1070,Southampton,,TRUE
+TRUE,18.0,3rd Class,600,Southampton,General Labourer,FALSE
+TRUE,16.0,3rd Class,600,Southampton,General Labourer,FALSE
+TRUE,45.0,3rd Class,539,Southampton,General Labourer,FALSE
+TRUE,22.0,3rd Class,558,Cherbourg,General Labourer,FALSE
+TRUE,29.0,3rd Class,558,Cherbourg,General Labourer,FALSE
+TRUE,15.0,3rd Class,558,Cherbourg,General Labourer,FALSE
+TRUE,47.0,3rd Class,560,Southampton,Farmer,FALSE
+FALSE,5.0,3rd Class,963,Southampton,,TRUE
+TRUE,37.0,3rd Class,544,Southampton,General Labourer,FALSE
+TRUE,39.0,3rd Class,1170,Southampton,Crane Operator,FALSE
+TRUE,25.0,3rd Class,598,Queenstown,Farm Labourer,FALSE
+TRUE,34.0,3rd Class,544,Southampton,,TRUE
+TRUE,18.0,3rd Class,602,Southampton,,FALSE
+FALSE,22.0,3rd Class,598,Queenstown,,FALSE
+TRUE,28.0,3rd Class,598,Queenstown,General Labourer,FALSE
+TRUE,42.0,3rd Class,537,Queenstown,Farm Labourer,FALSE
+TRUE,19.0,3rd Class,608,Queenstown,Farm Labourer,FALSE
+TRUE,20.0,3rd Class,598,Queenstown,Farm Labourer,FALSE
+TRUE,32.0,3rd Class,4360,Southampton,Seaman,TRUE
+FALSE,20.0,3rd Class,2650,Southampton,Servant,FALSE
+FALSE,7.0,3rd Class,2650,Southampton,,FALSE
+TRUE,22.0,3rd Class,622,Southampton,Carpenter / Joiner,FALSE
+TRUE,18.0,3rd Class,2650,Southampton,Blacksmith,FALSE
+TRUE,16.0,3rd Class,2650,Southampton,Messenger,FALSE
+FALSE,48.0,3rd Class,2650,Southampton,Farmer,FALSE
+TRUE,28.0,3rd Class,598,Queenstown,General Labourer,FALSE
+TRUE,38.0,3rd Class,560,Southampton,Carpenter / Joiner,FALSE
+TRUE,29.0,3rd Class,598,Queenstown,Farm Labourer,FALSE
+TRUE,21.0,3rd Class,1120,Southampton,Shoemaker,FALSE
+FALSE,38.0,3rd Class,558,Cherbourg,,TRUE
+TRUE,21.0,3rd Class,558,Cherbourg,Farm Labourer,FALSE
+TRUE,,3rd Class,610,Cherbourg,General Labourer,FALSE
+TRUE,22.0,3rd Class,622,Southampton,Locksmith,FALSE
+FALSE,17.0,3rd Class,597,Queenstown,,TRUE
+FALSE,19.0,3rd Class,598,Queenstown,,TRUE
+FALSE,9.0,3rd Class,1580,Southampton,,TRUE
+TRUE,33.0,3rd Class,1580,Southampton,Turner,FALSE
+TRUE,41.0,3rd Class,606,Southampton,Shoemaker,FALSE
+FALSE,31.0,3rd Class,1580,Southampton,,TRUE
+FALSE,9.0,3rd Class,3620,Southampton,,FALSE
+FALSE,1.0,3rd Class,3620,Southampton,,FALSE
+FALSE,11.0,3rd Class,3620,Southampton,,FALSE
+FALSE,10.0,3rd Class,3620,Southampton,,FALSE
+FALSE,16.0,3rd Class,3620,Southampton,Servant,FALSE
+TRUE,14.0,3rd Class,3620,Southampton,Scholar,FALSE
+TRUE,42.0,3rd Class,3620,Southampton,Engineer,FALSE
+FALSE,43.0,3rd Class,3620,Southampton,,FALSE
+TRUE,32.0,3rd Class,646,Southampton,General Labourer,FALSE
+TRUE,40.0,3rd Class,622,Southampton,Farrier,FALSE
+TRUE,23.0,3rd Class,622,Southampton,General Labourer,FALSE
+TRUE,19.0,3rd Class,760,Southampton,General Labourer,FALSE
+TRUE,37.0,3rd Class,612,Southampton,General Labourer,FALSE
+TRUE,28.0,3rd Class,612,Southampton,,FALSE
+TRUE,19.0,3rd Class,600,Southampton,General Labourer,FALSE
+FALSE,24.0,3rd Class,683,Southampton,General Labourer,FALSE
+TRUE,28.0,3rd Class,538,Southampton,General Labourer,FALSE
+TRUE,19.0,3rd Class,538,Southampton,General Labourer,FALSE
+TRUE,28.0,3rd Class,1220,Southampton,General Labourer,FALSE
+FALSE,24.0,3rd Class,1220,Southampton,,TRUE
+TRUE,19.0,3rd Class,734,Southampton,Painter & Decorator,FALSE
+TRUE,18.0,3rd Class,558,Cherbourg,General Labourer,FALSE
+TRUE,35.0,3rd Class,558,Cherbourg,,FALSE
+TRUE,27.0,3rd Class,558,Cherbourg,,TRUE
+TRUE,41.0,3rd Class,1090,Southampton,Barber,FALSE
+TRUE,26.0,3rd Class,606,Southampton,Farmer,FALSE
+TRUE,21.0,3rd Class,606,Southampton,Manufacturer,FALSE
+FALSE,45.0,3rd Class,1090,Southampton,,TRUE
+FALSE,17.0,3rd Class,597,Queenstown,,FALSE
+FALSE,21.0,3rd Class,583,Southampton,Servant,FALSE
+TRUE,28.0,3rd Class,530,Queenstown,General Labourer,FALSE
+TRUE,11.0,3rd Class,1450,Cherbourg,,FALSE
+FALSE,29.0,3rd Class,598,Queenstown,,TRUE
+TRUE,27.0,3rd Class,539,Southampton,Settler Recruiter,TRUE
+TRUE,24.0,3rd Class,4360,Southampton,Seaman,TRUE
+FALSE,18.0,3rd Class,521,Queenstown,,FALSE
+FALSE,26.0,3rd Class,612,Southampton,,TRUE
+FALSE,23.0,3rd Class,612,Southampton,Servant,FALSE
+FALSE,22.0,3rd Class,692,Southampton,,TRUE
+TRUE,28.0,3rd Class,610,Southampton,General Labourer,FALSE
+FALSE,28.0,3rd Class,600,Southampton,Servant,FALSE
+FALSE,21.0,3rd Class,598,Queenstown,,FALSE
+FALSE,2.0,3rd Class,949,Southampton,,TRUE
+FALSE,22.0,3rd Class,949,Southampton,,TRUE
+TRUE,43.0,3rd Class,498,Southampton,Farmer,FALSE
+TRUE,28.0,3rd Class,1740,Southampton,Seaman,FALSE
+FALSE,27.0,3rd Class,612,Southampton,,TRUE
+TRUE,22.0,3rd Class,598,Queenstown,General Labourer,FALSE
+FALSE,27.0,3rd Class,622,Southampton,Laundry Worker,TRUE
+TRUE,42.0,3rd Class,591,Southampton,Farmer,FALSE
+TRUE,34.0,3rd Class,609,Southampton,Framer,TRUE
+TRUE,33.0,3rd Class,1120,Cherbourg,,FALSE
+TRUE,32.0,3rd Class,610,Southampton,General Labourer,FALSE
+FALSE,27.0,3rd Class,612,Southampton,Servant,FALSE
+FALSE,25.0,3rd Class,612,Southampton,Servant,FALSE
+TRUE,20.0,3rd Class,610,Southampton,General Labourer,FALSE
+TRUE,27.0,3rd Class,606,Southampton,General Labourer,FALSE
+FALSE,16.0,3rd Class,1120,Cherbourg,Housekeeper,FALSE
+FALSE,19.0,3rd Class,1120,Cherbourg,Housekeeper,FALSE
+TRUE,29.0,3rd Class,610,Cherbourg,,TRUE
+TRUE,21.0,3rd Class,602,Southampton,,TRUE
+TRUE,21.0,3rd Class,544,Southampton,General Labourer,FALSE
+TRUE,20.0,3rd Class,606,Southampton,,FALSE
+TRUE,48.0,3rd Class,545,Southampton,Farmer,FALSE
+TRUE,17.0,3rd Class,606,Southampton,Farmer,FALSE
+FALSE,26.0,3rd Class,598,Queenstown,,TRUE
+TRUE,29.0,3rd Class,626,Southampton,,TRUE
+TRUE,34.0,3rd Class,502,Southampton,General Labourer,FALSE
+TRUE,26.0,3rd Class,600,Southampton,,TRUE
+TRUE,22.0,3rd Class,602,Southampton,General Labourer,FALSE
+TRUE,33.0,3rd Class,668,Southampton,,FALSE
+TRUE,31.0,3rd Class,600,Southampton,,FALSE
+TRUE,29.0,3rd Class,606,Southampton,General Labourer,FALSE
+FALSE,4.0,3rd Class,860,Southampton,,TRUE
+FALSE,1.0,3rd Class,860,Southampton,,TRUE
+TRUE,49.0,3rd Class,,Southampton,Seaman,FALSE
+TRUE,33.0,3rd Class,600,Southampton,General Labourer,FALSE
+TRUE,19.0,3rd Class,,Southampton,Seaman,FALSE
+FALSE,26.0,3rd Class,860,Southampton,,TRUE
+FALSE,8.0,3rd Class,1810,Southampton,,FALSE
+FALSE,7.0,3rd Class,1810,Southampton,,FALSE
+TRUE,35.0,3rd Class,1810,Southampton,Plumber,FALSE
+FALSE,34.0,3rd Class,1810,Southampton,,FALSE
+TRUE,23.0,3rd Class,610,Southampton,General Labourer,FALSE
+TRUE,25.0,3rd Class,606,Southampton,General Labourer,TRUE
+TRUE,39.0,3rd Class,558,Cherbourg,,FALSE
+FALSE,20.0,3rd Class,760,Southampton,Servant,FALSE
+FALSE,21.0,3rd Class,760,Southampton,Servant,FALSE
+TRUE,32.0,3rd Class,612,Southampton,,TRUE
+TRUE,17.0,3rd Class,550,Southampton,General Labourer,FALSE
+TRUE,21.0,3rd Class,651,Southampton,General Labourer,FALSE
+TRUE,30.0,3rd Class,610,Southampton,General Labourer,FALSE
+TRUE,21.0,3rd Class,602,Southampton,Military,TRUE
+TRUE,33.0,3rd Class,606,Southampton,Engineer,FALSE
+TRUE,22.0,3rd Class,581,Southampton,Farmer,FALSE
+FALSE,4.0,3rd Class,1040,Cherbourg,,TRUE
+TRUE,39.0,3rd Class,1040,Cherbourg,Hotelier,TRUE
+TRUE,18.0,3rd Class,558,Cherbourg,Farmer,FALSE
+TRUE,19.0,3rd Class,558,Cherbourg,Farmer,FALSE
+TRUE,23.0,3rd Class,598,Queenstown,Farm Labourer,FALSE
+TRUE,39.0,3rd Class,560,Southampton,Farmer,FALSE
+FALSE,20.0,3rd Class,598,Queenstown,,TRUE
+FALSE,22.0,3rd Class,598,Queenstown,,TRUE
+TRUE,44.0,3rd Class,605,Queenstown,Farm Labourer,FALSE
+TRUE,19.0,3rd Class,622,Southampton,Painter & Decorator,FALSE
+TRUE,24.0,3rd Class,598,Queenstown,Farm Labourer,TRUE
+TRUE,25.0,3rd Class,1120,Cherbourg,Farm Labourer,FALSE
+FALSE,20.0,3rd Class,1120,Cherbourg,Farm Labourer,FALSE
+TRUE,25.0,3rd Class,598,Queenstown,General Labourer,FALSE
+TRUE,22.0,3rd Class,598,Queenstown,General Labourer,FALSE
+TRUE,22.0,3rd Class,597,Queenstown,Farm Labourer,FALSE
+FALSE,4.0,3rd Class,1720,Southampton,,TRUE
+FALSE,26.0,3rd Class,1720,Southampton,,TRUE
+FALSE,22.0,3rd Class,669,Southampton,,FALSE
+TRUE,29.0,3rd Class,1720,Southampton,,TRUE
+TRUE,26.0,3rd Class,669,Southampton,Magazineer,FALSE
+FALSE,1.0,3rd Class,941,Southampton,,FALSE
+TRUE,18.0,3rd Class,606,Southampton,Farm Labourer,FALSE
+FALSE,36.0,3rd Class,941,Southampton,Housewife,FALSE
+TRUE,,3rd Class,610,Cherbourg,General Labourer,FALSE
+TRUE,25.0,3rd Class,558,Cherbourg,General Labourer,TRUE
+TRUE,26.0,3rd Class,583,Southampton,Baker,FALSE
+TRUE,30.0,3rd Class,558,Cherbourg,General Labourer,FALSE
+FALSE,37.0,3rd Class,740,Southampton,Housekeeper,FALSE
+TRUE,23.0,3rd Class,610,Southampton,General Labourer,FALSE
+TRUE,38.0,3rd Class,4360,Southampton,Seaman,TRUE
+TRUE,23.0,3rd Class,4360,Southampton,Seaman,FALSE
+FALSE,22.0,3rd Class,560,Southampton,,TRUE
+TRUE,16.0,3rd Class,598,Queenstown,Farm Labourer,FALSE
+TRUE,32.0,3rd Class,4360,Southampton,Seaman,TRUE
+TRUE,22.0,3rd Class,600,Southampton,General Labourer,FALSE
+TRUE,29.0,3rd Class,732,Southampton,General Labourer,FALSE
+TRUE,29.0,3rd Class,600,Southampton,General Labourer,FALSE
+TRUE,22.0,3rd Class,558,Cherbourg,General Labourer,TRUE
+FALSE,5.0,3rd Class,1970,Southampton,,FALSE
+FALSE,3.0,3rd Class,1970,Southampton,,FALSE
+FALSE,8.0,3rd Class,1970,Southampton,,FALSE
+FALSE,12.0,3rd Class,1970,Southampton,,FALSE
+FALSE,40.0,3rd Class,1970,Southampton,,FALSE
+TRUE,32.0,3rd Class,612,Southampton,,FALSE
+TRUE,20.0,3rd Class,1200,Queenstown,General Labourer,FALSE
+TRUE,36.0,3rd Class,,Southampton,Seaman,FALSE
+TRUE,26.0,3rd Class,1860,Southampton,Dipper,FALSE
+TRUE,24.0,3rd Class,734,Southampton,Farmer,FALSE
+FALSE,25.0,3rd Class,600,Southampton,,FALSE
+FALSE,45.0,3rd Class,598,Southampton,,FALSE
+TRUE,36.0,3rd Class,1200,Southampton,General Labourer,FALSE
+FALSE,30.0,3rd Class,1200,Southampton,,FALSE
+TRUE,20.0,3rd Class,612,Southampton,,TRUE
+TRUE,21.0,3rd Class,608,Queenstown,Farm Labourer,FALSE
+TRUE,28.0,3rd Class,4360,Southampton,Seaman,FALSE
+TRUE,27.0,3rd Class,734,Southampton,Baker,FALSE
+TRUE,25.0,3rd Class,560,Southampton,Jeweller,FALSE
+TRUE,30.0,3rd Class,1240,Southampton,Engineer,FALSE
+FALSE,26.0,3rd Class,1240,Southampton,,FALSE
+TRUE,21.0,3rd Class,608,Southampton,Grocers Assistant,FALSE
+TRUE,20.0,3rd Class,560,Southampton,Farmer,FALSE
+TRUE,29.0,3rd Class,669,Southampton,,TRUE
+TRUE,51.0,3rd Class,545,Southampton,General Labourer,FALSE
+TRUE,32.0,3rd Class,585,Southampton,,TRUE
+TRUE,30.0,3rd Class,497,Cherbourg,General Labourer,FALSE
+TRUE,44.0,3rd Class,610,Southampton,General Labourer,FALSE
+TRUE,22.0,3rd Class,550,Southampton,,FALSE
+TRUE,29.0,3rd Class,612,Southampton,General Labourer,FALSE
+TRUE,20.0,3rd Class,583,Southampton,Butler,FALSE
+FALSE,21.0,3rd Class,598,Queenstown,,TRUE
+TRUE,24.0,3rd Class,551,Southampton,,TRUE
+FALSE,20.0,3rd Class,608,Queenstown,,FALSE
+TRUE,34.0,3rd Class,622,Southampton,Tailor,FALSE
+TRUE,20.0,3rd Class,558,Cherbourg,,TRUE
+FALSE,32.0,3rd Class,598,Queenstown,,FALSE
+FALSE,28.0,3rd Class,597,Queenstown,,TRUE
+TRUE,25.0,3rd Class,558,Cherbourg,Farm Labourer,FALSE
+TRUE,23.0,3rd Class,610,Southampton,,FALSE
+TRUE,35.0,3rd Class,610,Southampton,General Labourer,FALSE
+TRUE,33.0,3rd Class,610,Cherbourg,General Labourer,FALSE
+TRUE,30.0,3rd Class,610,Cherbourg,,FALSE
+FALSE,24.0,3rd Class,598,Queenstown,,TRUE
+TRUE,19.0,3rd Class,598,Queenstown,Barman,TRUE
+FALSE,29.0,3rd Class,1800,Queenstown,,TRUE
+FALSE,26.0,3rd Class,1800,Queenstown,,TRUE
+TRUE,24.0,3rd Class,1800,Queenstown,General Labourer,TRUE
+FALSE,31.0,3rd Class,600,Queenstown,,TRUE
+TRUE,19.0,3rd Class,1200,Queenstown,Farm Labourer,FALSE
+FALSE,22.0,3rd Class,608,Queenstown,,TRUE
+FALSE,17.0,3rd Class,645,Queenstown,,TRUE
+FALSE,42.0,3rd Class,598,Queenstown,,FALSE
+TRUE,20.0,3rd Class,598,Queenstown,Farm Labourer,FALSE
+TRUE,27.0,3rd Class,1240,Southampton,Provision Manager,FALSE
+FALSE,19.0,3rd Class,1240,Southampton,,FALSE
+FALSE,27.0,3rd Class,598,Queenstown,,FALSE
+FALSE,63.0,3rd Class,622,Southampton,Milliner,FALSE
+TRUE,22.0,3rd Class,598,Queenstown,General Labourer,FALSE
+FALSE,31.0,3rd Class,622,Southampton,,FALSE
+TRUE,48.0,3rd Class,622,Southampton,Musician,FALSE
+TRUE,28.0,3rd Class,598,Queenstown,Farm Labourer,FALSE
+TRUE,21.0,3rd Class,600,Southampton,Farmer,TRUE
+TRUE,28.0,3rd Class,610,Southampton,General Labourer,FALSE
+TRUE,23.0,3rd Class,622,Southampton,Engineer,FALSE
+TRUE,24.0,3rd Class,610,Southampton,General Labourer,FALSE
+TRUE,21.0,3rd Class,610,Southampton,General Labourer,FALSE
+TRUE,23.0,3rd Class,610,Southampton,General Labourer,FALSE
+FALSE,23.0,3rd Class,608,Queenstown,,TRUE
+TRUE,27.0,3rd Class,591,Southampton,Carpenter / Joiner,FALSE
+FALSE,7.0,3rd Class,963,Southampton,,TRUE
+FALSE,29.0,3rd Class,963,Southampton,Tailor,TRUE
+TRUE,19.0,3rd Class,622,Southampton,Bricklayer,FALSE
+FALSE,28.0,3rd Class,1860,Queenstown,,TRUE
+TRUE,27.0,3rd Class,1860,Queenstown,General Labourer,FALSE
+TRUE,34.0,3rd Class,622,Southampton,Carpenter / Joiner,FALSE
+TRUE,30.0,3rd Class,598,Queenstown,General Labourer,FALSE
+TRUE,29.0,3rd Class,600,Southampton,,TRUE
+FALSE,7.0,3rd Class,1180,Cherbourg,,TRUE
+FALSE,4.0,3rd Class,1180,Cherbourg,,TRUE
+FALSE,24.0,3rd Class,1180,Cherbourg,,TRUE
+FALSE,35.0,3rd Class,558,Cherbourg,Housewife,TRUE
+FALSE,22.0,3rd Class,558,Cherbourg,,TRUE
+TRUE,28.0,3rd Class,622,Southampton,Traveller,FALSE
+FALSE,21.0,3rd Class,597,Queenstown,,TRUE
+FALSE,18.0,3rd Class,1200,Queenstown,,FALSE
+FALSE,25.0,3rd Class,598,Queenstown,,TRUE
+TRUE,22.0,3rd Class,622,Southampton,Chemist,FALSE
+FALSE,18.0,3rd Class,1200,Queenstown,,TRUE
+FALSE,25.0,3rd Class,1200,Queenstown,,TRUE
+FALSE,34.0,3rd Class,1200,Queenstown,,TRUE
+TRUE,18.0,3rd Class,598,Southampton,General Labourer,FALSE
+TRUE,22.0,3rd Class,610,Southampton,General Labourer,FALSE
+FALSE,15.0,3rd Class,558,Cherbourg,,TRUE
+TRUE,17.0,3rd Class,558,Cherbourg,,FALSE
+FALSE,1.0,3rd Class,1220,Cherbourg,,TRUE
+TRUE,20.0,3rd Class,1220,Cherbourg,,TRUE
+FALSE,19.0,3rd Class,1220,Cherbourg,,TRUE
+TRUE,34.0,3rd Class,622,Southampton,Mason,FALSE
+TRUE,32.0,3rd Class,610,Southampton,General Labourer,FALSE
+TRUE,20.0,3rd Class,558,Cherbourg,Farm Labourer,FALSE
+TRUE,20.0,3rd Class,558,Cherbourg,,FALSE
+FALSE,21.0,3rd Class,598,Queenstown,,FALSE
+TRUE,22.0,3rd Class,610,Southampton,General Labourer,FALSE
+FALSE,11.0,3rd Class,868,Cherbourg,,TRUE
+FALSE,14.0,3rd Class,868,Cherbourg,,TRUE
+FALSE,29.0,3rd Class,612,Southampton,Servant,FALSE
+TRUE,28.0,3rd Class,622,Southampton,General Labourer,FALSE
+FALSE,18.0,3rd Class,600,Southampton,,TRUE
+FALSE,26.0,3rd Class,606,Southampton,,TRUE
+TRUE,21.0,3rd Class,606,Southampton,General Labourer,FALSE
+TRUE,41.0,3rd Class,550,Southampton,General Labourer,FALSE
+TRUE,39.0,3rd Class,612,Southampton,,TRUE
+TRUE,20.0,3rd Class,558,Cherbourg,Journalist,FALSE
+TRUE,21.0,3rd Class,602,Southampton,Farm Labourer,FALSE
+FALSE,22.0,3rd Class,598,Southampton,,TRUE
+TRUE,60.0,3rd Class,482,Southampton,Farmer,FALSE
+TRUE,27.0,3rd Class,1200,Queenstown,Farm Labourer,FALSE
+TRUE,21.0,3rd Class,605,Queenstown,,FALSE
+FALSE,26.0,3rd Class,1200,Queenstown,Housewife,TRUE
+TRUE,17.0,3rd Class,597,Queenstown,General Labourer,FALSE
+TRUE,16.0,3rd Class,598,Queenstown,General Labourer,FALSE
+TRUE,23.0,3rd Class,598,Queenstown,Farmer,FALSE
+FALSE,27.0,3rd Class,598,Queenstown,,TRUE
+FALSE,25.0,3rd Class,608,Queenstown,,TRUE
+TRUE,21.0,3rd Class,598,Queenstown,Farm Labourer,TRUE
+FALSE,16.0,3rd Class,605,Queenstown,,TRUE
+FALSE,21.0,3rd Class,589,Queenstown,,FALSE
+FALSE,9.0,3rd Class,245,Southampton,,TRUE
+TRUE,28.0,3rd Class,1740,Southampton,Engineer,FALSE
+TRUE,42.0,3rd Class,649,Southampton,General Labourer,FALSE
+TRUE,27.0,3rd Class,565,Southampton,General Labourer,FALSE
+FALSE,31.0,3rd Class,606,Southampton,,FALSE
+TRUE,28.0,3rd Class,606,Southampton,,FALSE
+TRUE,32.0,3rd Class,600,Southampton,,TRUE
+TRUE,20.0,3rd Class,712,Southampton,Salesman,FALSE
+FALSE,23.0,3rd Class,669,Southampton,Farmer,FALSE
+FALSE,20.0,3rd Class,669,Southampton,Farm Labourer,FALSE
+TRUE,20.0,3rd Class,669,Southampton,Farmer,FALSE
+TRUE,16.0,3rd Class,712,Southampton,Farm Labourer,FALSE
+FALSE,2.0,3rd Class,1630,Southampton,,FALSE
+FALSE,6.0,3rd Class,1630,Southampton,,FALSE
+FALSE,3.0,3rd Class,1630,Southampton,,FALSE
+FALSE,8.0,3rd Class,1630,Southampton,,FALSE
+FALSE,29.0,3rd Class,1630,Southampton,Housewife,FALSE
+FALSE,1.0,3rd Class,3060,Southampton,,FALSE
+FALSE,14.0,3rd Class,3060,Southampton,General Labourer,FALSE
+FALSE,7.0,3rd Class,3060,Southampton,,FALSE
+FALSE,2.0,3rd Class,3060,Southampton,,FALSE
+TRUE,16.0,3rd Class,3060,Southampton,General Labourer,FALSE
+FALSE,41.0,3rd Class,3060,Southampton,,FALSE
+TRUE,21.0,3rd Class,669,Southampton,Farmer,FALSE
+TRUE,19.0,3rd Class,1120,Southampton,Shoemaker,FALSE
+TRUE,32.0,3rd Class,610,Southampton,General Labourer,FALSE
+FALSE,0.0,3rd Class,1060,Southampton,,FALSE
+FALSE,3.0,3rd Class,1060,Southampton,,FALSE
+FALSE,26.0,3rd Class,1060,Southampton,,FALSE
+TRUE,32.0,3rd Class,541,Southampton,Farmer,FALSE
+TRUE,28.0,3rd Class,600,Southampton,General Labourer,FALSE
+TRUE,24.0,3rd Class,622,Southampton,Waiter,FALSE
+TRUE,21.0,3rd Class,612,Southampton,General Labourer,FALSE
+TRUE,25.0,3rd Class,612,Southampton,General Labourer,FALSE
+TRUE,22.0,3rd Class,560,Southampton,Farmer,FALSE
+TRUE,25.0,3rd Class,600,Southampton,Chauffeur,TRUE
+FALSE,4.0,3rd Class,1730,Cherbourg,,TRUE
+FALSE,2.0,3rd Class,1730,Cherbourg,,TRUE
+FALSE,24.0,3rd Class,1730,Cherbourg,,TRUE
+FALSE,26.0,3rd Class,628,Queenstown,,FALSE
+TRUE,24.0,3rd Class,622,Southampton,Dairy Worker,FALSE
+FALSE,28.0,3rd Class,610,Southampton,Servant,FALSE
+TRUE,19.0,3rd Class,610,Southampton,General Labourer,FALSE
+TRUE,29.0,3rd Class,610,Southampton,General Labourer,FALSE
+FALSE,18.0,3rd Class,600,Southampton,,FALSE
+TRUE,25.0,3rd Class,600,Southampton,General Labourer,FALSE
+TRUE,32.0,3rd Class,622,Southampton,Leather Worker,TRUE
+TRUE,27.0,3rd Class,610,Southampton,General Labourer,FALSE
+TRUE,17.0,3rd Class,669,Southampton,,FALSE
+TRUE,24.0,3rd Class,669,Southampton,,FALSE
+TRUE,16.0,3rd Class,673,Cherbourg,,FALSE
+TRUE,27.0,3rd Class,610,Southampton,General Labourer,FALSE
+FALSE,63.0,3rd Class,626,Southampton,,FALSE
+TRUE,30.0,3rd Class,558,Cherbourg,,FALSE
+TRUE,19.0,3rd Class,560,Southampton,Butcher,FALSE
+TRUE,38.0,3rd Class,610,Southampton,General Labourer,FALSE
+TRUE,21.0,3rd Class,622,Southampton,Baker,FALSE
+FALSE,10.0,3rd Class,2250,Queenstown,,FALSE
+FALSE,4.0,3rd Class,2250,Queenstown,,FALSE
+FALSE,7.0,3rd Class,2250,Queenstown,,FALSE
+FALSE,2.0,3rd Class,2250,Queenstown,,FALSE
+FALSE,8.0,3rd Class,2250,Queenstown,,FALSE
+FALSE,39.0,3rd Class,2250,Queenstown,Housekeeper,FALSE
+FALSE,22.0,3rd Class,3060,Southampton,,FALSE
+TRUE,35.0,3rd Class,550,Southampton,General Labourer,FALSE
+FALSE,18.0,3rd Class,596,Queenstown,,TRUE
+TRUE,69.0,3rd Class,1120,Southampton,Hotelier,FALSE
+FALSE,58.0,3rd Class,1120,Southampton,,FALSE
+TRUE,50.0,3rd Class,1120,Southampton,Mason,FALSE
+FALSE,47.0,3rd Class,1120,Southampton,,FALSE
+TRUE,29.0,3rd Class,622,Southampton,Miner,FALSE
+TRUE,49.0,3rd Class,600,Southampton,Tailor,FALSE
+FALSE,2.0,3rd Class,1560,Southampton,,FALSE
+TRUE,18.0,3rd Class,1560,Southampton,General Labourer,FALSE
+FALSE,41.0,3rd Class,1560,Southampton,,FALSE
+FALSE,26.0,3rd Class,622,Southampton,Tailor,TRUE
+TRUE,53.0,3rd Class,622,Southampton,Farm Labourer,FALSE
+TRUE,16.0,3rd Class,622,Southampton,Porter,FALSE
+TRUE,24.0,3rd Class,598,Queenstown,General Labourer,TRUE
+TRUE,29.0,3rd Class,1860,Queenstown,General Labourer,FALSE
+TRUE,19.0,3rd Class,591,Southampton,Carpenter / Joiner,FALSE
+TRUE,43.0,3rd Class,560,Southampton,Miner,FALSE
+TRUE,30.0,3rd Class,558,Cherbourg,Farm Labourer,FALSE
+TRUE,27.0,3rd Class,558,Cherbourg,Farm Labourer,FALSE
+TRUE,20.0,3rd Class,597,Queenstown,Farm Labourer,FALSE
+TRUE,17.0,3rd Class,586,Southampton,Fur Cutter,FALSE
+FALSE,12.0,3rd Class,5370,Southampton,,FALSE
+FALSE,4.0,3rd Class,5370,Southampton,,FALSE
+FALSE,7.0,3rd Class,5370,Southampton,,FALSE
+FALSE,14.0,3rd Class,5370,Southampton,Scholar,FALSE
+FALSE,10.0,3rd Class,5370,Southampton,,FALSE
+FALSE,20.0,3rd Class,5370,Southampton,Dressmaker / CouturiÃ Ã¶Ãre,FALSE
+TRUE,18.0,3rd Class,5370,Southampton,Baker,FALSE
+TRUE,16.0,3rd Class,5370,Southampton,Cook,FALSE
+TRUE,19.0,3rd Class,5370,Southampton,Barman,FALSE
+TRUE,44.0,3rd Class,5370,Southampton,Tradesman,FALSE
+FALSE,44.0,3rd Class,5370,Southampton,,FALSE
+TRUE,24.0,3rd Class,720,Southampton,General Labourer,FALSE
+FALSE,21.0,3rd Class,591,Southampton,,TRUE
+TRUE,29.0,3rd Class,612,Southampton,General Labourer,FALSE
+TRUE,17.0,3rd Class,1670,Cherbourg,General Labourer,FALSE
+TRUE,40.0,3rd Class,1670,Cherbourg,General Labourer,FALSE
+TRUE,15.0,3rd Class,1670,Cherbourg,General Labourer,FALSE
+FALSE,1.0,3rd Class,1290,Southampton,,TRUE
+FALSE,4.0,3rd Class,1290,Southampton,,TRUE
+FALSE,24.0,3rd Class,1290,Southampton,,TRUE
+TRUE,21.0,3rd Class,734,Southampton,,TRUE
+TRUE,19.0,3rd Class,622,Southampton,Miner,FALSE
+TRUE,33.0,3rd Class,622,Southampton,Gardener,FALSE
+TRUE,22.0,3rd Class,597,Queenstown,,FALSE
+TRUE,29.0,3rd Class,734,Southampton,,TRUE
+TRUE,42.0,3rd Class,610,Southampton,,FALSE
+FALSE,10.0,3rd Class,320,Cherbourg,,FALSE
+TRUE,24.0,3rd Class,598,Queenstown,Farm Labourer,FALSE
+TRUE,19.0,3rd Class,558,Cherbourg,,FALSE
+TRUE,55.0,3rd Class,1170,Southampton,Painter & Decorator,FALSE
+FALSE,20.0,3rd Class,605,Queenstown,,TRUE
+TRUE,22.0,3rd Class,622,Southampton,Valet,FALSE
+TRUE,39.0,3rd Class,622,Southampton,General Labourer,FALSE
+TRUE,22.0,3rd Class,558,Cherbourg,Farmer,FALSE
+TRUE,20.0,3rd Class,622,Southampton,Tailor,FALSE
+TRUE,40.0,3rd Class,610,Southampton,General Labourer,FALSE
+TRUE,21.0,3rd Class,612,Southampton,General Labourer,FALSE
+FALSE,18.0,3rd Class,502,Southampton,,TRUE
+FALSE,5.0,3rd Class,2150,Southampton,,FALSE
+FALSE,11.0,3rd Class,2150,Southampton,,FALSE
+FALSE,9.0,3rd Class,2150,Southampton,,FALSE
+FALSE,2.0,3rd Class,2150,Southampton,,FALSE
+TRUE,40.0,3rd Class,2150,Southampton,General Labourer,FALSE
+FALSE,43.0,3rd Class,2150,Southampton,,FALSE
+TRUE,42.0,3rd Class,610,Southampton,General Labourer,FALSE
+TRUE,20.0,3rd Class,622,Southampton,Merchant,FALSE
+TRUE,37.0,3rd Class,669,Southampton,Farm Labourer,FALSE
+FALSE,17.0,3rd Class,597,Queenstown,,TRUE
+TRUE,26.0,3rd Class,598,Queenstown,,FALSE
+TRUE,31.0,3rd Class,622,Southampton,,FALSE
+TRUE,23.0,3rd Class,622,Southampton,General Labourer,FALSE
+TRUE,32.0,3rd Class,622,Southampton,Grocer,FALSE
+TRUE,23.0,3rd Class,610,Southampton,General Labourer,FALSE
+TRUE,33.0,3rd Class,671,Cherbourg,General Labourer,FALSE
+FALSE,24.0,3rd Class,583,Southampton,Servant,TRUE
+TRUE,21.0,3rd Class,622,Southampton,Porter,FALSE
+TRUE,51.0,3rd Class,,Southampton,Seaman,FALSE
+TRUE,19.0,3rd Class,610,Southampton,General Labourer,FALSE
+FALSE,2.0,3rd Class,808,Southampton,,FALSE
+FALSE,29.0,3rd Class,808,Southampton,,FALSE
+TRUE,31.0,3rd Class,612,Southampton,,TRUE
+FALSE,22.0,3rd Class,760,Southampton,,FALSE
+TRUE,27.0,3rd Class,669,Southampton,Farmer,FALSE
+TRUE,20.0,3rd Class,622,Southampton,Farmer,TRUE
+TRUE,44.0,3rd Class,612,Southampton,,TRUE
+TRUE,25.0,3rd Class,544,Southampton,Coach Trimmer,FALSE
+TRUE,74.0,3rd Class,600,Southampton,,FALSE
+TRUE,14.0,3rd Class,712,Southampton,,TRUE
+TRUE,24.0,3rd Class,602,Southampton,Farmer,FALSE
+TRUE,41.0,3rd Class,622,Southampton,Florist,FALSE
+TRUE,25.0,3rd Class,,Southampton,Seaman,TRUE
+TRUE,25.0,3rd Class,602,Southampton,,TRUE
+TRUE,34.0,3rd Class,622,Southampton,Groom,FALSE
+TRUE,31.0,3rd Class,497,Cherbourg,Dealer,FALSE
+FALSE,16.0,3rd Class,658,Cherbourg,,TRUE
+FALSE,0.4,3rd Class,658,Cherbourg,,TRUE
+TRUE,34.0,3rd Class,497,Cherbourg,Dealer,FALSE
+TRUE,16.0,3rd Class,558,Cherbourg,Scholar,FALSE
+TRUE,36.0,3rd Class,622,Southampton,Mason,FALSE
+TRUE,36.0,3rd Class,1240,Southampton,General Labourer,FALSE
+FALSE,32.0,3rd Class,1240,Southampton,,TRUE
+TRUE,32.0,3rd Class,612,Southampton,General Labourer,FALSE
+TRUE,20.0,3rd Class,598,Queenstown,Farmer,FALSE
+TRUE,23.0,3rd Class,610,Southampton,General Labourer,FALSE
+TRUE,22.0,3rd Class,622,Southampton,Scholar,FALSE
+TRUE,20.0,3rd Class,558,Cherbourg,Farm Labourer,FALSE
+FALSE,8.0,3rd Class,1180,Cherbourg,,TRUE
+FALSE,9.0,3rd Class,1180,Cherbourg,,TRUE
+FALSE,27.0,3rd Class,1180,Cherbourg,,TRUE
+TRUE,36.0,3rd Class,610,Southampton,General Labourer,FALSE
+FALSE,18.0,3rd Class,760,Southampton,,TRUE
+FALSE,63.0,3rd Class,740,Southampton,,TRUE
+FALSE,10.0,3rd Class,1120,Southampton,,FALSE
+FALSE,9.0,3rd Class,1120,Southampton,,FALSE
+TRUE,35.0,3rd Class,1120,Southampton,,FALSE
+TRUE,35.0,3rd Class,734,Southampton,Farmer,FALSE
+TRUE,28.0,3rd Class,734,Southampton,Farmer,FALSE
+FALSE,10.0,3rd Class,1860,Southampton,,FALSE
+TRUE,36.0,3rd Class,1860,Southampton,Farmer,FALSE
+FALSE,30.0,3rd Class,1860,Southampton,,FALSE
+TRUE,23.0,3rd Class,734,Southampton,Farmer,FALSE
+TRUE,46.0,3rd Class,695,Southampton,Farmer,FALSE
+FALSE,18.0,3rd Class,1390,Southampton,Servant,FALSE
+TRUE,31.0,3rd Class,1390,Southampton,Farmer,FALSE
+TRUE,15.0,3rd Class,1390,Southampton,Farm Labourer,FALSE
+FALSE,31.0,3rd Class,1390,Southampton,,FALSE
+TRUE,28.0,3rd Class,734,Southampton,Merchant,FALSE
+TRUE,22.0,3rd Class,558,Cherbourg,,TRUE
+TRUE,20.0,3rd Class,606,Southampton,General Labourer,FALSE
+FALSE,14.0,3rd Class,606,Southampton,Servant,FALSE
+TRUE,21.0,3rd Class,610,Southampton,General Labourer,FALSE
+TRUE,22.0,3rd Class,695,Southampton,Farm Labourer,FALSE
+TRUE,34.0,3rd Class,622,Southampton,Motor Fitter,FALSE
+TRUE,30.0,3rd Class,583,Southampton,Bricklayer,FALSE
+TRUE,25.0,3rd Class,558,Cherbourg,Farmer,FALSE
+TRUE,66.0,3rd Class,622,Southampton,Miner,FALSE
+TRUE,27.0,3rd Class,602,Southampton,,TRUE
+TRUE,51.0,3rd Class,598,Southampton,General Labourer,FALSE
+TRUE,18.0,3rd Class,502,Southampton,General Labourer,FALSE
+TRUE,21.0,3rd Class,502,Southampton,General Labourer,FALSE
+FALSE,47.0,3rd Class,541,Southampton,,TRUE
+TRUE,37.0,3rd Class,673,Cherbourg,,FALSE
+TRUE,18.0,3rd Class,583,Southampton,Farm Labourer,FALSE
+TRUE,28.0,3rd Class,622,Southampton,Carman,FALSE
+TRUE,28.0,3rd Class,1240,Southampton,Pugilist,FALSE
+TRUE,21.0,3rd Class,560,Southampton,Dairy Worker,FALSE
+TRUE,27.0,3rd Class,669,Southampton,Farmer,FALSE
+TRUE,54.0,3rd Class,560,Southampton,Merchant,FALSE
+TRUE,36.0,3rd Class,734,Southampton,Farmer,FALSE
+TRUE,27.0,3rd Class,1120,Cherbourg,General Labourer,FALSE
+FALSE,15.0,3rd Class,1120,Cherbourg,,TRUE
+TRUE,45.0,3rd Class,558,Cherbourg,Shoemaker,FALSE
+TRUE,28.0,3rd Class,558,Cherbourg,,FALSE
+TRUE,22.0,3rd Class,558,Cherbourg,,FALSE
+TRUE,27.0,3rd Class,558,Cherbourg,General Labourer,FALSE
+TRUE,29.0,3rd Class,608,Southampton,Farmer,FALSE
+FALSE,22.0,A la Carte,,Southampton,Assistant Waiter,FALSE
+TRUE,26.0,A la Carte,,Southampton,Assistant Plateman,FALSE
+FALSE,24.0,A la Carte,,Southampton,Waiter,FALSE
+FALSE,27.0,A la Carte,,Southampton,Waiter,FALSE
+FALSE,33.0,A la Carte,,Southampton,Waiter,FALSE
+FALSE,22.0,A la Carte,,Southampton,Assistant Waiter,FALSE
+TRUE,26.0,A la Carte,,Southampton,Assistant Waiter,FALSE
+TRUE,28.0,A la Carte,,Southampton,Cook,FALSE
+TRUE,26.0,A la Carte,,Southampton,Pantryman,FALSE
+TRUE,44.0,A la Carte,,Southampton,Waiter,FALSE
+TRUE,21.0,A la Carte,,Southampton,Larder Cook,FALSE
+FALSE,27.0,A la Carte,,Southampton,Cashier,TRUE
+FALSE,32.0,A la Carte,,Southampton,Waiter,FALSE
+TRUE,25.0,A la Carte,,Southampton,Roast Cook,FALSE
+TRUE,19.0,A la Carte,,Southampton,Assistant Roast Cook,FALSE
+TRUE,28.0,A la Carte,,Southampton,Entre Cook,FALSE
+FALSE,17.0,A la Carte,,Southampton,Assistant Waiter,FALSE
+FALSE,20.0,A la Carte,,Southampton,Assistant Waiter,FALSE
+TRUE,18.0,A la Carte,,Southampton,Assistant Waiter,FALSE
+TRUE,20.0,A la Carte,,Southampton,Assistant Pastry Cook,FALSE
+FALSE,17.0,A la Carte,,Southampton,Assistant Waiter,FALSE
+TRUE,20.0,A la Carte,,Southampton,Assistant Fish Cook,FALSE
+FALSE,30.0,A la Carte,,Southampton,Scullion,FALSE
+FALSE,23.0,A la Carte,,Southampton,Assistant Scullion,FALSE
+FALSE,37.0,A la Carte,,Southampton,a  la Carte Restaurant Manager,FALSE
+FALSE,31.0,A la Carte,,Southampton,Waiter,FALSE
+TRUE,24.0,A la Carte,,Southampton,Waiter,FALSE
+TRUE,28.0,A la Carte,,Southampton,Pastry Cook,FALSE
+TRUE,29.0,A la Carte,,Southampton,Soup Cook,FALSE
+TRUE,28.0,A la Carte,,Southampton,Controller,FALSE
+TRUE,24.0,A la Carte,,Southampton,Assistant Sauce Cook,FALSE
+FALSE,20.0,A la Carte,,Southampton,Cashier,TRUE
+FALSE,20.0,A la Carte,,Southampton,Ice Man,FALSE
+TRUE,25.0,A la Carte,,Southampton,Kitchen Clerk,TRUE
+FALSE,23.0,A la Carte,,Southampton,Cook,FALSE
+FALSE,20.0,A la Carte,,Southampton,Assistant Waiter,FALSE
+FALSE,42.0,A la Carte,,Southampton,Head Waiter,FALSE
+FALSE,19.0,A la Carte,,Southampton,Assistant Larder Cook,FALSE
+FALSE,21.0,A la Carte,,Southampton,Assistant Waiter,FALSE
+FALSE,20.0,A la Carte,,Southampton,Assistant Waiter,FALSE
+FALSE,17.0,A la Carte,,Southampton,Assistant Waiter,FALSE
+FALSE,20.0,A la Carte,,Southampton,Assistant Waiter,FALSE
+TRUE,35.0,A la Carte,,Southampton,Storekeeper,FALSE
+FALSE,17.0,A la Carte,,Southampton,Assistant Waiter,FALSE
+FALSE,30.0,A la Carte,,Southampton,Waiter,FALSE
+FALSE,28.0,A la Carte,,Southampton,Waiter,FALSE
+TRUE,17.0,A la Carte,,Southampton,Barman,FALSE
+FALSE,21.0,A la Carte,,Southampton,Waiter,FALSE
+FALSE,22.0,A la Carte,,Southampton,Assistant Waiter,FALSE
+FALSE,22.0,A la Carte,,Southampton,Assistant Waiter,FALSE
+FALSE,23.0,A la Carte,,Southampton,Waiter,FALSE
+TRUE,49.0,A la Carte,,Southampton,Chef,FALSE
+FALSE,24.0,A la Carte,,Southampton,Assistant Waiter,FALSE
+FALSE,25.0,A la Carte,,Southampton,Glass Man,FALSE
+FALSE,24.0,A la Carte,,Southampton,Assistant Glass Man,FALSE
+FALSE,42.0,A la Carte,,Southampton,Carver,FALSE
+FALSE,24.0,A la Carte,,Southampton,Waiter,FALSE
+FALSE,23.0,A la Carte,,Southampton,Assistant Glass Man,FALSE
+FALSE,27.0,A la Carte,,Southampton,Kitchen Porter,FALSE
+TRUE,16.0,A la Carte,,Southampton,Page Boy,FALSE
+FALSE,22.0,A la Carte,,Southampton,Waiter,FALSE
+FALSE,35.0,A la Carte,,Southampton,Waiter,FALSE
+FALSE,21.0,A la Carte,,Southampton,Cook,FALSE
+TRUE,19.0,A la Carte,,Southampton,Assistant Soup Cook,FALSE
+TRUE,18.0,A la Carte,,Southampton,Assistant Restaurant Controller,FALSE
+FALSE,31.0,A la Carte,,Southampton,Waiter,FALSE
+FALSE,35.0,A la Carte,,Southampton,Waiter,FALSE
+FALSE,20.0,A la Carte,,Southampton,Assistant Waiter,FALSE
+FALSE,26.0,A la Carte,,Southampton,Wine Butler,FALSE
+TRUE,40.0,Deck,,Southampton,Able Seaman,TRUE
+TRUE,36.0,Deck,,Southampton,Able Seaman,TRUE
+TRUE,43.0,Deck,,Southampton,Master-at-arms,TRUE
+TRUE,28.0,Deck,,Belfast,4th. Officer,TRUE
+TRUE,29.0,Deck,,Southampton,Able Seaman,FALSE
+TRUE,42.0,Deck,,Southampton,Able Seaman,TRUE
+TRUE,42.0,Deck,,Belfast,Quartermaster,TRUE
+TRUE,27.0,Deck,,Southampton,Able Seaman,TRUE
+TRUE,34.0,Deck,,Southampton,Able Seaman,TRUE
+TRUE,31.0,Deck,,Southampton,Able Seaman,FALSE
+TRUE,28.0,Deck,,Southampton,Able Seaman,FALSE
+TRUE,39.0,Deck,,Southampton,Able Seaman,FALSE
+TRUE,24.0,Deck,,Southampton,Lookout,TRUE
+TRUE,27.0,Deck,,Southampton,Able Seaman,TRUE
+TRUE,24.0,Deck,,Belfast,Lookout,TRUE
+TRUE,44.0,Deck,,Belfast,Storekeeper,TRUE
+TRUE,27.0,Deck,,Southampton,Able Seaman,TRUE
+TRUE,31.0,Deck,,Belfast,Boatswain Mate,TRUE
+TRUE,39.0,Deck,,Southampton,Window Cleaner,TRUE
+TRUE,43.0,Deck,,Belfast,Lamp Trimmer,TRUE
+TRUE,29.0,Deck,,Southampton,Quartermaster,TRUE
+TRUE,29.0,Deck,,Belfast,Lookout,TRUE
+TRUE,27.0,Deck,,Belfast,Able Seaman,FALSE
+TRUE,40.0,Deck,,Southampton,Able Seaman,TRUE
+TRUE,33.0,Deck,,Southampton,Able Seaman,TRUE
+TRUE,48.0,Deck,,Southampton,Quartermaster,TRUE
+TRUE,26.0,Deck,,Belfast,Carpenter / Joiner,FALSE
+TRUE,23.0,Deck,,Belfast,Lookout,TRUE
+TRUE,32.0,Deck,,Southampton,Able Seaman,TRUE
+TRUE,43.0,Deck,,Southampton,Master-at-arms,FALSE
+TRUE,41.0,Deck,,Southampton,Lookout,TRUE
+TRUE,38.0,Deck,,Belfast,2nd. Officer,TRUE
+TRUE,29.0,Deck,,Belfast,5th. Officer,TRUE
+TRUE,25.0,Deck,,Southampton,Able Seaman,TRUE
+TRUE,26.0,Deck,,Southampton,Able Seaman,FALSE
+TRUE,30.0,Deck,,Southampton,Able Seaman,FALSE
+TRUE,27.0,Deck,,Southampton,Mess Steward,FALSE
+TRUE,31.0,Deck,,Belfast,Carpenter / Joiner,FALSE
+TRUE,47.0,Deck,,Southampton,Able Seaman,TRUE
+TRUE,36.0,Deck,,Southampton,Able Seaman,TRUE
+TRUE,24.0,Deck,,Belfast,6th. Officer,FALSE
+TRUE,32.0,Deck,,Southampton,Able Seaman,TRUE
+TRUE,39.0,Deck,,Belfast,1st. Officer,FALSE
+TRUE,42.0,Deck,,Belfast,Boatswain,FALSE
+FALSE,62.0,Deck,,Belfast,Surgeon,FALSE
+TRUE,27.0,Deck,,Belfast,Quartermaster,TRUE
+TRUE,28.0,Deck,,Southampton,Able Seaman,TRUE
+TRUE,43.0,Deck,,Southampton,Able Seaman,TRUE
+TRUE,37.0,Deck,,Belfast,Quartermaster,TRUE
+TRUE,26.0,Deck,,Southampton,Able Seaman,TRUE
+TRUE,34.0,Deck,,Belfast,3rd. Officer,TRUE
+TRUE,33.0,Deck,,Southampton,Able Seaman,TRUE
+TRUE,32.0,Deck,,Belfast,Quartermaster,TRUE
+TRUE,30.0,Deck,,Southampton,Window Cleaner,FALSE
+TRUE,33.0,Deck,,Southampton,Able Seaman,TRUE
+FALSE,37.0,Deck,,Southampton,Assistant Surgeon,FALSE
+FALSE,62.0,Deck,,Southampton,Master,FALSE
+TRUE,26.0,Deck,,Southampton,Seaman,FALSE
+TRUE,24.0,Deck,,Southampton,Lookout,TRUE
+TRUE,23.0,Deck,,Southampton,Mess Steward,FALSE
+TRUE,35.0,Deck,,Southampton,Able Seaman,FALSE
+TRUE,20.0,Deck,,Southampton,Seaman,FALSE
+TRUE,32.0,Deck,,Southampton,Able Seaman,TRUE
+TRUE,30.0,Deck,,Belfast,Able Seaman,TRUE
+TRUE,39.0,Deck,,Southampton,Chief Officer,FALSE
+TRUE,41.0,Deck,,Belfast,Quartermaster,TRUE
+TRUE,33.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,26.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,24.0,Engine,,Southampton,Trimmer,TRUE
+TRUE,32.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,34.0,Engine,,Belfast,Electrician,FALSE
+TRUE,22.0,Engine,,Southampton,Trimmer,TRUE
+TRUE,46.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,24.0,Engine,,Southampton,Greaser,FALSE
+TRUE,32.0,Engine,,Southampton,Greaser,FALSE
+TRUE,30.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,29.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,41.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,28.0,Engine,,Southampton,Leading Fireman,TRUE
+TRUE,33.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,35.0,Engine,,Belfast,Greaser,FALSE
+TRUE,24.0,Engine,,Southampton,Fireman / Stoker,TRUE
+TRUE,50.0,Engine,,Belfast,Chief Engineer,FALSE
+TRUE,24.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,30.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,42.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,39.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,22.0,Engine,,Southampton,Trimmer,FALSE
+TRUE,33.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,20.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,20.0,Engine,,Southampton,Trimmer,FALSE
+TRUE,19.0,Engine,,Southampton,Trimmer,TRUE
+TRUE,28.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,41.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,24.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,22.0,Engine,,Southampton,Trimmer,TRUE
+TRUE,26.0,Engine,,Belfast,Mess Steward,FALSE
+TRUE,36.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,29.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,21.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,44.0,Engine,,Southampton,Greaser,FALSE
+TRUE,39.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,30.0,Engine,,Southampton,Trimmer,FALSE
+TRUE,34.0,Engine,,Southampton,Greaser,FALSE
+TRUE,25.0,Engine,,Southampton,Trimmer,FALSE
+TRUE,25.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,25.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,35.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,32.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,30.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,30.0,Engine,,Belfast,Trimmer,FALSE
+TRUE,40.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,37.0,Engine,,Southampton,Trimmer,FALSE
+TRUE,46.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,28.0,Engine,,Southampton,Trimmer,FALSE
+TRUE,37.0,Engine,,Southampton,Greaser,FALSE
+TRUE,22.0,Engine,,Southampton,Trimmer,TRUE
+TRUE,24.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,35.0,Engine,,Belfast,Boilermaker,FALSE
+TRUE,25.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,39.0,Engine,,Southampton,Fireman / Stoker,TRUE
+TRUE,21.0,Engine,,Southampton,Trimmer,FALSE
+TRUE,57.0,Engine,,Belfast,Mess Steward,FALSE
+TRUE,35.0,Engine,,Southampton,Fireman / Stoker,TRUE
+TRUE,34.0,Engine,,Southampton,Fireman / Stoker,TRUE
+TRUE,26.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,25.0,Engine,,Southampton,Trimmer,FALSE
+TRUE,22.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,33.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,,Engine,,Southampton,Trimmer,FALSE
+TRUE,45.0,Engine,,Southampton,Greaser,FALSE
+TRUE,30.0,Engine,,Southampton,Fireman / Stoker,TRUE
+TRUE,26.0,Engine,,Belfast,Junior Assistant 3rd. Engineer,FALSE
+TRUE,23.0,Engine,,Southampton,Trimmer,FALSE
+TRUE,44.0,Engine,,Belfast,Deck Engineer,FALSE
+TRUE,21.0,Engine,,Southampton,Fireman / Stoker,TRUE
+TRUE,39.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,30.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,25.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,33.0,Engine,,Southampton,Leading Fireman,FALSE
+TRUE,23.0,Engine,,Southampton,Trimmer,FALSE
+TRUE,24.0,Engine,,Southampton,Fireman / Stoker,TRUE
+TRUE,36.0,Engine,,Southampton,Trimmer,FALSE
+TRUE,30.0,Engine,,Southampton,Fireman / Stoker,TRUE
+TRUE,24.0,Engine,,Southampton,Trimmer,TRUE
+TRUE,38.0,Engine,,Belfast,Junior 3rd. Engineer,FALSE
+TRUE,27.0,Engine,,Southampton,Junior Assistant 4th Engineer,FALSE
+TRUE,22.0,Engine,,Southampton,Fireman / Stoker,TRUE
+TRUE,22.0,Engine,,Southampton,Trimmer,TRUE
+TRUE,27.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,28.0,Engine,,Belfast,Writer / Engineer's Clerk,FALSE
+TRUE,24.0,Engine,,Belfast,Senior Assistant 4th. Engineer,FALSE
+TRUE,25.0,Engine,,Southampton,Fireman / Stoker,TRUE
+TRUE,22.0,Engine,,Southampton,Trimmer,FALSE
+TRUE,44.0,Engine,,Southampton,Greaser,FALSE
+TRUE,24.0,Engine,,Southampton,Trimmer,FALSE
+TRUE,18.0,Engine,,Belfast,Electrician,FALSE
+TRUE,30.0,Engine,,Southampton,Trimmer,FALSE
+TRUE,39.0,Engine,,Belfast,Senior 2nd. Engineer,FALSE
+TRUE,30.0,Engine,,Southampton,Greaser,FALSE
+TRUE,34.0,Engine,,Southampton,Trimmer,FALSE
+TRUE,38.0,Engine,,Southampton,Leading Fireman,FALSE
+TRUE,21.0,Engine,,Southampton,Mess Steward,TRUE
+TRUE,27.0,Engine,,Belfast,Junior Boilermaker,FALSE
+TRUE,43.0,Engine,,Southampton,Fireman / Stoker,TRUE
+TRUE,22.0,Engine,,Southampton,Trimmer,FALSE
+TRUE,30.0,Engine,,Southampton,Leading Fireman,FALSE
+TRUE,37.0,Engine,,Belfast,Storekeeper,FALSE
+TRUE,30.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,29.0,Engine,,Belfast,Junior Assistant 3rd. Engineer,FALSE
+TRUE,20.0,Engine,,Southampton,Trimmer,TRUE
+TRUE,26.0,Engine,,Southampton,Trimmer,TRUE
+TRUE,24.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,34.0,Engine,,Southampton,Fireman / Stoker,TRUE
+TRUE,34.0,Engine,,Southampton,Greaser,FALSE
+TRUE,32.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,29.0,Engine,,Southampton,Trimmer,FALSE
+TRUE,42.0,Engine,,Southampton,Greaser,FALSE
+TRUE,22.0,Engine,,Southampton,Trimmer,FALSE
+TRUE,26.0,Engine,,Southampton,Trimmer,FALSE
+TRUE,22.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,28.0,Engine,,Belfast,Fireman / Stoker,TRUE
+TRUE,20.0,Engine,,Southampton,Trimmer,FALSE
+TRUE,40.0,Engine,,Southampton,Greaser,FALSE
+TRUE,24.0,Engine,,Southampton,Mess Steward,FALSE
+TRUE,35.0,Engine,,Belfast,Fireman / Stoker,TRUE
+TRUE,32.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,22.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,53.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,30.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,21.0,Engine,,Southampton,Trimmer,FALSE
+TRUE,28.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,39.0,Engine,,Southampton,Fireman / Stoker,TRUE
+TRUE,38.0,Engine,,Belfast,Junior 2nd. Engineer,FALSE
+TRUE,49.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,34.0,Engine,,Belfast,Junior Assistant 2nd. Engineer,FALSE
+TRUE,45.0,Engine,,Southampton,Trimmer,FALSE
+TRUE,24.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,20.0,Engine,,Southampton,Trimmer,TRUE
+TRUE,29.0,Engine,,Southampton,Leading Fireman,TRUE
+TRUE,33.0,Engine,,Belfast,Engineer,FALSE
+TRUE,25.0,Engine,,Southampton,Trimmer,FALSE
+TRUE,30.0,Engine,,Southampton,Trimmer,FALSE
+TRUE,29.0,Engine,,Belfast,Senior Assistant 3rd. Engineer,FALSE
+TRUE,26.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,46.0,Engine,,Belfast,Senior 4th. Engineer,FALSE
+TRUE,22.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,22.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,36.0,Engine,,Belfast,Senior 3rd. Engineer,FALSE
+TRUE,22.0,Engine,,Southampton,Trimmer,TRUE
+TRUE,28.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,35.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,23.0,Engine,,Southampton,Fireman / Stoker,TRUE
+TRUE,20.0,Engine,,Southampton,Trimmer,FALSE
+TRUE,33.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,29.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,27.0,Engine,,Southampton,Greaser,FALSE
+TRUE,27.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,37.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,38.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,32.0,Engine,,Southampton,Fireman / Stoker,TRUE
+TRUE,35.0,Engine,,Southampton,Greaser,FALSE
+TRUE,30.0,Engine,,Southampton,Electrician,FALSE
+TRUE,40.0,Engine,,Southampton,Fireman / Stoker,TRUE
+TRUE,43.0,Engine,,Southampton,Greaser,FALSE
+TRUE,24.0,Engine,,Southampton,Trimmer,FALSE
+TRUE,38.0,Engine,,Southampton,Leading Fireman,FALSE
+TRUE,44.0,Engine,,Southampton,Greaser,FALSE
+TRUE,23.0,Engine,,Belfast,Assistant Electrician,FALSE
+TRUE,24.0,Engine,,Southampton,Fireman / Stoker,TRUE
+TRUE,43.0,Engine,,Belfast,Extra Assistant 4th Engineer (Refrigeration),FALSE
+TRUE,37.0,Engine,,Southampton,Greaser,FALSE
+TRUE,43.0,Engine,,Belfast,Storekeeper,FALSE
+TRUE,26.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,30.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,39.0,Engine,,Southampton,Greaser,FALSE
+TRUE,42.0,Engine,,Southampton,Fireman Messman,TRUE
+TRUE,32.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,18.0,Engine,,Southampton,Trimmer,FALSE
+TRUE,20.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,47.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,30.0,Engine,,Southampton,Fireman / Stoker,TRUE
+TRUE,29.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,28.0,Engine,,Southampton,Trimmer,FALSE
+TRUE,30.0,Engine,,Southampton,Trimmer,FALSE
+TRUE,32.0,Engine,,Belfast,Junior 5th. Engineer,FALSE
+TRUE,32.0,Engine,,Southampton,Fireman / Stoker,TRUE
+TRUE,22.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,39.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,25.0,Engine,,Southampton,Trimmer,FALSE
+TRUE,32.0,Engine,,Southampton,Fireman / Stoker,TRUE
+TRUE,39.0,Engine,,Southampton,Leading Fireman,FALSE
+TRUE,24.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,60.0,Engine,,Southampton,Fireman Messman,FALSE
+TRUE,27.0,Engine,,Southampton,Leading Fireman,FALSE
+TRUE,25.0,Engine,,Southampton,Fireman / Stoker,TRUE
+TRUE,36.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,23.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,38.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,26.0,Engine,,Southampton,Trimmer,TRUE
+TRUE,34.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,30.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,30.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,37.0,Engine,,Southampton,Greaser,FALSE
+TRUE,21.0,Engine,,Southampton,Trimmer,TRUE
+TRUE,26.0,Engine,,Belfast,Fireman / Stoker,FALSE
+TRUE,32.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,22.0,Engine,,Belfast,Junior 6th. Engineer,FALSE
+TRUE,26.0,Engine,,Belfast,Electrician,FALSE
+TRUE,28.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,26.0,Engine,,Belfast,Extra 5th Engineer,FALSE
+TRUE,33.0,Engine,,Belfast,Deck Enginer,FALSE
+TRUE,46.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,18.0,Engine,,Southampton,Trimmer,FALSE
+TRUE,29.0,Engine,,Southampton,Fireman / Stoker,TRUE
+TRUE,21.0,Engine,,Southampton,Trimmer,FALSE
+TRUE,44.0,Engine,,Southampton,Greaser,FALSE
+TRUE,21.0,Engine,,Southampton,Trimmer,FALSE
+TRUE,27.0,Engine,,Southampton,Trimmer,FALSE
+TRUE,26.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,30.0,Engine,,Southampton,Greaser,FALSE
+TRUE,24.0,Engine,,Southampton,Trimmer,FALSE
+TRUE,23.0,Engine,,Belfast,Senior 6th. Engineer,FALSE
+TRUE,33.0,Engine,,Southampton,Fireman / Stoker,TRUE
+TRUE,28.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,33.0,Engine,,Southampton,Assistant Storekeeper,FALSE
+TRUE,35.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,23.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,21.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,30.0,Engine,,Southampton,Fireman / Stoker,TRUE
+TRUE,30.0,Engine,,Southampton,Fireman / Stoker,TRUE
+TRUE,25.0,Engine,,Southampton,Trimmer,TRUE
+TRUE,31.0,Engine,,Southampton,Greaser,FALSE
+TRUE,32.0,Engine,,Southampton,Fireman / Stoker,TRUE
+TRUE,35.0,Engine,,Southampton,Fireman / Stoker,TRUE
+TRUE,32.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,31.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,29.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,42.0,Engine,,Belfast,Greaser,FALSE
+TRUE,26.0,Engine,,Belfast,Senior 5th. Engineer,FALSE
+TRUE,28.0,Engine,,Southampton,Fireman / Stoker,TRUE
+TRUE,39.0,Engine,,Southampton,Trimmer,TRUE
+TRUE,19.0,Engine,,Southampton,Trimmer,TRUE
+TRUE,23.0,Engine,,Southampton,Trimmer,FALSE
+TRUE,27.0,Engine,,Southampton,Greaser,FALSE
+TRUE,25.0,Engine,,Southampton,Greaser,FALSE
+TRUE,24.0,Engine,,Southampton,Fireman / Stoker,TRUE
+TRUE,32.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,30.0,Engine,,Southampton,Greaser,TRUE
+TRUE,20.0,Engine,,Southampton,Trimmer,FALSE
+TRUE,24.0,Engine,,Southampton,Fireman / Stoker,TRUE
+TRUE,23.0,Engine,,Southampton,Trimmer,FALSE
+TRUE,31.0,Engine,,Southampton,Leading Fireman,FALSE
+TRUE,24.0,Engine,,Southampton,Fireman / Stoker,TRUE
+TRUE,29.0,Engine,,Southampton,Greaser,TRUE
+TRUE,21.0,Engine,,Southampton,Trimmer,FALSE
+TRUE,30.0,Engine,,Southampton,Trimmer,FALSE
+TRUE,31.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,32.0,Engine,,Southampton,Fireman / Stoker,TRUE
+TRUE,28.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,36.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,35.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,26.0,Engine,,Belfast,Plumber,FALSE
+TRUE,23.0,Engine,,Southampton,Assistant Storekeeper,FALSE
+TRUE,30.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,32.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,23.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,23.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,23.0,Engine,,Southampton,Trimmer,FALSE
+TRUE,40.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,28.0,Engine,,Southampton,Greaser,TRUE
+TRUE,39.0,Engine,,Southampton,Greaser,FALSE
+TRUE,25.0,Engine,,Southampton,Fireman / Stoker,TRUE
+TRUE,31.0,Engine,,Southampton,Fireman / Stoker,TRUE
+TRUE,32.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,20.0,Engine,,Southampton,Trimmer,TRUE
+TRUE,32.0,Engine,,Southampton,Junior Assistant 2nd. Engineer,FALSE
+TRUE,25.0,Engine,,Southampton,Fireman / Stoker,TRUE
+TRUE,20.0,Engine,,Southampton,Trimmer,FALSE
+TRUE,26.0,Engine,,Southampton,Trimmer,FALSE
+TRUE,31.0,Engine,,Belfast,Chief Electrician,FALSE
+TRUE,40.0,Engine,,Southampton,Leading Fireman,FALSE
+TRUE,26.0,Engine,,Southampton,Trimmer,FALSE
+TRUE,35.0,Engine,,Belfast,Junior 4th. Engineer,FALSE
+TRUE,22.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,40.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,26.0,Engine,,Southampton,Trimmer,FALSE
+TRUE,21.0,Engine,,Southampton,Trimmer,TRUE
+TRUE,30.0,Engine,,Southampton,Fireman / Stoker,TRUE
+TRUE,30.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,,Engine,,Southampton,Trimmer,FALSE
+TRUE,20.0,Engine,,Southampton,Trimmer,FALSE
+TRUE,25.0,Engine,,Southampton,Fireman / Stoker,TRUE
+TRUE,28.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,25.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,42.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,24.0,Engine,,Southampton,Fireman / Stoker,TRUE
+TRUE,50.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,26.0,Engine,,Southampton,Fireman / Stoker,TRUE
+TRUE,25.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,35.0,Engine,,Southampton,Fireman / Stoker,TRUE
+TRUE,44.0,Engine,,Southampton,Leading Fireman,TRUE
+TRUE,25.0,Engine,,Southampton,Fireman / Stoker,TRUE
+TRUE,31.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,30.0,Engine,,Southampton,Greaser,FALSE
+TRUE,40.0,Engine,,Southampton,Fireman / Stoker,TRUE
+TRUE,35.0,Engine,,Belfast,Fireman / Stoker,FALSE
+TRUE,42.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,35.0,Engine,,Southampton,Greaser,FALSE
+TRUE,32.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,33.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,24.0,Engine,,Belfast,Junior Assistant 4th. Engineer,FALSE
+TRUE,31.0,Engine,,Southampton,Leading Fireman,FALSE
+TRUE,39.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,25.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,27.0,Engine,,Southampton,Fireman / Stoker,FALSE
+FALSE,36.0,Engine,,Southampton,Trimmer,FALSE
+TRUE,28.0,Engine,,Southampton,Trimmer,FALSE
+TRUE,31.0,Engine,,Southampton,Leading Fireman,FALSE
+TRUE,32.0,Engine,,Southampton,Greaser,TRUE
+TRUE,28.0,Engine,,Southampton,Trimmer,FALSE
+TRUE,23.0,Engine,,Southampton,Trimmer,TRUE
+TRUE,26.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,28.0,Engine,,Belfast,Senior Assistant 2nd. Engineer,FALSE
+TRUE,45.0,Engine,,Southampton,Trimmer,FALSE
+TRUE,39.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,37.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,30.0,Engine,,Southampton,Trimmer,FALSE
+TRUE,40.0,Engine,,Southampton,Greaser,FALSE
+TRUE,26.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,30.0,Engine,,Southampton,Fireman / Stoker,FALSE
+TRUE,21.0,Victualling,,Southampton,Lounge Pantry Steward,FALSE
+TRUE,20.0,Victualling,,Southampton,Saloon Steward,FALSE
+TRUE,28.0,Victualling,,Southampton,Steward,FALSE
+TRUE,35.0,Victualling,,Southampton,Assistant Pantryman Steward,FALSE
+TRUE,36.0,Victualling,,Southampton,Bed Room Steward,FALSE
+TRUE,17.0,Victualling,,Southampton,Lift Steward,FALSE
+TRUE,26.0,Victualling,,Southampton,Scullion,FALSE
+TRUE,41.0,Victualling,,Belfast,Saloon Steward,FALSE
+TRUE,48.0,Victualling,,Southampton,Bed Room Steward,FALSE
+TRUE,19.0,Victualling,,Southampton,Assistant Saloon Steward,TRUE
+TRUE,26.0,Victualling,,Southampton,Clerk,FALSE
+TRUE,32.0,Victualling,,Southampton,Glory Hole Steward,FALSE
+TRUE,22.0,Victualling,,Southampton,Assistant Vegetable Cook,FALSE
+TRUE,32.0,Victualling,,Belfast,Assistant Lounge Steward,FALSE
+TRUE,28.0,Victualling,,Southampton,Saloon Steward,TRUE
+TRUE,31.0,Victualling,,Southampton,Saloon Steward,FALSE
+TRUE,36.0,Victualling,,Belfast,Saloon Steward,FALSE
+TRUE,19.0,Victualling,,Southampton,Plate Steward,TRUE
+TRUE,19.0,Victualling,,Southampton,Baker,FALSE
+TRUE,37.0,Victualling,,Southampton,Saloon Steward,FALSE
+TRUE,40.0,Victualling,,Belfast,Purser,FALSE
+TRUE,36.0,Victualling,,Southampton,Bed Room Steward,FALSE
+TRUE,37.0,Victualling,,Southampton,Baker,FALSE
+TRUE,15.0,Victualling,,Southampton,Bell Boy,FALSE
+TRUE,33.0,Victualling,,Belfast,Saloon Steward,FALSE
+TRUE,35.0,Victualling,,Southampton,Butcher,FALSE
+TRUE,32.0,Victualling,,Southampton,Saloon Steward,FALSE
+TRUE,25.0,Victualling,,Southampton,Steward,FALSE
+TRUE,51.0,Victualling,,Southampton,Steward,FALSE
+TRUE,48.0,Victualling,,Southampton,Linen Steward,FALSE
+TRUE,31.0,Victualling,,Southampton,Assistant Roast Cook,FALSE
+TRUE,34.0,Victualling,,Southampton,Bed Room Steward,FALSE
+TRUE,19.0,Victualling,,Southampton,Kitchen Porter,FALSE
+TRUE,29.0,Victualling,,Southampton,Saloon Steward,FALSE
+FALSE,30.0,Victualling,,Southampton,Stewardess,TRUE
+TRUE,31.0,Victualling,,Southampton,Baggage Steward,FALSE
+TRUE,38.0,Victualling,,Belfast,Saloon Steward,FALSE
+TRUE,34.0,Victualling,,Belfast,Bed Room Steward,FALSE
+FALSE,45.0,Victualling,,Southampton,Stewardess,TRUE
+TRUE,30.0,Victualling,,Southampton,Chef,FALSE
+TRUE,29.0,Victualling,,Southampton,Bed Room Steward,FALSE
+TRUE,40.0,Victualling,,Belfast,Bed Room Steward,FALSE
+TRUE,36.0,Victualling,,Southampton,Bed Room Steward,FALSE
+TRUE,30.0,Victualling,,Belfast,Deck Steward,FALSE
+TRUE,24.0,Victualling,,Southampton,Saloon Steward,FALSE
+TRUE,35.0,Victualling,,Southampton,Saloon Steward,FALSE
+TRUE,36.0,Victualling,,Belfast,Saloon Steward,FALSE
+TRUE,43.0,Victualling,,Southampton,Plate Steward,FALSE
+TRUE,48.0,Victualling,,Belfast,Bed Room Steward,FALSE
+TRUE,22.0,Victualling,,Belfast,Assistant Telegraphist,TRUE
+TRUE,33.0,Victualling,,Southampton,Saloon Steward,FALSE
+TRUE,31.0,Victualling,,Southampton,Steward,FALSE
+TRUE,27.0,Victualling,,Southampton,Steward,FALSE
+TRUE,33.0,Victualling,,Belfast,Bath Steward,FALSE
+TRUE,30.0,Victualling,,Southampton,Verandah Steward,FALSE
+TRUE,34.0,Victualling,,Belfast,Saloon Steward,TRUE
+TRUE,28.0,Victualling,,Belfast,Saloon Steward,FALSE
+TRUE,34.0,Victualling,,Southampton,Assistant Vegetable Cook,FALSE
+TRUE,30.0,Victualling,,Southampton,Scullion,FALSE
+TRUE,21.0,Victualling,,Southampton,Boots,FALSE
+TRUE,20.0,Victualling,,Belfast,Plate Steward,FALSE
+TRUE,18.0,Victualling,,Southampton,Extra 3rd. Baker,TRUE
+TRUE,30.0,Victualling,,Belfast,Lounge Steward,FALSE
+TRUE,31.0,Victualling,,Belfast,Saloon Steward,TRUE
+TRUE,29.0,Victualling,,Southampton,Saloon Steward,FALSE
+TRUE,20.0,Victualling,,Southampton,Plate Steward,TRUE
+TRUE,21.0,Victualling,,Southampton,Saloon Steward,FALSE
+TRUE,23.0,Victualling,,Southampton,Saloon Steward,FALSE
+TRUE,38.0,Victualling,,Southampton,Bed Room Steward,FALSE
+TRUE,25.0,Victualling,,Southampton,3rd Class Clerk,FALSE
+TRUE,31.0,Victualling,,Southampton,Lift Steward,FALSE
+TRUE,32.0,Victualling,,Belfast,Saloon Steward,FALSE
+TRUE,34.0,Victualling,,Southampton,Saloon Steward,FALSE
+FALSE,33.0,Victualling,,Southampton,Turkish Bath Stewardess,TRUE
+TRUE,27.0,Victualling,,Southampton,Grill Cook,FALSE
+TRUE,34.0,Victualling,,Belfast,Saloon Steward,FALSE
+TRUE,20.0,Victualling,,Southampton,Steward,FALSE
+TRUE,32.0,Victualling,,Southampton,Boots,TRUE
+TRUE,25.0,Victualling,,Southampton,Saloon Steward,FALSE
+TRUE,27.0,Victualling,,Belfast,Saloon Steward,FALSE
+TRUE,28.0,Victualling,,Southampton,Steward,FALSE
+TRUE,52.0,Victualling,,Southampton,Baker,FALSE
+TRUE,33.0,Victualling,,Southampton,Assistant Saloon Steward,FALSE
+TRUE,28.0,Victualling,,Southampton,Saloon Steward,FALSE
+TRUE,33.0,Victualling,,Southampton,Scullion,TRUE
+TRUE,17.0,Victualling,,Southampton,Scullion,TRUE
+TRUE,25.0,Victualling,,Belfast,Saloon Steward,FALSE
+TRUE,32.0,Victualling,,Southampton,Saloon Steward,FALSE
+TRUE,42.0,Victualling,,Southampton,Cook,FALSE
+TRUE,27.0,Victualling,,Southampton,Assistant Printer Steward,FALSE
+TRUE,29.0,Victualling,,Southampton,Steward,FALSE
+TRUE,27.0,Victualling,,Southampton,Saloon Steward,TRUE
+TRUE,36.0,Victualling,,Belfast,Bed Room Steward,TRUE
+TRUE,39.0,Victualling,,Belfast,Saloon Steward,FALSE
+TRUE,32.0,Victualling,,Southampton,Glory Hole Steward,FALSE
+TRUE,42.0,Victualling,,Southampton,Turkish Bath Attendant,FALSE
+TRUE,30.0,Victualling,,Southampton,Saloon Steward,TRUE
+TRUE,35.0,Victualling,,Belfast,Bed Room Steward,FALSE
+TRUE,45.0,Victualling,,Belfast,Bed Room Steward,TRUE
+TRUE,35.0,Victualling,,Belfast,Bed Room Steward,TRUE
+TRUE,18.0,Victualling,,Southampton,Steward,TRUE
+TRUE,19.0,Victualling,,Southampton,Saloon Steward,FALSE
+TRUE,33.0,Victualling,,Belfast,Bed Room Steward,FALSE
+TRUE,27.0,Victualling,,Belfast,Extra 2nd Baker,FALSE
+TRUE,26.0,Victualling,,Belfast,Saloon Steward,FALSE
+TRUE,19.0,Victualling,,Southampton,Assistant Saloon Steward,FALSE
+TRUE,29.0,Victualling,,Belfast,Saloon Steward,FALSE
+TRUE,26.0,Victualling,,Belfast,Saloon Steward,FALSE
+TRUE,36.0,Victualling,,Southampton,Saloon Steward,FALSE
+TRUE,49.0,Victualling,,Southampton,Saloon Steward,FALSE
+TRUE,44.0,Victualling,,Belfast,Steward,FALSE
+TRUE,36.0,Victualling,,Belfast,Reception Room Steward,FALSE
+TRUE,35.0,Victualling,,Belfast,Bed Room Steward,FALSE
+TRUE,22.0,Victualling,,Southampton,Saloon Steward,FALSE
+TRUE,41.0,Victualling,,Southampton,Hospital Steward,FALSE
+TRUE,31.0,Victualling,,Southampton,Saloon Steward,FALSE
+TRUE,24.0,Victualling,,Southampton,Steward,FALSE
+TRUE,22.0,Victualling,,Southampton,Steward,FALSE
+TRUE,39.0,Victualling,,Southampton,Deck Steward,FALSE
+TRUE,39.0,Victualling,,Southampton,Assistant Pantryman Steward,FALSE
+TRUE,34.0,Victualling,,Southampton,Steward,FALSE
+TRUE,30.0,Victualling,,Southampton,Assistant Vegetable Cook,TRUE
+TRUE,35.0,Victualling,,Southampton,Turkish Bath Attendant,FALSE
+TRUE,41.0,Victualling,,Belfast,Bed Room Steward,TRUE
+TRUE,27.0,Victualling,,Belfast,Saloon Steward,FALSE
+TRUE,38.0,Victualling,,Belfast,Saloon Steward,FALSE
+TRUE,22.0,Victualling,,Belfast,Confectioner,FALSE
+TRUE,37.0,Victualling,,Belfast,Bed Room Steward,TRUE
+TRUE,29.0,Victualling,,Belfast,Boots,FALSE
+TRUE,36.0,Victualling,,Southampton,Vienna Baker,FALSE
+TRUE,18.0,Victualling,,Southampton,Steward,FALSE
+TRUE,26.0,Victualling,,Belfast,Bugler Steward,FALSE
+TRUE,26.0,Victualling,,Southampton,Steward,TRUE
+TRUE,32.0,Victualling,,Southampton,Steward,FALSE
+TRUE,37.0,Victualling,,Southampton,Bed Room Steward,FALSE
+TRUE,27.0,Victualling,,Southampton,Steward,FALSE
+TRUE,29.0,Victualling,,Southampton,Saloon Steward,FALSE
+TRUE,43.0,Victualling,,Belfast,Deck Steward,FALSE
+TRUE,31.0,Victualling,,Southampton,Bed Room Steward,FALSE
+TRUE,36.0,Victualling,,Southampton,Saloon Steward,TRUE
+TRUE,33.0,Victualling,,Southampton,Baker,FALSE
+TRUE,34.0,Victualling,,Belfast,Bed Room Steward,FALSE
+TRUE,38.0,Victualling,,Southampton,Ship's Cook,FALSE
+FALSE,42.0,Victualling,,Southampton,Stewardess,TRUE
+TRUE,28.0,Victualling,,Southampton,Assistant Passage Cook,FALSE
+TRUE,31.0,Victualling,,Belfast,3rd Saloon Steward,FALSE
+FALSE,44.0,Victualling,,Southampton,Stewardess,TRUE
+TRUE,28.0,Victualling,,Southampton,Assistant Saloon Steward,FALSE
+TRUE,28.0,Victualling,,Southampton,Boots,TRUE
+TRUE,37.0,Victualling,,Southampton,Postal Clerk,FALSE
+TRUE,22.0,Victualling,,Southampton,Steward,TRUE
+TRUE,38.0,Victualling,,Southampton,Scullion,FALSE
+TRUE,41.0,Victualling,,Southampton,Bed Room Steward,FALSE
+TRUE,25.0,Victualling,,Belfast,Assistant Smoke Room Steward,FALSE
+TRUE,20.0,Victualling,,Southampton,Assistant Pantry Steward,FALSE
+TRUE,21.0,Victualling,,Southampton,Kitchen Porter,TRUE
+TRUE,37.0,Victualling,,Belfast,Chief 2nd Class Steward,TRUE
+TRUE,19.0,Victualling,,Southampton,Saloon Steward,FALSE
+TRUE,16.0,Victualling,,Southampton,Bell Boy,FALSE
+TRUE,18.0,Victualling,,Southampton,Assistant Pantryman Steward,FALSE
+TRUE,40.0,Victualling,,Southampton,Saloon Steward,TRUE
+TRUE,31.0,Victualling,,Southampton,Steward,TRUE
+TRUE,21.0,Victualling,,Southampton,Saloon Steward,TRUE
+TRUE,23.0,Victualling,,Southampton,Scullion,FALSE
+TRUE,38.0,Victualling,,Southampton,Saloon Steward,FALSE
+TRUE,43.0,Victualling,,Southampton,Deck Steward,FALSE
+TRUE,44.0,Victualling,,Belfast,Bed Room Steward,FALSE
+TRUE,30.0,Victualling,,Southampton,Saloon Steward,FALSE
+TRUE,38.0,Victualling,,Belfast,Saloon Steward,FALSE
+TRUE,27.0,Victualling,,Southampton,Butcher,FALSE
+TRUE,37.0,Victualling,,Belfast,Bed Room Steward,FALSE
+TRUE,36.0,Victualling,,Southampton,Steward,FALSE
+TRUE,38.0,Victualling,,Belfast,Bed Room Steward,FALSE
+TRUE,35.0,Victualling,,Southampton,Bath Steward,FALSE
+TRUE,36.0,Victualling,,Southampton,Baker,FALSE
+TRUE,22.0,Victualling,,Southampton,Plate Steward,FALSE
+TRUE,16.0,Victualling,,Belfast,Saloon Steward,FALSE
+TRUE,37.0,Victualling,,Southampton,Bed Room Steward,FALSE
+TRUE,22.0,Victualling,,Southampton,Plate Steward,FALSE
+TRUE,28.0,Victualling,,Belfast,Reception Steward,FALSE
+TRUE,20.0,Victualling,,Southampton,Clothes Presser,FALSE
+TRUE,16.0,Victualling,,Southampton,Plate Steward,FALSE
+TRUE,38.0,Victualling,,Belfast,Saloon Steward,FALSE
+TRUE,31.0,Victualling,,Belfast,Saloon Steward,FALSE
+TRUE,36.0,Victualling,,Southampton,Steward,FALSE
+TRUE,16.0,Victualling,,Southampton,Plate Steward,FALSE
+TRUE,31.0,Victualling,,Southampton,Assistant Saloon Steward,FALSE
+TRUE,28.0,Victualling,,Southampton,Vegetable. Cook,FALSE
+TRUE,19.0,Victualling,,Southampton,Steward,TRUE
+TRUE,32.0,Victualling,,Southampton,Bed Room Steward,FALSE
+TRUE,21.0,Victualling,,Southampton,Steward,FALSE
+TRUE,20.0,Victualling,,Southampton,Scullion,FALSE
+TRUE,22.0,Victualling,,Belfast,Boots,FALSE
+TRUE,35.0,Victualling,,Belfast,Bed Room Steward,FALSE
+TRUE,41.0,Victualling,,Belfast,Saloon Steward,FALSE
+TRUE,25.0,Victualling,,Southampton,Saloon Steward,FALSE
+FALSE,24.0,Victualling,,Southampton,Stewardess,TRUE
+TRUE,25.0,Victualling,,Southampton,Assistant Ship's Cook,FALSE
+TRUE,41.0,Victualling,,Belfast,Saloon Steward,TRUE
+TRUE,17.0,Victualling,,Southampton,Saloon Steward,FALSE
+TRUE,38.0,Victualling,,Southampton,Plate Steward,FALSE
+TRUE,29.0,Victualling,,Southampton,Roast Cook,FALSE
+TRUE,20.0,Victualling,,Southampton,Saloon Steward,FALSE
+TRUE,32.0,Victualling,,Belfast,Chief Baker,TRUE
+TRUE,28.0,Victualling,,Southampton,Saloon Steward,TRUE
+TRUE,21.0,Victualling,,Southampton,Library Steward,FALSE
+TRUE,30.0,Victualling,,Southampton,Hebrew Cook,FALSE
+TRUE,28.0,Victualling,,Southampton,Assistant Saloon Steward,FALSE
+TRUE,30.0,Victualling,,Belfast,Saloon Steward,FALSE
+TRUE,32.0,Victualling,,Southampton,Chief 3rd Class Steward,FALSE
+TRUE,31.0,Victualling,,Southampton,Storekeeper,FALSE
+TRUE,18.0,Victualling,,Southampton,Lift Steward,FALSE
+TRUE,28.0,Victualling,,Southampton,Clerk,FALSE
+TRUE,20.0,Victualling,,Southampton,Scullion,FALSE
+TRUE,42.0,Victualling,,Southampton,Saloon Steward,FALSE
+TRUE,39.0,Victualling,,Southampton,Bed Room Steward,FALSE
+TRUE,30.0,Victualling,,Southampton,Saloon Steward,FALSE
+TRUE,33.0,Victualling,,Southampton,Barber,FALSE
+TRUE,44.0,Victualling,,Southampton,Saloon Steward,TRUE
+TRUE,21.0,Victualling,,Southampton,Steward,FALSE
+TRUE,21.0,Victualling,,Southampton,Assistant Saloon Steward,FALSE
+TRUE,35.0,Victualling,,Belfast,Saloon Steward,FALSE
+TRUE,34.0,Victualling,,Southampton,Saloon Steward,FALSE
+TRUE,55.0,Victualling,,Belfast,Chief Steward,FALSE
+FALSE,38.0,Victualling,,Southampton,Stewardess,TRUE
+TRUE,35.0,Victualling,,Belfast,Saloon Steward,FALSE
+TRUE,22.0,Victualling,,Southampton,Confectioner,FALSE
+FALSE,41.0,Victualling,,Southampton,Stewardess,TRUE
+TRUE,35.0,Victualling,,Southampton,Saloon Steward,FALSE
+TRUE,26.0,Victualling,,Belfast,Steward,FALSE
+TRUE,21.0,Victualling,,Belfast,Assistant Pantryman Steward,FALSE
+TRUE,27.0,Victualling,,Southampton,Steward,TRUE
+TRUE,23.0,Victualling,,Southampton,Plate Steward,FALSE
+TRUE,40.0,Victualling,,Belfast,Saloon Steward,TRUE
+TRUE,32.0,Victualling,,Belfast,Saloon Steward,FALSE
+TRUE,33.0,Victualling,,Southampton,Scullion,FALSE
+TRUE,19.0,Victualling,,Southampton,Assistant Pantry Steward,FALSE
+TRUE,38.0,Victualling,,Southampton,Grill Cook,FALSE
+TRUE,34.0,Victualling,,Belfast,Saloon Steward,TRUE
+TRUE,38.0,Victualling,,Southampton,Saloon Steward,FALSE
+TRUE,36.0,Victualling,,Southampton,Interpreter Steward,FALSE
+TRUE,23.0,Victualling,,Southampton,Steward,FALSE
+TRUE,34.0,Victualling,,Belfast,Saloon Steward,TRUE
+TRUE,34.0,Victualling,,Southampton,Bed Room Steward,FALSE
+TRUE,35.0,Victualling,,Belfast,Bath Steward,FALSE
+TRUE,36.0,Victualling,,Southampton,Steward,FALSE
+TRUE,50.0,Victualling,,Southampton,Postal Clerk,FALSE
+TRUE,26.0,Victualling,,Southampton,Assistant Pantryman Steward,FALSE
+TRUE,20.0,Victualling,,Southampton,Assistant Pantryman Steward,FALSE
+FALSE,28.0,Victualling,,Southampton,Stewardess,TRUE
+TRUE,29.0,Victualling,,Southampton,Scullion,TRUE
+FALSE,33.0,Victualling,,Southampton,Stewardess,TRUE
+TRUE,31.0,Victualling,,Belfast,Entre Cook,TRUE
+TRUE,52.0,Victualling,,Belfast,Chief Butcher,FALSE
+TRUE,36.0,Victualling,,Southampton,Bed Room Steward,FALSE
+TRUE,36.0,Victualling,,Belfast,Gymnasium Steward,FALSE
+TRUE,37.0,Victualling,,Southampton,Purser,FALSE
+TRUE,27.0,Victualling,,Southampton,Saloon Steward,FALSE
+FALSE,40.0,Victualling,,Southampton,Stewardess,TRUE
+TRUE,23.0,Victualling,,Belfast,Saloon Steward,TRUE
+TRUE,21.0,Victualling,,Belfast,Second Pantry Steward,FALSE
+TRUE,32.0,Victualling,,Belfast,Saloon Steward,FALSE
+TRUE,43.0,Victualling,,Belfast,Bed Room Steward,FALSE
+TRUE,34.0,Victualling,,Southampton,Saloon Steward,FALSE
+TRUE,24.0,Victualling,,Southampton,Saloon Steward,FALSE
+TRUE,51.0,Victualling,,Southampton,Butcher,TRUE
+TRUE,52.0,Victualling,,Belfast,Printer Steward,FALSE
+TRUE,39.0,Victualling,,Southampton,Saloon Steward,FALSE
+TRUE,42.0,Victualling,,Southampton,Assistant Storekeeper,FALSE
+TRUE,28.0,Victualling,,Belfast,Bath Room Steward,TRUE
+TRUE,34.0,Victualling,,Belfast,1st. Saloon Steward,FALSE
+TRUE,20.0,Victualling,,Southampton,Steward,FALSE
+TRUE,25.0,Victualling,,Southampton,Baker,TRUE
+TRUE,39.0,Victualling,,Southampton,Saloon Steward,FALSE
+TRUE,34.0,Victualling,,Southampton,Steward,FALSE
+TRUE,35.0,Victualling,,Southampton,Assistant Saloon Steward,TRUE
+TRUE,39.0,Victualling,,Belfast,Bed Room Steward,FALSE
+TRUE,28.0,Victualling,,Southampton,Clothes Presser Steward,FALSE
+TRUE,31.0,Victualling,,Southampton,Saloon Steward,FALSE
+TRUE,40.0,Victualling,,Southampton,Assistant Vegetable Cook,FALSE
+TRUE,32.0,Victualling,,Belfast,Saloon Steward,FALSE
+TRUE,49.0,Victualling,,Southampton,Assistant Saloon Steward,FALSE
+TRUE,17.0,Victualling,,Southampton,Lift Steward,FALSE
+TRUE,29.0,Victualling,,Southampton,Captain's Steward (Tiger),FALSE
+TRUE,35.0,Victualling,,Southampton,Chief Storekeeper,FALSE
+TRUE,18.0,Victualling,,Southampton,Saloon Steward,FALSE
+TRUE,24.0,Victualling,,Southampton,Steward,FALSE
+TRUE,32.0,Victualling,,Southampton,Steward,TRUE
+TRUE,33.0,Victualling,,Southampton,Bath Steward,FALSE
+TRUE,30.0,Victualling,,Southampton,Assistant Saloon Steward,FALSE
+TRUE,49.0,Victualling,,Belfast,Bed Room Steward,FALSE
+TRUE,22.0,Victualling,,Southampton,Telephone Steward,FALSE
+TRUE,39.0,Victualling,,Southampton,Boots,FALSE
+TRUE,31.0,Victualling,,Southampton,Saloon Steward,FALSE
+TRUE,25.0,Victualling,,Southampton,Bed Room Steward,FALSE
+TRUE,30.0,Victualling,,Southampton,Saloon Steward,TRUE
+TRUE,23.0,Victualling,,Belfast,Saloon Steward,TRUE
+TRUE,25.0,Victualling,,Belfast,Telegraphist,FALSE
+TRUE,18.0,Victualling,,Southampton,Scullion,FALSE
+TRUE,34.0,Victualling,,Southampton,Assistant Pantry,FALSE
+TRUE,22.0,Victualling,,Southampton,Steward,TRUE
+TRUE,32.0,Victualling,,Southampton,Butcher,FALSE
+TRUE,22.0,Victualling,,Southampton,Storekeeper,TRUE
+FALSE,33.0,Victualling,,Southampton,Stewardess,TRUE
+TRUE,23.0,Victualling,,Southampton,Steward,FALSE
+TRUE,21.0,Victualling,,Southampton,Steward,TRUE
+TRUE,40.0,Victualling,,Belfast,Chef,FALSE
+TRUE,22.0,Victualling,,Southampton,Saloon Steward,FALSE
+TRUE,20.0,Victualling,,Southampton,Steward,TRUE
+TRUE,35.0,Victualling,,Belfast,Saloon Steward,FALSE
+TRUE,29.0,Victualling,,Southampton,Saloon Steward,FALSE
+TRUE,33.0,Victualling,,Belfast,Saloon Steward,FALSE
+TRUE,36.0,Victualling,,Belfast,Boots,FALSE
+TRUE,32.0,Victualling,,Belfast,Saloon Steward,TRUE
+TRUE,54.0,Victualling,,Southampton,Bed Room Steward,FALSE
+TRUE,31.0,Victualling,,Belfast,Saloon Steward,FALSE
+TRUE,25.0,Victualling,,Southampton,Clerk,FALSE
+TRUE,19.0,Victualling,,Southampton,Steward,FALSE
+TRUE,23.0,Victualling,,Southampton,Storekeeper,FALSE
+TRUE,29.0,Victualling,,Southampton,Saloon Steward,FALSE
+TRUE,27.0,Victualling,,Southampton,Saloon Steward,FALSE
+TRUE,19.0,Victualling,,Southampton,Assistant Saloon Steward,FALSE
+TRUE,36.0,Victualling,,Belfast,Third Butcher,FALSE
+TRUE,40.0,Victualling,,Belfast,Bed Room Steward,FALSE
+FALSE,41.0,Victualling,,Southampton,Stewardess,TRUE
+TRUE,30.0,Victualling,,Southampton,Saloon Steward,FALSE
+FALSE,40.0,Victualling,,Southampton,Stewardess,TRUE
+TRUE,32.0,Victualling,,Southampton,Assistant Storekeeper,FALSE
+TRUE,27.0,Victualling,,Southampton,Saloon Steward,FALSE
+TRUE,36.0,Victualling,,Southampton,Scullion,TRUE
+TRUE,31.0,Victualling,,Belfast,Saloon Steward,FALSE
+TRUE,58.0,Victualling,,Belfast,Bath Room Steward,TRUE
+TRUE,17.0,Victualling,,Southampton,Saloon Steward,FALSE
+TRUE,27.0,Victualling,,Southampton,Steward,FALSE
+TRUE,32.0,Victualling,,Southampton,Saloon Steward,TRUE
+TRUE,41.0,Victualling,,Southampton,Saloon Steward,FALSE
+TRUE,26.0,Victualling,,Southampton,Saloon Steward,FALSE
+TRUE,23.0,Victualling,,Southampton,Steward,TRUE
+TRUE,21.0,Victualling,,Southampton,Boots,FALSE
+TRUE,42.0,Victualling,,Southampton,Saloon Steward,FALSE
+TRUE,25.0,Victualling,,Southampton,Steward,FALSE
+TRUE,25.0,Victualling,,Southampton,Chief Pantry Steward,TRUE
+TRUE,39.0,Victualling,,Southampton,Kitchen Porter,FALSE
+TRUE,39.0,Victualling,,Belfast,Saloon Steward,FALSE
+TRUE,29.0,Victualling,,Belfast,Bed Room Steward,FALSE
+TRUE,31.0,Victualling,,Southampton,Scullion,TRUE
+TRUE,25.0,Victualling,,Southampton,Saloon Steward,FALSE
+TRUE,32.0,Victualling,,Southampton,Passage Cook,FALSE
+TRUE,23.0,Victualling,,Southampton,Steward,FALSE
+TRUE,33.0,Victualling,,Belfast,Saloon Steward,FALSE
+TRUE,35.0,Victualling,,Southampton,Steward,FALSE
+TRUE,37.0,Victualling,,Belfast,Larder Cook,FALSE
+FALSE,28.0,Victualling,,Southampton,Stewardess,TRUE
+FALSE,30.0,Victualling,,Southampton,Turkish Bath Stewardess,TRUE
+TRUE,29.0,Victualling,,Belfast,Saloon Steward,FALSE
+FALSE,42.0,Victualling,,Southampton,Stewardess,TRUE
+TRUE,38.0,Victualling,,Southampton,Kitchen Porter,FALSE
+TRUE,38.0,Victualling,,Southampton,Bed Room Steward,FALSE
+TRUE,20.0,Victualling,,Belfast,Assistant Pantryman Steward,FALSE
+TRUE,24.0,Victualling,,Southampton,Baker,FALSE
+TRUE,35.0,Victualling,,Southampton,Postal Clerk,FALSE
+TRUE,30.0,Victualling,,Southampton,Saloon Steward,FALSE
+FALSE,22.0,Victualling,,Southampton,Stewardess,FALSE
+TRUE,34.0,Victualling,,Southampton,Saloon Steward,FALSE
+FALSE,47.0,Victualling,,Southampton,Stewardess,TRUE
+TRUE,34.0,Victualling,,Belfast,Chief Boots Steward,FALSE
+TRUE,27.0,Victualling,,Belfast,Verandah Steward,TRUE
+TRUE,33.0,Victualling,,Southampton,Bed Room Steward,FALSE
+TRUE,30.0,Victualling,,Southampton,Bed Room Steward,FALSE
+TRUE,19.0,Victualling,,Southampton,Saloon Steward,FALSE
+TRUE,35.0,Victualling,,Southampton,Saloon Steward,FALSE
+TRUE,34.0,Victualling,,Belfast,Saloon Steward,FALSE
+TRUE,31.0,Victualling,,Belfast,2nd. Class Cook,FALSE
+TRUE,46.0,Victualling,,Belfast,Bed Room Steward,FALSE
+TRUE,38.0,Victualling,,Belfast,Saloon Steward,FALSE
+TRUE,,Victualling,,Southampton,Steward,FALSE
+TRUE,22.0,Victualling,,Southampton,Steward,FALSE
+TRUE,32.0,Victualling,,Southampton,Stenographer,FALSE
+TRUE,23.0,Victualling,,Southampton,Turkish Bath Attendant,FALSE
+TRUE,30.0,Victualling,,Southampton,Saloon Steward,FALSE
+TRUE,27.0,Victualling,,Southampton,Assistant Saloon Steward,TRUE
+TRUE,32.0,Victualling,,Southampton,Saloon Steward,FALSE
+TRUE,17.0,Victualling,,Southampton,Steward,FALSE
+TRUE,43.0,Victualling,,Southampton,Bed Room Steward,TRUE
+TRUE,23.0,Victualling,,Southampton,Saloon Steward,TRUE
+TRUE,32.0,Victualling,,Belfast,Saloon Steward,TRUE
+TRUE,25.0,Victualling,,Belfast,2nd (Assistant) Storekeeper,FALSE
+TRUE,39.0,Victualling,,Southampton,Cook,FALSE
+TRUE,31.0,Victualling,,Belfast,Saloon Steward,TRUE
+TRUE,28.0,Victualling,,Southampton,Butcher,FALSE
+TRUE,30.0,Victualling,,Southampton,Saloon Steward,FALSE
+TRUE,28.0,Victualling,,Belfast,Saloon Steward,FALSE
+TRUE,38.0,Victualling,,Southampton,Saloon Steward,FALSE
+TRUE,37.0,Victualling,,Southampton,Baker,FALSE
+FALSE,35.0,Victualling,,Southampton,Matron,FALSE
+TRUE,48.0,Victualling,,Belfast,Chief Pantryman Steward,FALSE
+FALSE,32.0,Victualling,,Southampton,Stewardess,FALSE
+TRUE,34.0,Victualling,,Belfast,Bed Room Steward,FALSE
+TRUE,38.0,Victualling,,Belfast,Bed Room Steward,FALSE
+TRUE,36.0,Victualling,,Southampton,Saloon Steward,TRUE
+TRUE,36.0,Victualling,,Belfast,Bed Room Steward,FALSE
+TRUE,35.0,Victualling,,Southampton,Saloon Steward,FALSE
+TRUE,14.0,Victualling,,Southampton,Bell Boy,FALSE
+TRUE,24.0,Victualling,,Belfast,Saloon Steward,FALSE
+TRUE,50.0,Victualling,,Belfast,Smoke Room Steward,FALSE
+TRUE,51.0,Victualling,,Southampton,Barber,TRUE
+TRUE,23.0,Victualling,,Southampton,Cook,FALSE
+TRUE,29.0,Victualling,,Belfast,Assistant Second Steward,TRUE
+TRUE,29.0,Victualling,,Belfast,Saloon Steward,TRUE
+TRUE,37.0,Victualling,,Southampton,Barber,FALSE
+TRUE,27.0,Victualling,,Southampton,Glory Hole Steward,FALSE
+TRUE,31.0,Victualling,,Belfast,Saloon Steward,FALSE
+TRUE,18.0,Victualling,,Southampton,Saloon Steward,TRUE
+TRUE,39.0,Victualling,,Southampton,Saloon Steward,FALSE
+TRUE,37.0,Victualling,,Southampton,Bath Steward,TRUE
+TRUE,38.0,Victualling,,Southampton,Storekeeper,FALSE
+TRUE,28.0,Victualling,,Southampton,Assistant Saloon Steward,TRUE
+TRUE,35.0,Victualling,,Southampton,Postal Clerk,FALSE
+TRUE,46.0,Victualling,,Southampton,Steward,FALSE
+TRUE,33.0,Victualling,,Southampton,Butcher,FALSE
+TRUE,38.0,Victualling,,Southampton,Cook,TRUE
+TRUE,33.0,Victualling,,Southampton,Steward,FALSE
+TRUE,31.0,Victualling,,Southampton,Smoke Room Steward,TRUE
+TRUE,34.0,Victualling,,Southampton,Bed Room Steward,FALSE
+TRUE,40.0,Victualling,,Southampton,Assistant Saloon Steward,FALSE
+TRUE,44.0,Victualling,,Southampton,Postal Clerk,FALSE
+TRUE,36.0,Victualling,,Southampton,Saloon Steward,FALSE
+TRUE,19.0,Victualling,,Belfast,Assistant Pantryman Steward,FALSE
+TRUE,24.0,Victualling,,Southampton,Sports Instructor,FALSE
+TRUE,40.0,Victualling,,Southampton,Glory Hole Steward,TRUE
+TRUE,38.0,Victualling,,Southampton,Saloon Steward,TRUE

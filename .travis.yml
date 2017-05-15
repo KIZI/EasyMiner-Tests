@@ -1,0 +1,15 @@
+language: generic
+sudo: required
+
+services:
+  - docker
+
+install:
+  - ./start-easyminer.sh 
+
+script:
+  - ./run-tests.sh
+  
+after_script:
+  - ./cleanup-tests.sh
+  - ./stop-easyminer.sh

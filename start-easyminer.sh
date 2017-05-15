@@ -17,3 +17,5 @@ docker run -d -p 8080:8080 --name easyminer-scorer --network easyminer kizi/easy
 #Short sleep to make sure that Easyminer is inicialized
 sleep 45
 echo EasyMiner is available at http://"$(docker-machine ip)":8894
+#Build docker image for test execution
+docker build -t soulekamil/robot-docker .

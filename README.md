@@ -3,7 +3,7 @@ This repository contains web UI tests for [EasyMiner project](http://easyminer.e
 Tests are written in [Robot Framework](http://robotframework.org/). Test suite can be executed using provided docker image, that supports testing against Firefox and Xvfb. 
 # How to execute tests locally
 ## Requirements
-- Docker 1.12+ (with "default" docker machine)
+- Docker 1.12+
 - Bash shell - for Windows users: MinGW (shipped with Git for Windows or standalone) is sufficient
 ## Test execution
 To run tests locally follow these steps:

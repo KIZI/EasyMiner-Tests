@@ -1,9 +1,9 @@
 *** Settings ***
 Library           Selenium2Library
 Library           Process
-Variables         variables.py
 
 *** Variables ***
+${BaseUrl}        http://easyminer-frontend
 ${Browser}        ff
 &{Urls}           newMiner=/easyminercenter/em/data/upload    register=/easyminercenter/em/user/register    home=/easyminercenter/    login=/easyminercenter/em/user/login    upload=/easyminercenter/em/data/upload    logout=/easyminercenter/em/user/logout
 ${ImplicitWait}    10s

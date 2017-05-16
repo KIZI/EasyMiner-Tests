@@ -11,6 +11,3 @@ Resource          Common.robot
 &{InvalidUserShortPasswords}    name=Invalid UserSix    email=invalid.user6@gmail.com    password=Aaaaa    passwordRepeat=Aaaaa
 
 *** Keywords ***
-create new miner page is displayed
-    page should contain element    css=h2    with text    "Create new miner"
-    page should contain element    css=a[href="${Urls.upload}"]    with text    "Create new miner"

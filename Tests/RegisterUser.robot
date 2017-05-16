@@ -63,3 +63,6 @@ Register user test setup
 
 Register user test teardown
     Logout user
+
+create new miner page is displayed
+    page should contain element    css=a[href="${Urls.upload}"]

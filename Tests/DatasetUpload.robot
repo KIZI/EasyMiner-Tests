@@ -46,7 +46,8 @@ Dataset upload suite setup
     Sign up user "${ValidUser1}"
 
 Dataset upload suite teardown
-    Close Browser
+    Logout user
+    Close All Browsers
 
 dataset upload page is opened
     Go To    ${BaseUrl}${Urls.upload}

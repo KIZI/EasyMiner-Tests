@@ -12,29 +12,35 @@ ${TitanicDatasetFieldCount}    7
 [2.1.1] Upload csv dataset - comma separated
     Given dataset upload page is opened
     When dataset "titanic-comma.csv" is uploaded
+    And separator "," is selected
     Then dataset field headers should contain following fields    @{TitanicDatasetFields}
     And dataset field count should be "${TitanicDatasetFieldCount}"
 
 [2.1.2] Upload csv dataset - semicolon separated
     Given dataset upload page is opened
     When dataset "titanic-semicolon.csv" is uploaded
+    And separator ";" is selected
     Then dataset field headers should contain following fields    @{TitanicDatasetFields}
     And dataset field count should be "${TitanicDatasetFieldCount}"
 
 [2.1.3] Upload csv dataset - vertical line separated
     Given dataset upload page is opened
     When dataset "titanic-verticalLine.csv" is uploaded
+    And separator "|" is selected
     Then dataset field headers should contain following fields    @{TitanicDatasetFields}
+    And dataset field count should be "${TitanicDatasetFieldCount}"
 
 [2.1.4] Upload csv dataset - tab separated
     Given dataset upload page is opened
     When dataset "titanic-tab.csv" is uploaded
+    And separator "\t" is selected
     Then dataset field headers should contain following fields    @{TitanicDatasetFields}
     And dataset field count should be "${TitanicDatasetFieldCount}"
 
 [2.1.4] Upload zip archive with csv dataset - comma separated
     Given dataset upload page is opened
     When dataset "titanic.zip" is uploaded
+    And separator "," is selected
     Then dataset field headers should contain following fields    @{TitanicDatasetFields}
     And dataset field count should be "${TitanicDatasetFieldCount}"
 
@@ -63,3 +69,7 @@ dataset "${datasetName}" is uploaded
 
 dataset field count should be "${datasetFieldCount}"
     Xpath Should Match X Times    //*[@id="uploadConfigPreviewBlock"]/table/tbody/tr/th    ${datasetFieldCount}
+
+separator "${separator}" is selected
+    Select From List By Value    css=#frm-uploadConfigForm-separator    ${separator}
+    Focus    css=#frm-uploadConfigForm-name

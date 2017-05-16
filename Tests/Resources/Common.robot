@@ -1,12 +1,11 @@
 *** Settings ***
-Library           Selenium2Library
+Library           Selenium2Library    2    10
 Library           Process
 
 *** Variables ***
 ${BaseUrl}        http://easyminer-frontend
 ${Browser}        ff
 &{Urls}           newMiner=/easyminercenter/em/data/upload    register=/easyminercenter/em/user/register    home=/easyminercenter/    login=/easyminercenter/em/user/login    upload=/easyminercenter/em/data/upload    logout=/easyminercenter/em/user/logout
-${ImplicitWait}    10s
 &{ValidUser1}     name=Valid UserOne    email=valid.user1@gmail.com    password=Aaaaaa    passwordRepeat=Aaaaaa
 
 *** Keywords ***

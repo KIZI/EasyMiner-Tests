@@ -45,7 +45,6 @@ ${LoginFormId}    frm-loginForm
 
 *** Keywords ***
 Login user suite setup
-    Set Selenium Implicit Wait    ${ImplicitWait}
     Delete all users
     Open Browser    ${BaseUrl}${Urls.home}    ${Browser}
     Sign up user "${ValidUser1}"

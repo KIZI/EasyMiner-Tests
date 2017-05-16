@@ -53,7 +53,6 @@ ${RegisterFormId}    frm-registrationForm
 
 *** Keywords ***
 Register user suite setup
-    Set Selenium Implicit Wait    ${ImplicitWait}
     Delete all users
     Open Browser    ${BaseUrl}${Urls.home}    ${Browser}
 

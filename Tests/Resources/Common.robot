@@ -1,5 +1,5 @@
 *** Settings ***
-Library           Selenium2Library    2    10
+Library           Selenium2Library    10    10
 Library           Process
 
 *** Variables ***

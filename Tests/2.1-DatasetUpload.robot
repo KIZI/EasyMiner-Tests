@@ -32,12 +32,12 @@ ${UploadFileConfigFormId}    frm-uploadConfigForm
     Then dataset field count should be "${TitanicDatasetFieldCount}"
     And dataset field headers should contain following fields    @{TitanicDatasetFields}
 
-[2.1.4] Upload csv dataset - tab separated
-    Given dataset upload page is opened
-    When dataset "titanic-tab.csv" is uploaded
-    And separator "\t" is selected
-    Then dataset field count should be "${TitanicDatasetFieldCount}"
-    And dataset field headers should contain following fields    @{TitanicDatasetFields}
+#[2.1.4] Upload csv dataset - tab separated
+#    Given dataset upload page is opened
+#    When dataset "titanic-tab.csv" is uploaded
+#    And separator "\t" is selected
+#    Then dataset field count should be "${TitanicDatasetFieldCount}"
+#    And dataset field headers should contain following fields    @{TitanicDatasetFields}
 
 [2.1.5] Upload zip archive with csv dataset - comma separated
     Given dataset upload page is opened

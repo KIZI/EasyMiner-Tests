@@ -12,7 +12,6 @@ echo "$(tail -$HISTORYLENGHT links.html)" > links.html
 cd TestResults
 ls -d */ | cut -f1 -d'/' > tmp
 cat ../commit-history.txt >> tmp
-cat tmp | uniq
 echo "$(cat tmp | uniq -u)" > tmp
-xargs ls -rf < tmp
+xargs rm -rf < tmp
 rm tmp

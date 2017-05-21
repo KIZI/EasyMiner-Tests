@@ -1,0 +1,2774 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170521 17:32:27.801" generator="Robot 2.9.2 (Python 2.7.12 on linux2)">
+<suite source="/Tests" id="s1" name="Tests">
+<suite source="/Tests/1.1-RegisterUser.robot" id="s1-s1" name="1.1-RegisterUser">
+<kw type="setup" name="Register user suite setup">
+<kw name="Delete all users" library="Common">
+<kw name="Run Process" library="Process">
+<doc>Runs a process and waits for it to complete.</doc>
+<arguments>
+<arg>/Tests/Resources/delete-all-users.sh</arg>
+<arg>stdout=${TEMPDIR}/stdout.txt</arg>
+<arg>stderr=${TEMPDIR}/stderr.txt</arg>
+<arg>timeout=10s</arg>
+<arg>shell=True</arg>
+</arguments>
+<assign>
+<var>${result}</var>
+</assign>
+<msg timestamp="20170521 17:32:28.122" level="INFO">Starting process:
+/Tests/Resources/delete-all-users.sh</msg>
+<msg timestamp="20170521 17:32:28.134" level="INFO">Waiting for process to complete.</msg>
+<msg timestamp="20170521 17:32:28.235" level="INFO">Process completed.</msg>
+<msg timestamp="20170521 17:32:28.236" level="INFO">${result} = &lt;result object with rc 0&gt;</msg>
+<status status="PASS" endtime="20170521 17:32:28.236" starttime="20170521 17:32:28.119"></status>
+</kw>
+<kw name="Log Many" library="BuiltIn">
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
+<arguments>
+<arg>stdout: ${result.stdout}</arg>
+<arg>stderr: ${result.stderr}</arg>
+</arguments>
+<msg timestamp="20170521 17:32:28.239" level="INFO">stdout: </msg>
+<msg timestamp="20170521 17:32:28.240" level="INFO">stderr: </msg>
+<status status="PASS" endtime="20170521 17:32:28.241" starttime="20170521 17:32:28.238"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:32:28.242" starttime="20170521 17:32:28.118"></status>
+</kw>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${BaseUrl}${Urls.home}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20170521 17:32:28.245" level="INFO">Opening browser 'ff' to base url 'http://easyminer-frontend/easyminercenter/'</msg>
+<status status="PASS" endtime="20170521 17:32:35.221" starttime="20170521 17:32:28.243"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:32:35.236" starttime="20170521 17:32:28.117"></status>
+</kw>
+<test id="s1-s1-t1" name="[1.1.1] Register valid user">
+<kw type="setup" name="Register user test setup">
+<kw name="Delete all users" library="Common">
+<kw name="Run Process" library="Process">
+<doc>Runs a process and waits for it to complete.</doc>
+<arguments>
+<arg>/Tests/Resources/delete-all-users.sh</arg>
+<arg>stdout=${TEMPDIR}/stdout.txt</arg>
+<arg>stderr=${TEMPDIR}/stderr.txt</arg>
+<arg>timeout=10s</arg>
+<arg>shell=True</arg>
+</arguments>
+<assign>
+<var>${result}</var>
+</assign>
+<msg timestamp="20170521 17:32:35.260" level="INFO">Starting process:
+/Tests/Resources/delete-all-users.sh</msg>
+<msg timestamp="20170521 17:32:35.267" level="INFO">Waiting for process to complete.</msg>
+<msg timestamp="20170521 17:32:35.469" level="INFO">Process completed.</msg>
+<msg timestamp="20170521 17:32:35.471" level="INFO">${result} = &lt;result object with rc 0&gt;</msg>
+<status status="PASS" endtime="20170521 17:32:35.471" starttime="20170521 17:32:35.251"></status>
+</kw>
+<kw name="Log Many" library="BuiltIn">
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
+<arguments>
+<arg>stdout: ${result.stdout}</arg>
+<arg>stderr: ${result.stderr}</arg>
+</arguments>
+<msg timestamp="20170521 17:32:35.474" level="INFO">stdout: </msg>
+<msg timestamp="20170521 17:32:35.475" level="INFO">stderr: </msg>
+<status status="PASS" endtime="20170521 17:32:35.476" starttime="20170521 17:32:35.472"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:32:35.477" starttime="20170521 17:32:35.249"></status>
+</kw>
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BaseUrl}${Urls.home}</arg>
+</arguments>
+<msg timestamp="20170521 17:32:35.480" level="INFO">Opening url 'http://easyminer-frontend/easyminercenter/'</msg>
+<status status="PASS" endtime="20170521 17:32:36.008" starttime="20170521 17:32:35.478"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:32:36.009" starttime="20170521 17:32:35.247"></status>
+</kw>
+<kw name="Given sign up page is opened" library="Common">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BaseUrl}${Urls.register}</arg>
+</arguments>
+<msg timestamp="20170521 17:32:36.017" level="INFO">Opening url 'http://easyminer-frontend/easyminercenter/em/user/register'</msg>
+<status status="PASS" endtime="20170521 17:32:36.718" starttime="20170521 17:32:36.015"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:32:36.719" starttime="20170521 17:32:36.011"></status>
+</kw>
+<kw name="When register user as &quot;${ValidUser1}&quot;" library="Common">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="text"][name="name"]</arg>
+<arg>${user.name}</arg>
+</arguments>
+<msg timestamp="20170521 17:32:36.727" level="INFO">Typing text 'Valid UserOne' into text field 'css=input[type="text"][name="name"]'</msg>
+<status status="PASS" endtime="20170521 17:32:36.986" starttime="20170521 17:32:36.725"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="text"][name="email"]</arg>
+<arg>${user.email}</arg>
+</arguments>
+<msg timestamp="20170521 17:32:36.989" level="INFO">Typing text 'valid.user1@gmail.com' into text field 'css=input[type="text"][name="email"]'</msg>
+<status status="PASS" endtime="20170521 17:32:37.138" starttime="20170521 17:32:36.987"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="password"][name="password"]</arg>
+<arg>${user.password}</arg>
+</arguments>
+<msg timestamp="20170521 17:32:37.140" level="INFO">Typing text 'Aaaaaa' into text field 'css=input[type="password"][name="password"]'</msg>
+<status status="PASS" endtime="20170521 17:32:37.235" starttime="20170521 17:32:37.138"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="password"][name="rePassword"]</arg>
+<arg>${user.passwordRepeat}</arg>
+</arguments>
+<msg timestamp="20170521 17:32:37.239" level="INFO">Typing text 'Aaaaaa' into text field 'css=input[type="password"][name="rePassword"]'</msg>
+<status status="PASS" endtime="20170521 17:32:37.334" starttime="20170521 17:32:37.236"></status>
+</kw>
+<kw name="Confirm standard form" library="Common">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=input[name="_submit"][class~="button"]</arg>
+</arguments>
+<msg timestamp="20170521 17:32:37.340" level="INFO">Clicking element 'css=input[name="_submit"][class~="button"]'.</msg>
+<status status="PASS" endtime="20170521 17:32:46.670" starttime="20170521 17:32:37.337"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:32:46.671" starttime="20170521 17:32:37.335"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:32:46.677" starttime="20170521 17:32:36.721"></status>
+</kw>
+<kw name="Then create new miner page is displayed">
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>css=a[href="${Urls.upload}"]</arg>
+</arguments>
+<msg timestamp="20170521 17:32:46.700" level="INFO">Current page contains element 'css=a[href="/easyminercenter/em/data/upload"]'.</msg>
+<status status="PASS" endtime="20170521 17:32:46.701" starttime="20170521 17:32:46.680"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:32:46.702" starttime="20170521 17:32:46.678"></status>
+</kw>
+<kw type="teardown" name="Register user test teardown">
+<kw name="logout user" library="Common">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BaseUrl}${Urls.logout}</arg>
+</arguments>
+<msg timestamp="20170521 17:32:46.710" level="INFO">Opening url 'http://easyminer-frontend/easyminercenter/em/user/logout'</msg>
+<status status="PASS" endtime="20170521 17:32:47.222" starttime="20170521 17:32:46.708"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:32:47.223" starttime="20170521 17:32:46.706"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:32:47.224" starttime="20170521 17:32:46.703"></status>
+</kw>
+<tags>
+<tag>User administration</tag>
+</tags>
+<status status="PASS" endtime="20170521 17:32:47.225" critical="yes" starttime="20170521 17:32:35.241"></status>
+</test>
+<test id="s1-s1-t2" name="[1.1.2] Register invalid user with empty name">
+<kw type="setup" name="Register user test setup">
+<kw name="Delete all users" library="Common">
+<kw name="Run Process" library="Process">
+<doc>Runs a process and waits for it to complete.</doc>
+<arguments>
+<arg>/Tests/Resources/delete-all-users.sh</arg>
+<arg>stdout=${TEMPDIR}/stdout.txt</arg>
+<arg>stderr=${TEMPDIR}/stderr.txt</arg>
+<arg>timeout=10s</arg>
+<arg>shell=True</arg>
+</arguments>
+<assign>
+<var>${result}</var>
+</assign>
+<msg timestamp="20170521 17:32:47.251" level="INFO">Starting process:
+/Tests/Resources/delete-all-users.sh</msg>
+<msg timestamp="20170521 17:32:47.271" level="INFO">Waiting for process to complete.</msg>
+<msg timestamp="20170521 17:32:47.372" level="INFO">Process completed.</msg>
+<msg timestamp="20170521 17:32:47.373" level="INFO">${result} = &lt;result object with rc 0&gt;</msg>
+<status status="PASS" endtime="20170521 17:32:47.373" starttime="20170521 17:32:47.240"></status>
+</kw>
+<kw name="Log Many" library="BuiltIn">
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
+<arguments>
+<arg>stdout: ${result.stdout}</arg>
+<arg>stderr: ${result.stderr}</arg>
+</arguments>
+<msg timestamp="20170521 17:32:47.377" level="INFO">stdout: </msg>
+<msg timestamp="20170521 17:32:47.377" level="INFO">stderr: </msg>
+<status status="PASS" endtime="20170521 17:32:47.378" starttime="20170521 17:32:47.375"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:32:47.379" starttime="20170521 17:32:47.238"></status>
+</kw>
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BaseUrl}${Urls.home}</arg>
+</arguments>
+<msg timestamp="20170521 17:32:47.388" level="INFO">Opening url 'http://easyminer-frontend/easyminercenter/'</msg>
+<status status="PASS" endtime="20170521 17:32:47.804" starttime="20170521 17:32:47.380"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:32:47.805" starttime="20170521 17:32:47.235"></status>
+</kw>
+<kw name="Given sign up page is opened" library="Common">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BaseUrl}${Urls.register}</arg>
+</arguments>
+<msg timestamp="20170521 17:32:47.809" level="INFO">Opening url 'http://easyminer-frontend/easyminercenter/em/user/register'</msg>
+<status status="PASS" endtime="20170521 17:32:48.207" starttime="20170521 17:32:47.808"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:32:48.208" starttime="20170521 17:32:47.806"></status>
+</kw>
+<kw name="When register user as &quot;${InvalidUserEmptyName}&quot;" library="Common">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="text"][name="name"]</arg>
+<arg>${user.name}</arg>
+</arguments>
+<msg timestamp="20170521 17:32:48.223" level="INFO">Typing text '' into text field 'css=input[type="text"][name="name"]'</msg>
+<status status="PASS" endtime="20170521 17:32:48.334" starttime="20170521 17:32:48.218"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="text"][name="email"]</arg>
+<arg>${user.email}</arg>
+</arguments>
+<msg timestamp="20170521 17:32:48.339" level="INFO">Typing text 'invalid.user1@gmail.com' into text field 'css=input[type="text"][name="email"]'</msg>
+<status status="PASS" endtime="20170521 17:32:48.553" starttime="20170521 17:32:48.335"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="password"][name="password"]</arg>
+<arg>${user.password}</arg>
+</arguments>
+<msg timestamp="20170521 17:32:48.556" level="INFO">Typing text 'Aaaaaa' into text field 'css=input[type="password"][name="password"]'</msg>
+<status status="PASS" endtime="20170521 17:32:48.761" starttime="20170521 17:32:48.554"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="password"][name="rePassword"]</arg>
+<arg>${user.passwordRepeat}</arg>
+</arguments>
+<msg timestamp="20170521 17:32:48.779" level="INFO">Typing text 'Aaaaaa' into text field 'css=input[type="password"][name="rePassword"]'</msg>
+<status status="PASS" endtime="20170521 17:32:48.941" starttime="20170521 17:32:48.765"></status>
+</kw>
+<kw name="Confirm standard form" library="Common">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=input[name="_submit"][class~="button"]</arg>
+</arguments>
+<msg timestamp="20170521 17:32:48.948" level="INFO">Clicking element 'css=input[name="_submit"][class~="button"]'.</msg>
+<status status="PASS" endtime="20170521 17:32:49.089" starttime="20170521 17:32:48.945"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:32:49.090" starttime="20170521 17:32:48.942"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:32:49.091" starttime="20170521 17:32:48.209"></status>
+</kw>
+<kw name="Then error is displayed on field &quot;name&quot; in form &quot;${RegisterFormId}&quot;" library="Common">
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>css=input[id="${formId}-${fieldName}"][class~="has-error"]</arg>
+</arguments>
+<msg timestamp="20170521 17:32:49.108" level="INFO">Current page contains element 'css=input[id="frm-registrationForm-name"][class~="has-error"]'.</msg>
+<status status="PASS" endtime="20170521 17:32:49.109" starttime="20170521 17:32:49.096"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>css=span[id="${formId}-${fieldName}_message"][class~="error-message"]</arg>
+</arguments>
+<msg timestamp="20170521 17:32:49.122" level="INFO">Current page contains element 'css=span[id="frm-registrationForm-name_message"][class~="error-message"]'.</msg>
+<status status="PASS" endtime="20170521 17:32:49.123" starttime="20170521 17:32:49.110"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:32:49.124" starttime="20170521 17:32:49.092"></status>
+</kw>
+<kw type="teardown" name="Register user test teardown">
+<kw name="logout user" library="Common">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BaseUrl}${Urls.logout}</arg>
+</arguments>
+<msg timestamp="20170521 17:32:49.131" level="INFO">Opening url 'http://easyminer-frontend/easyminercenter/em/user/logout'</msg>
+<status status="PASS" endtime="20170521 17:32:49.729" starttime="20170521 17:32:49.129"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:32:49.733" starttime="20170521 17:32:49.127"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:32:49.740" starttime="20170521 17:32:49.125"></status>
+</kw>
+<tags>
+<tag>User administration</tag>
+</tags>
+<status status="PASS" endtime="20170521 17:32:49.749" critical="yes" starttime="20170521 17:32:47.231"></status>
+</test>
+<test id="s1-s1-t3" name="[1.1.3] Register invalid user with empty email">
+<kw type="setup" name="Register user test setup">
+<kw name="Delete all users" library="Common">
+<kw name="Run Process" library="Process">
+<doc>Runs a process and waits for it to complete.</doc>
+<arguments>
+<arg>/Tests/Resources/delete-all-users.sh</arg>
+<arg>stdout=${TEMPDIR}/stdout.txt</arg>
+<arg>stderr=${TEMPDIR}/stderr.txt</arg>
+<arg>timeout=10s</arg>
+<arg>shell=True</arg>
+</arguments>
+<assign>
+<var>${result}</var>
+</assign>
+<msg timestamp="20170521 17:32:49.759" level="INFO">Starting process:
+/Tests/Resources/delete-all-users.sh</msg>
+<msg timestamp="20170521 17:32:49.765" level="INFO">Waiting for process to complete.</msg>
+<msg timestamp="20170521 17:32:49.867" level="INFO">Process completed.</msg>
+<msg timestamp="20170521 17:32:49.868" level="INFO">${result} = &lt;result object with rc 0&gt;</msg>
+<status status="PASS" endtime="20170521 17:32:49.868" starttime="20170521 17:32:49.756"></status>
+</kw>
+<kw name="Log Many" library="BuiltIn">
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
+<arguments>
+<arg>stdout: ${result.stdout}</arg>
+<arg>stderr: ${result.stderr}</arg>
+</arguments>
+<msg timestamp="20170521 17:32:49.871" level="INFO">stdout: </msg>
+<msg timestamp="20170521 17:32:49.872" level="INFO">stderr: </msg>
+<status status="PASS" endtime="20170521 17:32:49.873" starttime="20170521 17:32:49.869"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:32:49.873" starttime="20170521 17:32:49.755"></status>
+</kw>
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BaseUrl}${Urls.home}</arg>
+</arguments>
+<msg timestamp="20170521 17:32:49.876" level="INFO">Opening url 'http://easyminer-frontend/easyminercenter/'</msg>
+<status status="PASS" endtime="20170521 17:32:50.231" starttime="20170521 17:32:49.874"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:32:50.232" starttime="20170521 17:32:49.753"></status>
+</kw>
+<kw name="Given sign up page is opened" library="Common">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BaseUrl}${Urls.register}</arg>
+</arguments>
+<msg timestamp="20170521 17:32:50.240" level="INFO">Opening url 'http://easyminer-frontend/easyminercenter/em/user/register'</msg>
+<status status="PASS" endtime="20170521 17:32:50.623" starttime="20170521 17:32:50.238"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:32:50.624" starttime="20170521 17:32:50.233"></status>
+</kw>
+<kw name="When register user as &quot;${InvalidUserEmptyEmail}&quot;" library="Common">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="text"][name="name"]</arg>
+<arg>${user.name}</arg>
+</arguments>
+<msg timestamp="20170521 17:32:50.631" level="INFO">Typing text 'Invalid UserTwo' into text field 'css=input[type="text"][name="name"]'</msg>
+<status status="PASS" endtime="20170521 17:32:50.771" starttime="20170521 17:32:50.626"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="text"][name="email"]</arg>
+<arg>${user.email}</arg>
+</arguments>
+<msg timestamp="20170521 17:32:50.774" level="INFO">Typing text '' into text field 'css=input[type="text"][name="email"]'</msg>
+<status status="PASS" endtime="20170521 17:32:50.842" starttime="20170521 17:32:50.772"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="password"][name="password"]</arg>
+<arg>${user.password}</arg>
+</arguments>
+<msg timestamp="20170521 17:32:50.845" level="INFO">Typing text 'Aaaaaa' into text field 'css=input[type="password"][name="password"]'</msg>
+<status status="PASS" endtime="20170521 17:32:50.929" starttime="20170521 17:32:50.843"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="password"][name="rePassword"]</arg>
+<arg>${user.passwordRepeat}</arg>
+</arguments>
+<msg timestamp="20170521 17:32:50.932" level="INFO">Typing text 'Aaaaaa' into text field 'css=input[type="password"][name="rePassword"]'</msg>
+<status status="PASS" endtime="20170521 17:32:51.017" starttime="20170521 17:32:50.931"></status>
+</kw>
+<kw name="Confirm standard form" library="Common">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=input[name="_submit"][class~="button"]</arg>
+</arguments>
+<msg timestamp="20170521 17:32:51.022" level="INFO">Clicking element 'css=input[name="_submit"][class~="button"]'.</msg>
+<status status="PASS" endtime="20170521 17:32:51.127" starttime="20170521 17:32:51.020"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:32:51.128" starttime="20170521 17:32:51.018"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:32:51.129" starttime="20170521 17:32:50.625"></status>
+</kw>
+<kw name="Then error is displayed on field &quot;email&quot; in form &quot;${RegisterFormId}&quot;" library="Common">
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>css=input[id="${formId}-${fieldName}"][class~="has-error"]</arg>
+</arguments>
+<msg timestamp="20170521 17:32:51.145" level="INFO">Current page contains element 'css=input[id="frm-registrationForm-email"][class~="has-error"]'.</msg>
+<status status="PASS" endtime="20170521 17:32:51.146" starttime="20170521 17:32:51.134"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>css=span[id="${formId}-${fieldName}_message"][class~="error-message"]</arg>
+</arguments>
+<msg timestamp="20170521 17:32:51.158" level="INFO">Current page contains element 'css=span[id="frm-registrationForm-email_message"][class~="error-message"]'.</msg>
+<status status="PASS" endtime="20170521 17:32:51.159" starttime="20170521 17:32:51.147"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:32:51.160" starttime="20170521 17:32:51.131"></status>
+</kw>
+<kw type="teardown" name="Register user test teardown">
+<kw name="logout user" library="Common">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BaseUrl}${Urls.logout}</arg>
+</arguments>
+<msg timestamp="20170521 17:32:51.167" level="INFO">Opening url 'http://easyminer-frontend/easyminercenter/em/user/logout'</msg>
+<status status="PASS" endtime="20170521 17:32:51.722" starttime="20170521 17:32:51.165"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:32:51.723" starttime="20170521 17:32:51.163"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:32:51.724" starttime="20170521 17:32:51.161"></status>
+</kw>
+<tags>
+<tag>User administration</tag>
+</tags>
+<status status="PASS" endtime="20170521 17:32:51.725" critical="yes" starttime="20170521 17:32:49.751"></status>
+</test>
+<test id="s1-s1-t4" name="[1.1.4] Register invalid user with empty password">
+<kw type="setup" name="Register user test setup">
+<kw name="Delete all users" library="Common">
+<kw name="Run Process" library="Process">
+<doc>Runs a process and waits for it to complete.</doc>
+<arguments>
+<arg>/Tests/Resources/delete-all-users.sh</arg>
+<arg>stdout=${TEMPDIR}/stdout.txt</arg>
+<arg>stderr=${TEMPDIR}/stderr.txt</arg>
+<arg>timeout=10s</arg>
+<arg>shell=True</arg>
+</arguments>
+<assign>
+<var>${result}</var>
+</assign>
+<msg timestamp="20170521 17:32:51.737" level="INFO">Starting process:
+/Tests/Resources/delete-all-users.sh</msg>
+<msg timestamp="20170521 17:32:51.740" level="INFO">Waiting for process to complete.</msg>
+<msg timestamp="20170521 17:32:51.843" level="INFO">Process completed.</msg>
+<msg timestamp="20170521 17:32:51.846" level="INFO">${result} = &lt;result object with rc 0&gt;</msg>
+<status status="PASS" endtime="20170521 17:32:51.852" starttime="20170521 17:32:51.735"></status>
+</kw>
+<kw name="Log Many" library="BuiltIn">
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
+<arguments>
+<arg>stdout: ${result.stdout}</arg>
+<arg>stderr: ${result.stderr}</arg>
+</arguments>
+<msg timestamp="20170521 17:32:51.854" level="INFO">stdout: </msg>
+<msg timestamp="20170521 17:32:51.855" level="INFO">stderr: </msg>
+<status status="PASS" endtime="20170521 17:32:51.856" starttime="20170521 17:32:51.853"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:32:51.858" starttime="20170521 17:32:51.733"></status>
+</kw>
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BaseUrl}${Urls.home}</arg>
+</arguments>
+<msg timestamp="20170521 17:32:51.861" level="INFO">Opening url 'http://easyminer-frontend/easyminercenter/'</msg>
+<status status="PASS" endtime="20170521 17:32:52.381" starttime="20170521 17:32:51.859"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:32:52.382" starttime="20170521 17:32:51.732"></status>
+</kw>
+<kw name="Given sign up page is opened" library="Common">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BaseUrl}${Urls.register}</arg>
+</arguments>
+<msg timestamp="20170521 17:32:52.391" level="INFO">Opening url 'http://easyminer-frontend/easyminercenter/em/user/register'</msg>
+<status status="PASS" endtime="20170521 17:32:52.882" starttime="20170521 17:32:52.386"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:32:52.883" starttime="20170521 17:32:52.384"></status>
+</kw>
+<kw name="When register user as &quot;${InvalidUserEmptyPassword}&quot;" library="Common">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="text"][name="name"]</arg>
+<arg>${user.name}</arg>
+</arguments>
+<msg timestamp="20170521 17:32:52.890" level="INFO">Typing text 'Invalid UserThree' into text field 'css=input[type="text"][name="name"]'</msg>
+<status status="PASS" endtime="20170521 17:32:53.071" starttime="20170521 17:32:52.886"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="text"][name="email"]</arg>
+<arg>${user.email}</arg>
+</arguments>
+<msg timestamp="20170521 17:32:53.073" level="INFO">Typing text 'invalid.user3@gmail.com' into text field 'css=input[type="text"][name="email"]'</msg>
+<status status="PASS" endtime="20170521 17:32:53.224" starttime="20170521 17:32:53.072"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="password"][name="password"]</arg>
+<arg>${user.password}</arg>
+</arguments>
+<msg timestamp="20170521 17:32:53.227" level="INFO">Typing text '' into text field 'css=input[type="password"][name="password"]'</msg>
+<status status="PASS" endtime="20170521 17:32:53.314" starttime="20170521 17:32:53.225"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="password"][name="rePassword"]</arg>
+<arg>${user.passwordRepeat}</arg>
+</arguments>
+<msg timestamp="20170521 17:32:53.318" level="INFO">Typing text 'Aaaaaa' into text field 'css=input[type="password"][name="rePassword"]'</msg>
+<status status="PASS" endtime="20170521 17:32:53.445" starttime="20170521 17:32:53.315"></status>
+</kw>
+<kw name="Confirm standard form" library="Common">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=input[name="_submit"][class~="button"]</arg>
+</arguments>
+<msg timestamp="20170521 17:32:53.450" level="INFO">Clicking element 'css=input[name="_submit"][class~="button"]'.</msg>
+<status status="PASS" endtime="20170521 17:32:53.569" starttime="20170521 17:32:53.447"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:32:53.570" starttime="20170521 17:32:53.446"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:32:53.575" starttime="20170521 17:32:52.884"></status>
+</kw>
+<kw name="Then error is displayed on field &quot;password&quot; in form &quot;${RegisterFormId}&quot;" library="Common">
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>css=input[id="${formId}-${fieldName}"][class~="has-error"]</arg>
+</arguments>
+<msg timestamp="20170521 17:32:53.596" level="INFO">Current page contains element 'css=input[id="frm-registrationForm-password"][class~="has-error"]'.</msg>
+<status status="PASS" endtime="20170521 17:32:53.597" starttime="20170521 17:32:53.581"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>css=span[id="${formId}-${fieldName}_message"][class~="error-message"]</arg>
+</arguments>
+<msg timestamp="20170521 17:32:53.620" level="INFO">Current page contains element 'css=span[id="frm-registrationForm-password_message"][class~="error-message"]'.</msg>
+<status status="PASS" endtime="20170521 17:32:53.622" starttime="20170521 17:32:53.598"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:32:53.625" starttime="20170521 17:32:53.579"></status>
+</kw>
+<kw type="teardown" name="Register user test teardown">
+<kw name="logout user" library="Common">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BaseUrl}${Urls.logout}</arg>
+</arguments>
+<msg timestamp="20170521 17:32:53.631" level="INFO">Opening url 'http://easyminer-frontend/easyminercenter/em/user/logout'</msg>
+<status status="PASS" endtime="20170521 17:32:54.448" starttime="20170521 17:32:53.629"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:32:54.449" starttime="20170521 17:32:53.628"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:32:54.450" starttime="20170521 17:32:53.626"></status>
+</kw>
+<tags>
+<tag>User administration</tag>
+</tags>
+<status status="PASS" endtime="20170521 17:32:54.451" critical="yes" starttime="20170521 17:32:51.728"></status>
+</test>
+<test id="s1-s1-t5" name="[1.1.5] Register invalid user with empty repeated password">
+<kw type="setup" name="Register user test setup">
+<kw name="Delete all users" library="Common">
+<kw name="Run Process" library="Process">
+<doc>Runs a process and waits for it to complete.</doc>
+<arguments>
+<arg>/Tests/Resources/delete-all-users.sh</arg>
+<arg>stdout=${TEMPDIR}/stdout.txt</arg>
+<arg>stderr=${TEMPDIR}/stderr.txt</arg>
+<arg>timeout=10s</arg>
+<arg>shell=True</arg>
+</arguments>
+<assign>
+<var>${result}</var>
+</assign>
+<msg timestamp="20170521 17:32:54.473" level="INFO">Starting process:
+/Tests/Resources/delete-all-users.sh</msg>
+<msg timestamp="20170521 17:32:54.478" level="INFO">Waiting for process to complete.</msg>
+<msg timestamp="20170521 17:32:54.579" level="INFO">Process completed.</msg>
+<msg timestamp="20170521 17:32:54.580" level="INFO">${result} = &lt;result object with rc 0&gt;</msg>
+<status status="PASS" endtime="20170521 17:32:54.581" starttime="20170521 17:32:54.464"></status>
+</kw>
+<kw name="Log Many" library="BuiltIn">
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
+<arguments>
+<arg>stdout: ${result.stdout}</arg>
+<arg>stderr: ${result.stderr}</arg>
+</arguments>
+<msg timestamp="20170521 17:32:54.584" level="INFO">stdout: </msg>
+<msg timestamp="20170521 17:32:54.585" level="INFO">stderr: </msg>
+<status status="PASS" endtime="20170521 17:32:54.591" starttime="20170521 17:32:54.582"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:32:54.592" starttime="20170521 17:32:54.460"></status>
+</kw>
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BaseUrl}${Urls.home}</arg>
+</arguments>
+<msg timestamp="20170521 17:32:54.595" level="INFO">Opening url 'http://easyminer-frontend/easyminercenter/'</msg>
+<status status="PASS" endtime="20170521 17:32:55.062" starttime="20170521 17:32:54.593"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:32:55.064" starttime="20170521 17:32:54.459"></status>
+</kw>
+<kw name="Given sign up page is opened" library="Common">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BaseUrl}${Urls.register}</arg>
+</arguments>
+<msg timestamp="20170521 17:32:55.071" level="INFO">Opening url 'http://easyminer-frontend/easyminercenter/em/user/register'</msg>
+<status status="PASS" endtime="20170521 17:32:55.476" starttime="20170521 17:32:55.069"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:32:55.477" starttime="20170521 17:32:55.065"></status>
+</kw>
+<kw name="When register user as &quot;${InvalidUserEmptyPasswordRepeat}&quot;" library="Common">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="text"][name="name"]</arg>
+<arg>${user.name}</arg>
+</arguments>
+<msg timestamp="20170521 17:32:55.488" level="INFO">Typing text 'Invalid UserFour' into text field 'css=input[type="text"][name="name"]'</msg>
+<status status="PASS" endtime="20170521 17:32:55.618" starttime="20170521 17:32:55.479"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="text"][name="email"]</arg>
+<arg>${user.email}</arg>
+</arguments>
+<msg timestamp="20170521 17:32:55.623" level="INFO">Typing text 'invalid.user4@gmail.com' into text field 'css=input[type="text"][name="email"]'</msg>
+<status status="PASS" endtime="20170521 17:32:55.770" starttime="20170521 17:32:55.620"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="password"][name="password"]</arg>
+<arg>${user.password}</arg>
+</arguments>
+<msg timestamp="20170521 17:32:55.772" level="INFO">Typing text 'Aaaaaa' into text field 'css=input[type="password"][name="password"]'</msg>
+<status status="PASS" endtime="20170521 17:32:55.860" starttime="20170521 17:32:55.771"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="password"][name="rePassword"]</arg>
+<arg>${user.passwordRepeat}</arg>
+</arguments>
+<msg timestamp="20170521 17:32:55.863" level="INFO">Typing text '' into text field 'css=input[type="password"][name="rePassword"]'</msg>
+<status status="PASS" endtime="20170521 17:32:55.936" starttime="20170521 17:32:55.861"></status>
+</kw>
+<kw name="Confirm standard form" library="Common">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=input[name="_submit"][class~="button"]</arg>
+</arguments>
+<msg timestamp="20170521 17:32:55.939" level="INFO">Clicking element 'css=input[name="_submit"][class~="button"]'.</msg>
+<status status="PASS" endtime="20170521 17:32:56.036" starttime="20170521 17:32:55.938"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:32:56.037" starttime="20170521 17:32:55.937"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:32:56.038" starttime="20170521 17:32:55.478"></status>
+</kw>
+<kw name="Then error is displayed on field &quot;rePassword&quot; in form &quot;${RegisterFormId}&quot;" library="Common">
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>css=input[id="${formId}-${fieldName}"][class~="has-error"]</arg>
+</arguments>
+<msg timestamp="20170521 17:32:56.056" level="INFO">Current page contains element 'css=input[id="frm-registrationForm-rePassword"][class~="has-error"]'.</msg>
+<status status="PASS" endtime="20170521 17:32:56.057" starttime="20170521 17:32:56.044"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>css=span[id="${formId}-${fieldName}_message"][class~="error-message"]</arg>
+</arguments>
+<msg timestamp="20170521 17:32:56.069" level="INFO">Current page contains element 'css=span[id="frm-registrationForm-rePassword_message"][class~="error-message"]'.</msg>
+<status status="PASS" endtime="20170521 17:32:56.070" starttime="20170521 17:32:56.058"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:32:56.072" starttime="20170521 17:32:56.040"></status>
+</kw>
+<kw type="teardown" name="Register user test teardown">
+<kw name="logout user" library="Common">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BaseUrl}${Urls.logout}</arg>
+</arguments>
+<msg timestamp="20170521 17:32:56.077" level="INFO">Opening url 'http://easyminer-frontend/easyminercenter/em/user/logout'</msg>
+<status status="PASS" endtime="20170521 17:32:56.607" starttime="20170521 17:32:56.076"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:32:56.608" starttime="20170521 17:32:56.075"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:32:56.609" starttime="20170521 17:32:56.073"></status>
+</kw>
+<tags>
+<tag>User administration</tag>
+</tags>
+<status status="PASS" endtime="20170521 17:32:56.610" critical="yes" starttime="20170521 17:32:54.457"></status>
+</test>
+<test id="s1-s1-t6" name="[1.1.6] Register invalid user with unmatching passwords">
+<kw type="setup" name="Register user test setup">
+<kw name="Delete all users" library="Common">
+<kw name="Run Process" library="Process">
+<doc>Runs a process and waits for it to complete.</doc>
+<arguments>
+<arg>/Tests/Resources/delete-all-users.sh</arg>
+<arg>stdout=${TEMPDIR}/stdout.txt</arg>
+<arg>stderr=${TEMPDIR}/stderr.txt</arg>
+<arg>timeout=10s</arg>
+<arg>shell=True</arg>
+</arguments>
+<assign>
+<var>${result}</var>
+</assign>
+<msg timestamp="20170521 17:32:56.628" level="INFO">Starting process:
+/Tests/Resources/delete-all-users.sh</msg>
+<msg timestamp="20170521 17:32:56.631" level="INFO">Waiting for process to complete.</msg>
+<msg timestamp="20170521 17:32:56.732" level="INFO">Process completed.</msg>
+<msg timestamp="20170521 17:32:56.734" level="INFO">${result} = &lt;result object with rc 0&gt;</msg>
+<status status="PASS" endtime="20170521 17:32:56.734" starttime="20170521 17:32:56.619"></status>
+</kw>
+<kw name="Log Many" library="BuiltIn">
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
+<arguments>
+<arg>stdout: ${result.stdout}</arg>
+<arg>stderr: ${result.stderr}</arg>
+</arguments>
+<msg timestamp="20170521 17:32:56.736" level="INFO">stdout: </msg>
+<msg timestamp="20170521 17:32:56.737" level="INFO">stderr: </msg>
+<status status="PASS" endtime="20170521 17:32:56.738" starttime="20170521 17:32:56.735"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:32:56.739" starttime="20170521 17:32:56.618"></status>
+</kw>
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BaseUrl}${Urls.home}</arg>
+</arguments>
+<msg timestamp="20170521 17:32:56.742" level="INFO">Opening url 'http://easyminer-frontend/easyminercenter/'</msg>
+<status status="PASS" endtime="20170521 17:32:57.135" starttime="20170521 17:32:56.740"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:32:57.136" starttime="20170521 17:32:56.617"></status>
+</kw>
+<kw name="Given sign up page is opened" library="Common">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BaseUrl}${Urls.register}</arg>
+</arguments>
+<msg timestamp="20170521 17:32:57.145" level="INFO">Opening url 'http://easyminer-frontend/easyminercenter/em/user/register'</msg>
+<status status="PASS" endtime="20170521 17:32:57.569" starttime="20170521 17:32:57.143"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:32:57.570" starttime="20170521 17:32:57.138"></status>
+</kw>
+<kw name="When register user as &quot;${InvalidUserUnmatchingPasswords}&quot;" library="Common">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="text"][name="name"]</arg>
+<arg>${user.name}</arg>
+</arguments>
+<msg timestamp="20170521 17:32:57.578" level="INFO">Typing text 'Invalid UserFive' into text field 'css=input[type="text"][name="name"]'</msg>
+<status status="PASS" endtime="20170521 17:32:57.721" starttime="20170521 17:32:57.577"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="text"][name="email"]</arg>
+<arg>${user.email}</arg>
+</arguments>
+<msg timestamp="20170521 17:32:57.729" level="INFO">Typing text 'invalid.user5@gmail.com' into text field 'css=input[type="text"][name="email"]'</msg>
+<status status="PASS" endtime="20170521 17:32:57.863" starttime="20170521 17:32:57.723"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="password"][name="password"]</arg>
+<arg>${user.password}</arg>
+</arguments>
+<msg timestamp="20170521 17:32:57.866" level="INFO">Typing text 'Aaaaaa' into text field 'css=input[type="password"][name="password"]'</msg>
+<status status="PASS" endtime="20170521 17:32:57.954" starttime="20170521 17:32:57.864"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="password"][name="rePassword"]</arg>
+<arg>${user.passwordRepeat}</arg>
+</arguments>
+<msg timestamp="20170521 17:32:57.956" level="INFO">Typing text 'AaaaaA' into text field 'css=input[type="password"][name="rePassword"]'</msg>
+<status status="PASS" endtime="20170521 17:32:58.046" starttime="20170521 17:32:57.955"></status>
+</kw>
+<kw name="Confirm standard form" library="Common">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=input[name="_submit"][class~="button"]</arg>
+</arguments>
+<msg timestamp="20170521 17:32:58.051" level="INFO">Clicking element 'css=input[name="_submit"][class~="button"]'.</msg>
+<status status="PASS" endtime="20170521 17:32:58.151" starttime="20170521 17:32:58.048"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:32:58.152" starttime="20170521 17:32:58.047"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:32:58.153" starttime="20170521 17:32:57.572"></status>
+</kw>
+<kw name="Then error is displayed on field &quot;rePassword&quot; in form &quot;${RegisterFormId}&quot;" library="Common">
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>css=input[id="${formId}-${fieldName}"][class~="has-error"]</arg>
+</arguments>
+<msg timestamp="20170521 17:32:58.169" level="INFO">Current page contains element 'css=input[id="frm-registrationForm-rePassword"][class~="has-error"]'.</msg>
+<status status="PASS" endtime="20170521 17:32:58.170" starttime="20170521 17:32:58.158"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>css=span[id="${formId}-${fieldName}_message"][class~="error-message"]</arg>
+</arguments>
+<msg timestamp="20170521 17:32:58.184" level="INFO">Current page contains element 'css=span[id="frm-registrationForm-rePassword_message"][class~="error-message"]'.</msg>
+<status status="PASS" endtime="20170521 17:32:58.185" starttime="20170521 17:32:58.171"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:32:58.185" starttime="20170521 17:32:58.156"></status>
+</kw>
+<kw type="teardown" name="Register user test teardown">
+<kw name="logout user" library="Common">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BaseUrl}${Urls.logout}</arg>
+</arguments>
+<msg timestamp="20170521 17:32:58.192" level="INFO">Opening url 'http://easyminer-frontend/easyminercenter/em/user/logout'</msg>
+<status status="PASS" endtime="20170521 17:32:58.928" starttime="20170521 17:32:58.190"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:32:58.929" starttime="20170521 17:32:58.189"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:32:58.930" starttime="20170521 17:32:58.186"></status>
+</kw>
+<tags>
+<tag>User administration</tag>
+</tags>
+<status status="PASS" endtime="20170521 17:32:58.931" critical="yes" starttime="20170521 17:32:56.615"></status>
+</test>
+<test id="s1-s1-t7" name="[1.1.7] Register invalid user with short password">
+<kw type="setup" name="Register user test setup">
+<kw name="Delete all users" library="Common">
+<kw name="Run Process" library="Process">
+<doc>Runs a process and waits for it to complete.</doc>
+<arguments>
+<arg>/Tests/Resources/delete-all-users.sh</arg>
+<arg>stdout=${TEMPDIR}/stdout.txt</arg>
+<arg>stderr=${TEMPDIR}/stderr.txt</arg>
+<arg>timeout=10s</arg>
+<arg>shell=True</arg>
+</arguments>
+<assign>
+<var>${result}</var>
+</assign>
+<msg timestamp="20170521 17:32:58.951" level="INFO">Starting process:
+/Tests/Resources/delete-all-users.sh</msg>
+<msg timestamp="20170521 17:32:58.966" level="INFO">Waiting for process to complete.</msg>
+<msg timestamp="20170521 17:32:59.068" level="INFO">Process completed.</msg>
+<msg timestamp="20170521 17:32:59.069" level="INFO">${result} = &lt;result object with rc 0&gt;</msg>
+<status status="PASS" endtime="20170521 17:32:59.069" starttime="20170521 17:32:58.948"></status>
+</kw>
+<kw name="Log Many" library="BuiltIn">
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
+<arguments>
+<arg>stdout: ${result.stdout}</arg>
+<arg>stderr: ${result.stderr}</arg>
+</arguments>
+<msg timestamp="20170521 17:32:59.072" level="INFO">stdout: </msg>
+<msg timestamp="20170521 17:32:59.073" level="INFO">stderr: </msg>
+<status status="PASS" endtime="20170521 17:32:59.074" starttime="20170521 17:32:59.070"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:32:59.075" starttime="20170521 17:32:58.946"></status>
+</kw>
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BaseUrl}${Urls.home}</arg>
+</arguments>
+<msg timestamp="20170521 17:32:59.077" level="INFO">Opening url 'http://easyminer-frontend/easyminercenter/'</msg>
+<status status="PASS" endtime="20170521 17:32:59.630" starttime="20170521 17:32:59.075"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:32:59.632" starttime="20170521 17:32:58.940"></status>
+</kw>
+<kw name="Given sign up page is opened" library="Common">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BaseUrl}${Urls.register}</arg>
+</arguments>
+<msg timestamp="20170521 17:32:59.645" level="INFO">Opening url 'http://easyminer-frontend/easyminercenter/em/user/register'</msg>
+<status status="PASS" endtime="20170521 17:33:00.085" starttime="20170521 17:32:59.641"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:00.087" starttime="20170521 17:32:59.636"></status>
+</kw>
+<kw name="When register user as &quot;${InvalidUserShortPasswords}&quot;" library="Common">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="text"][name="name"]</arg>
+<arg>${user.name}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:00.095" level="INFO">Typing text 'Invalid UserSix' into text field 'css=input[type="text"][name="name"]'</msg>
+<status status="PASS" endtime="20170521 17:33:00.269" starttime="20170521 17:33:00.090"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="text"][name="email"]</arg>
+<arg>${user.email}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:00.272" level="INFO">Typing text 'invalid.user6@gmail.com' into text field 'css=input[type="text"][name="email"]'</msg>
+<status status="PASS" endtime="20170521 17:33:00.432" starttime="20170521 17:33:00.270"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="password"][name="password"]</arg>
+<arg>${user.password}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:00.435" level="INFO">Typing text 'Aaaaa' into text field 'css=input[type="password"][name="password"]'</msg>
+<status status="PASS" endtime="20170521 17:33:00.529" starttime="20170521 17:33:00.433"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="password"][name="rePassword"]</arg>
+<arg>${user.passwordRepeat}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:00.532" level="INFO">Typing text 'Aaaaa' into text field 'css=input[type="password"][name="rePassword"]'</msg>
+<status status="PASS" endtime="20170521 17:33:00.637" starttime="20170521 17:33:00.530"></status>
+</kw>
+<kw name="Confirm standard form" library="Common">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=input[name="_submit"][class~="button"]</arg>
+</arguments>
+<msg timestamp="20170521 17:33:00.640" level="INFO">Clicking element 'css=input[name="_submit"][class~="button"]'.</msg>
+<status status="PASS" endtime="20170521 17:33:00.776" starttime="20170521 17:33:00.639"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:00.777" starttime="20170521 17:33:00.638"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:00.778" starttime="20170521 17:33:00.088"></status>
+</kw>
+<kw name="Then error is displayed on field &quot;password&quot; in form &quot;${RegisterFormId}&quot;" library="Common">
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>css=input[id="${formId}-${fieldName}"][class~="has-error"]</arg>
+</arguments>
+<msg timestamp="20170521 17:33:00.797" level="INFO">Current page contains element 'css=input[id="frm-registrationForm-password"][class~="has-error"]'.</msg>
+<status status="PASS" endtime="20170521 17:33:00.798" starttime="20170521 17:33:00.783"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>css=span[id="${formId}-${fieldName}_message"][class~="error-message"]</arg>
+</arguments>
+<msg timestamp="20170521 17:33:00.814" level="INFO">Current page contains element 'css=span[id="frm-registrationForm-password_message"][class~="error-message"]'.</msg>
+<status status="PASS" endtime="20170521 17:33:00.815" starttime="20170521 17:33:00.798"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:00.816" starttime="20170521 17:33:00.779"></status>
+</kw>
+<kw type="teardown" name="Register user test teardown">
+<kw name="logout user" library="Common">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BaseUrl}${Urls.logout}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:00.822" level="INFO">Opening url 'http://easyminer-frontend/easyminercenter/em/user/logout'</msg>
+<status status="PASS" endtime="20170521 17:33:01.350" starttime="20170521 17:33:00.821"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:01.352" starttime="20170521 17:33:00.818"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:01.352" starttime="20170521 17:33:00.817"></status>
+</kw>
+<tags>
+<tag>User administration</tag>
+</tags>
+<status status="PASS" endtime="20170521 17:33:01.353" critical="yes" starttime="20170521 17:32:58.938"></status>
+</test>
+<test id="s1-s1-t8" name="[1.1.8] Register user that is already registered">
+<kw type="setup" name="Register user test setup">
+<kw name="Delete all users" library="Common">
+<kw name="Run Process" library="Process">
+<doc>Runs a process and waits for it to complete.</doc>
+<arguments>
+<arg>/Tests/Resources/delete-all-users.sh</arg>
+<arg>stdout=${TEMPDIR}/stdout.txt</arg>
+<arg>stderr=${TEMPDIR}/stderr.txt</arg>
+<arg>timeout=10s</arg>
+<arg>shell=True</arg>
+</arguments>
+<assign>
+<var>${result}</var>
+</assign>
+<msg timestamp="20170521 17:33:01.373" level="INFO">Starting process:
+/Tests/Resources/delete-all-users.sh</msg>
+<msg timestamp="20170521 17:33:01.377" level="INFO">Waiting for process to complete.</msg>
+<msg timestamp="20170521 17:33:01.479" level="INFO">Process completed.</msg>
+<msg timestamp="20170521 17:33:01.480" level="INFO">${result} = &lt;result object with rc 0&gt;</msg>
+<status status="PASS" endtime="20170521 17:33:01.481" starttime="20170521 17:33:01.363"></status>
+</kw>
+<kw name="Log Many" library="BuiltIn">
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
+<arguments>
+<arg>stdout: ${result.stdout}</arg>
+<arg>stderr: ${result.stderr}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:01.483" level="INFO">stdout: </msg>
+<msg timestamp="20170521 17:33:01.484" level="INFO">stderr: </msg>
+<status status="PASS" endtime="20170521 17:33:01.485" starttime="20170521 17:33:01.482"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:01.486" starttime="20170521 17:33:01.362"></status>
+</kw>
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BaseUrl}${Urls.home}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:01.488" level="INFO">Opening url 'http://easyminer-frontend/easyminercenter/'</msg>
+<status status="PASS" endtime="20170521 17:33:01.932" starttime="20170521 17:33:01.486"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:01.935" starttime="20170521 17:33:01.360"></status>
+</kw>
+<kw name="Given valid user is already registered" library="Common">
+<kw name="sign up page is opened" library="Common">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BaseUrl}${Urls.register}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:01.941" level="INFO">Opening url 'http://easyminer-frontend/easyminercenter/em/user/register'</msg>
+<status status="PASS" endtime="20170521 17:33:02.346" starttime="20170521 17:33:01.940"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:02.347" starttime="20170521 17:33:01.939"></status>
+</kw>
+<kw name="register user as &quot;${ValidUser1}&quot;" library="Common">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="text"][name="name"]</arg>
+<arg>${user.name}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:02.354" level="INFO">Typing text 'Valid UserOne' into text field 'css=input[type="text"][name="name"]'</msg>
+<status status="PASS" endtime="20170521 17:33:02.471" starttime="20170521 17:33:02.350"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="text"][name="email"]</arg>
+<arg>${user.email}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:02.474" level="INFO">Typing text 'valid.user1@gmail.com' into text field 'css=input[type="text"][name="email"]'</msg>
+<status status="PASS" endtime="20170521 17:33:02.599" starttime="20170521 17:33:02.472"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="password"][name="password"]</arg>
+<arg>${user.password}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:02.602" level="INFO">Typing text 'Aaaaaa' into text field 'css=input[type="password"][name="password"]'</msg>
+<status status="PASS" endtime="20170521 17:33:02.688" starttime="20170521 17:33:02.600"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="password"][name="rePassword"]</arg>
+<arg>${user.passwordRepeat}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:02.691" level="INFO">Typing text 'Aaaaaa' into text field 'css=input[type="password"][name="rePassword"]'</msg>
+<status status="PASS" endtime="20170521 17:33:02.792" starttime="20170521 17:33:02.689"></status>
+</kw>
+<kw name="Confirm standard form" library="Common">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=input[name="_submit"][class~="button"]</arg>
+</arguments>
+<msg timestamp="20170521 17:33:02.796" level="INFO">Clicking element 'css=input[name="_submit"][class~="button"]'.</msg>
+<status status="PASS" endtime="20170521 17:33:05.974" starttime="20170521 17:33:02.794"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:05.976" starttime="20170521 17:33:02.793"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:05.979" starttime="20170521 17:33:02.348"></status>
+</kw>
+<kw name="logout user" library="Common">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BaseUrl}${Urls.logout}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:05.986" level="INFO">Opening url 'http://easyminer-frontend/easyminercenter/em/user/logout'</msg>
+<status status="PASS" endtime="20170521 17:33:06.904" starttime="20170521 17:33:05.984"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:06.905" starttime="20170521 17:33:05.980"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:06.908" starttime="20170521 17:33:01.936"></status>
+</kw>
+<kw name="And sign up page is opened" library="Common">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BaseUrl}${Urls.register}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:06.918" level="INFO">Opening url 'http://easyminer-frontend/easyminercenter/em/user/register'</msg>
+<status status="PASS" endtime="20170521 17:33:07.602" starttime="20170521 17:33:06.915"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:07.604" starttime="20170521 17:33:06.910"></status>
+</kw>
+<kw name="When register user as &quot;${ValidUser1}&quot;" library="Common">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="text"][name="name"]</arg>
+<arg>${user.name}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:07.615" level="INFO">Typing text 'Valid UserOne' into text field 'css=input[type="text"][name="name"]'</msg>
+<status status="PASS" endtime="20170521 17:33:07.929" starttime="20170521 17:33:07.613"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="text"][name="email"]</arg>
+<arg>${user.email}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:07.936" level="INFO">Typing text 'valid.user1@gmail.com' into text field 'css=input[type="text"][name="email"]'</msg>
+<status status="PASS" endtime="20170521 17:33:08.303" starttime="20170521 17:33:07.931"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="password"][name="password"]</arg>
+<arg>${user.password}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:08.314" level="INFO">Typing text 'Aaaaaa' into text field 'css=input[type="password"][name="password"]'</msg>
+<status status="PASS" endtime="20170521 17:33:08.492" starttime="20170521 17:33:08.304"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="password"][name="rePassword"]</arg>
+<arg>${user.passwordRepeat}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:08.495" level="INFO">Typing text 'Aaaaaa' into text field 'css=input[type="password"][name="rePassword"]'</msg>
+<status status="PASS" endtime="20170521 17:33:08.598" starttime="20170521 17:33:08.493"></status>
+</kw>
+<kw name="Confirm standard form" library="Common">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=input[name="_submit"][class~="button"]</arg>
+</arguments>
+<msg timestamp="20170521 17:33:08.604" level="INFO">Clicking element 'css=input[name="_submit"][class~="button"]'.</msg>
+<status status="PASS" endtime="20170521 17:33:09.605" starttime="20170521 17:33:08.602"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:09.620" starttime="20170521 17:33:08.599"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:09.623" starttime="20170521 17:33:07.608"></status>
+</kw>
+<kw name="Then error is displayed on form with id &quot;${RegisterFormId}&quot;" library="Common">
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>css=form[id="${formId}"] .error</arg>
+</arguments>
+<msg timestamp="20170521 17:33:09.659" level="INFO">Current page contains element 'css=form[id="frm-registrationForm"] .error'.</msg>
+<status status="PASS" endtime="20170521 17:33:09.660" starttime="20170521 17:33:09.629"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:09.661" starttime="20170521 17:33:09.627"></status>
+</kw>
+<kw type="teardown" name="Register user test teardown">
+<kw name="logout user" library="Common">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BaseUrl}${Urls.logout}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:09.681" level="INFO">Opening url 'http://easyminer-frontend/easyminercenter/em/user/logout'</msg>
+<status status="PASS" endtime="20170521 17:33:10.860" starttime="20170521 17:33:09.676"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:10.864" starttime="20170521 17:33:09.674"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:10.868" starttime="20170521 17:33:09.667"></status>
+</kw>
+<tags>
+<tag>User administration</tag>
+</tags>
+<status status="PASS" endtime="20170521 17:33:10.869" critical="yes" starttime="20170521 17:33:01.357"></status>
+</test>
+<kw type="teardown" name="Close All Browsers" library="Selenium2Library">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20170521 17:33:10.983" starttime="20170521 17:33:10.878"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:10.983" starttime="20170521 17:32:27.881"></status>
+</suite>
+<suite source="/Tests/1.2-LoginUser.robot" id="s1-s2" name="1.2-LoginUser">
+<kw type="setup" name="Login user suite setup">
+<kw name="Delete all users" library="Common">
+<kw name="Run Process" library="Process">
+<doc>Runs a process and waits for it to complete.</doc>
+<arguments>
+<arg>/Tests/Resources/delete-all-users.sh</arg>
+<arg>stdout=${TEMPDIR}/stdout.txt</arg>
+<arg>stderr=${TEMPDIR}/stderr.txt</arg>
+<arg>timeout=10s</arg>
+<arg>shell=True</arg>
+</arguments>
+<assign>
+<var>${result}</var>
+</assign>
+<msg timestamp="20170521 17:33:11.130" level="INFO">Starting process:
+/Tests/Resources/delete-all-users.sh</msg>
+<msg timestamp="20170521 17:33:11.144" level="INFO">Waiting for process to complete.</msg>
+<msg timestamp="20170521 17:33:11.246" level="INFO">Process completed.</msg>
+<msg timestamp="20170521 17:33:11.250" level="INFO">${result} = &lt;result object with rc 0&gt;</msg>
+<status status="PASS" endtime="20170521 17:33:11.252" starttime="20170521 17:33:11.128"></status>
+</kw>
+<kw name="Log Many" library="BuiltIn">
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
+<arguments>
+<arg>stdout: ${result.stdout}</arg>
+<arg>stderr: ${result.stderr}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:11.260" level="INFO">stdout: </msg>
+<msg timestamp="20170521 17:33:11.273" level="INFO">stderr: </msg>
+<status status="PASS" endtime="20170521 17:33:11.276" starttime="20170521 17:33:11.255"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:11.281" starttime="20170521 17:33:11.123"></status>
+</kw>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${BaseUrl}${Urls.home}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:11.295" level="INFO">Opening browser 'ff' to base url 'http://easyminer-frontend/easyminercenter/'</msg>
+<status status="PASS" endtime="20170521 17:33:15.773" starttime="20170521 17:33:11.285"></status>
+</kw>
+<kw name="Sign up user &quot;${ValidUser1}&quot;" library="Common">
+<kw name="sign up page is opened" library="Common">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BaseUrl}${Urls.register}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:15.791" level="INFO">Opening url 'http://easyminer-frontend/easyminercenter/em/user/register'</msg>
+<status status="PASS" endtime="20170521 17:33:16.368" starttime="20170521 17:33:15.785"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:16.369" starttime="20170521 17:33:15.783"></status>
+</kw>
+<kw name="register user as &quot;${user}&quot;" library="Common">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="text"][name="name"]</arg>
+<arg>${user.name}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:16.377" level="INFO">Typing text 'Valid UserOne' into text field 'css=input[type="text"][name="name"]'</msg>
+<status status="PASS" endtime="20170521 17:33:16.616" starttime="20170521 17:33:16.372"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="text"][name="email"]</arg>
+<arg>${user.email}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:16.619" level="INFO">Typing text 'valid.user1@gmail.com' into text field 'css=input[type="text"][name="email"]'</msg>
+<status status="PASS" endtime="20170521 17:33:16.769" starttime="20170521 17:33:16.617"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="password"][name="password"]</arg>
+<arg>${user.password}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:16.772" level="INFO">Typing text 'Aaaaaa' into text field 'css=input[type="password"][name="password"]'</msg>
+<status status="PASS" endtime="20170521 17:33:16.874" starttime="20170521 17:33:16.770"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="password"][name="rePassword"]</arg>
+<arg>${user.passwordRepeat}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:16.876" level="INFO">Typing text 'Aaaaaa' into text field 'css=input[type="password"][name="rePassword"]'</msg>
+<status status="PASS" endtime="20170521 17:33:16.973" starttime="20170521 17:33:16.875"></status>
+</kw>
+<kw name="Confirm standard form" library="Common">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=input[name="_submit"][class~="button"]</arg>
+</arguments>
+<msg timestamp="20170521 17:33:16.976" level="INFO">Clicking element 'css=input[name="_submit"][class~="button"]'.</msg>
+<status status="PASS" endtime="20170521 17:33:20.257" starttime="20170521 17:33:16.975"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:20.259" starttime="20170521 17:33:16.973"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:20.260" starttime="20170521 17:33:16.370"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:20.265" starttime="20170521 17:33:15.776"></status>
+</kw>
+<kw name="logout user" library="Common">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BaseUrl}${Urls.logout}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:20.271" level="INFO">Opening url 'http://easyminer-frontend/easyminercenter/em/user/logout'</msg>
+<status status="PASS" endtime="20170521 17:33:20.835" starttime="20170521 17:33:20.268"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:20.837" starttime="20170521 17:33:20.266"></status>
+</kw>
+<kw name="Sign up user &quot;${ValidUser2}&quot;" library="Common">
+<kw name="sign up page is opened" library="Common">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BaseUrl}${Urls.register}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:20.856" level="INFO">Opening url 'http://easyminer-frontend/easyminercenter/em/user/register'</msg>
+<status status="PASS" endtime="20170521 17:33:21.353" starttime="20170521 17:33:20.853"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:21.354" starttime="20170521 17:33:20.848"></status>
+</kw>
+<kw name="register user as &quot;${user}&quot;" library="Common">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="text"][name="name"]</arg>
+<arg>${user.name}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:21.360" level="INFO">Typing text 'Valid UserTwo' into text field 'css=input[type="text"][name="name"]'</msg>
+<status status="PASS" endtime="20170521 17:33:21.472" starttime="20170521 17:33:21.356"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="text"][name="email"]</arg>
+<arg>${user.email}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:21.474" level="INFO">Typing text 'valid.user2@gmail.com' into text field 'css=input[type="text"][name="email"]'</msg>
+<status status="PASS" endtime="20170521 17:33:21.602" starttime="20170521 17:33:21.473"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="password"][name="password"]</arg>
+<arg>${user.password}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:21.605" level="INFO">Typing text 'Bbbbbbb' into text field 'css=input[type="password"][name="password"]'</msg>
+<status status="PASS" endtime="20170521 17:33:21.704" starttime="20170521 17:33:21.603"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="password"][name="rePassword"]</arg>
+<arg>${user.passwordRepeat}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:21.707" level="INFO">Typing text 'Bbbbbbb' into text field 'css=input[type="password"][name="rePassword"]'</msg>
+<status status="PASS" endtime="20170521 17:33:21.814" starttime="20170521 17:33:21.705"></status>
+</kw>
+<kw name="Confirm standard form" library="Common">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=input[name="_submit"][class~="button"]</arg>
+</arguments>
+<msg timestamp="20170521 17:33:21.817" level="INFO">Clicking element 'css=input[name="_submit"][class~="button"]'.</msg>
+<status status="PASS" endtime="20170521 17:33:25.000" starttime="20170521 17:33:21.816"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:25.002" starttime="20170521 17:33:21.815"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:25.003" starttime="20170521 17:33:21.354"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:25.004" starttime="20170521 17:33:20.842"></status>
+</kw>
+<kw name="logout user" library="Common">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BaseUrl}${Urls.logout}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:25.010" level="INFO">Opening url 'http://easyminer-frontend/easyminercenter/em/user/logout'</msg>
+<status status="PASS" endtime="20170521 17:33:25.576" starttime="20170521 17:33:25.008"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:25.577" starttime="20170521 17:33:25.007"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:25.578" starttime="20170521 17:33:11.114"></status>
+</kw>
+<test id="s1-s2-t1" name="[1.2.1] Login as valid user 1">
+<kw name="Given login page is opened">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BaseUrl}${Urls.login}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:25.590" level="INFO">Opening url 'http://easyminer-frontend/easyminercenter/em/user/login'</msg>
+<status status="PASS" endtime="20170521 17:33:26.078" starttime="20170521 17:33:25.588"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:26.080" starttime="20170521 17:33:25.586"></status>
+</kw>
+<kw name="When login user as &quot;${ValidUser1}&quot;">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="email"][name="email"]</arg>
+<arg>${user.email}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:26.102" level="INFO">Typing text 'valid.user1@gmail.com' into text field 'css=input[type="email"][name="email"]'</msg>
+<status status="PASS" endtime="20170521 17:33:26.409" starttime="20170521 17:33:26.097"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="password"][name="password"]</arg>
+<arg>${user.password}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:26.412" level="INFO">Typing text 'Aaaaaa' into text field 'css=input[type="password"][name="password"]'</msg>
+<status status="PASS" endtime="20170521 17:33:26.523" starttime="20170521 17:33:26.409"></status>
+</kw>
+<kw name="Confirm standard form" library="Common">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=input[name="_submit"][class~="button"]</arg>
+</arguments>
+<msg timestamp="20170521 17:33:26.528" level="INFO">Clicking element 'css=input[name="_submit"][class~="button"]'.</msg>
+<status status="PASS" endtime="20170521 17:33:27.829" starttime="20170521 17:33:26.526"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:27.831" starttime="20170521 17:33:26.524"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:27.839" starttime="20170521 17:33:26.084"></status>
+</kw>
+<kw name="Then user is logged in as &quot;${ValidUser1}&quot;">
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>css=#headerUserLink &gt; span.name</arg>
+<arg>with text</arg>
+<arg>${user.name}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:27.881" level="INFO">Current page contains element 'css=#headerUserLink &gt; span.name'.</msg>
+<status status="PASS" endtime="20170521 17:33:27.882" starttime="20170521 17:33:27.849"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:27.883" starttime="20170521 17:33:27.845"></status>
+</kw>
+<kw type="teardown" name="Login user test teardown">
+<kw name="logout user" library="Common">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BaseUrl}${Urls.logout}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:27.893" level="INFO">Opening url 'http://easyminer-frontend/easyminercenter/em/user/logout'</msg>
+<status status="PASS" endtime="20170521 17:33:28.727" starttime="20170521 17:33:27.891"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:28.733" starttime="20170521 17:33:27.888"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:28.735" starttime="20170521 17:33:27.885"></status>
+</kw>
+<tags>
+<tag>User Administration</tag>
+</tags>
+<status status="PASS" endtime="20170521 17:33:28.736" critical="yes" starttime="20170521 17:33:25.579"></status>
+</test>
+<test id="s1-s2-t2" name="[1.2.2] Login as valid user 2">
+<kw name="Given login page is opened">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BaseUrl}${Urls.login}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:28.755" level="INFO">Opening url 'http://easyminer-frontend/easyminercenter/em/user/login'</msg>
+<status status="PASS" endtime="20170521 17:33:29.426" starttime="20170521 17:33:28.750"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:29.427" starttime="20170521 17:33:28.746"></status>
+</kw>
+<kw name="When login user as &quot;${ValidUser2}&quot;">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="email"][name="email"]</arg>
+<arg>${user.email}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:29.439" level="INFO">Typing text 'valid.user2@gmail.com' into text field 'css=input[type="email"][name="email"]'</msg>
+<status status="PASS" endtime="20170521 17:33:29.791" starttime="20170521 17:33:29.437"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="password"][name="password"]</arg>
+<arg>${user.password}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:29.793" level="INFO">Typing text 'Bbbbbbb' into text field 'css=input[type="password"][name="password"]'</msg>
+<status status="PASS" endtime="20170521 17:33:29.922" starttime="20170521 17:33:29.792"></status>
+</kw>
+<kw name="Confirm standard form" library="Common">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=input[name="_submit"][class~="button"]</arg>
+</arguments>
+<msg timestamp="20170521 17:33:29.928" level="INFO">Clicking element 'css=input[name="_submit"][class~="button"]'.</msg>
+<status status="PASS" endtime="20170521 17:33:31.071" starttime="20170521 17:33:29.924"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:31.072" starttime="20170521 17:33:29.923"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:31.073" starttime="20170521 17:33:29.428"></status>
+</kw>
+<kw name="Then user is logged in as &quot;${ValidUser2}&quot;">
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>css=#headerUserLink &gt; span.name</arg>
+<arg>with text</arg>
+<arg>${user.name}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:31.097" level="INFO">Current page contains element 'css=#headerUserLink &gt; span.name'.</msg>
+<status status="PASS" endtime="20170521 17:33:31.098" starttime="20170521 17:33:31.079"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:31.099" starttime="20170521 17:33:31.074"></status>
+</kw>
+<kw type="teardown" name="Login user test teardown">
+<kw name="logout user" library="Common">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BaseUrl}${Urls.logout}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:31.107" level="INFO">Opening url 'http://easyminer-frontend/easyminercenter/em/user/logout'</msg>
+<status status="PASS" endtime="20170521 17:33:31.877" starttime="20170521 17:33:31.105"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:31.879" starttime="20170521 17:33:31.104"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:31.885" starttime="20170521 17:33:31.101"></status>
+</kw>
+<tags>
+<tag>User Administration</tag>
+</tags>
+<status status="PASS" endtime="20170521 17:33:31.887" critical="yes" starttime="20170521 17:33:28.739"></status>
+</test>
+<test id="s1-s2-t3" name="[1.2.3] Login as unregistered user">
+<kw name="Given login page is opened">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BaseUrl}${Urls.login}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:31.903" level="INFO">Opening url 'http://easyminer-frontend/easyminercenter/em/user/login'</msg>
+<status status="PASS" endtime="20170521 17:33:32.618" starttime="20170521 17:33:31.900"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:32.622" starttime="20170521 17:33:31.896"></status>
+</kw>
+<kw name="When login user as &quot;${UnRegisteredUser}&quot;">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="email"][name="email"]</arg>
+<arg>${user.email}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:32.636" level="INFO">Typing text 'abcdefgh@seznam.cz' into text field 'css=input[type="email"][name="email"]'</msg>
+<status status="PASS" endtime="20170521 17:33:32.893" starttime="20170521 17:33:32.630"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="password"][name="password"]</arg>
+<arg>${user.password}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:32.902" level="INFO">Typing text 'aaaaaaaa' into text field 'css=input[type="password"][name="password"]'</msg>
+<status status="PASS" endtime="20170521 17:33:33.039" starttime="20170521 17:33:32.899"></status>
+</kw>
+<kw name="Confirm standard form" library="Common">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=input[name="_submit"][class~="button"]</arg>
+</arguments>
+<msg timestamp="20170521 17:33:33.047" level="INFO">Clicking element 'css=input[name="_submit"][class~="button"]'.</msg>
+<status status="PASS" endtime="20170521 17:33:33.933" starttime="20170521 17:33:33.044"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:33.935" starttime="20170521 17:33:33.041"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:33.936" starttime="20170521 17:33:32.627"></status>
+</kw>
+<kw name="Then error is displayed on form with id &quot;${LoginFormId}&quot;" library="Common">
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>css=form[id="${formId}"] .error</arg>
+</arguments>
+<msg timestamp="20170521 17:33:33.966" level="INFO">Current page contains element 'css=form[id="frm-loginForm"] .error'.</msg>
+<status status="PASS" endtime="20170521 17:33:33.967" starttime="20170521 17:33:33.944"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:33.968" starttime="20170521 17:33:33.940"></status>
+</kw>
+<kw type="teardown" name="Login user test teardown">
+<kw name="logout user" library="Common">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BaseUrl}${Urls.logout}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:33.975" level="INFO">Opening url 'http://easyminer-frontend/easyminercenter/em/user/logout'</msg>
+<status status="PASS" endtime="20170521 17:33:35.338" starttime="20170521 17:33:33.973"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:35.340" starttime="20170521 17:33:33.970"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:35.341" starttime="20170521 17:33:33.968"></status>
+</kw>
+<tags>
+<tag>User Administration</tag>
+</tags>
+<status status="PASS" endtime="20170521 17:33:35.345" critical="yes" starttime="20170521 17:33:31.892"></status>
+</test>
+<test id="s1-s2-t4" name="[1.2.4] Login with empty username and filled password">
+<kw name="Given login page is opened">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BaseUrl}${Urls.login}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:35.359" level="INFO">Opening url 'http://easyminer-frontend/easyminercenter/em/user/login'</msg>
+<status status="PASS" endtime="20170521 17:33:36.660" starttime="20170521 17:33:35.355"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:36.669" starttime="20170521 17:33:35.352"></status>
+</kw>
+<kw name="When login user as &quot;${UserWithEmptyUsername}&quot;">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="email"][name="email"]</arg>
+<arg>${user.email}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:36.685" level="INFO">Typing text '' into text field 'css=input[type="email"][name="email"]'</msg>
+<status status="PASS" endtime="20170521 17:33:36.905" starttime="20170521 17:33:36.681"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="password"][name="password"]</arg>
+<arg>${user.password}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:36.909" level="INFO">Typing text 'Bbbbbbb' into text field 'css=input[type="password"][name="password"]'</msg>
+<status status="PASS" endtime="20170521 17:33:37.243" starttime="20170521 17:33:36.906"></status>
+</kw>
+<kw name="Confirm standard form" library="Common">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=input[name="_submit"][class~="button"]</arg>
+</arguments>
+<msg timestamp="20170521 17:33:37.258" level="INFO">Clicking element 'css=input[name="_submit"][class~="button"]'.</msg>
+<status status="PASS" endtime="20170521 17:33:37.458" starttime="20170521 17:33:37.251"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:37.459" starttime="20170521 17:33:37.247"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:37.460" starttime="20170521 17:33:36.675"></status>
+</kw>
+<kw name="Then error is displayed on field &quot;email&quot; in form &quot;${LoginFormId}&quot;" library="Common">
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>css=input[id="${formId}-${fieldName}"][class~="has-error"]</arg>
+</arguments>
+<msg timestamp="20170521 17:33:37.487" level="INFO">Current page contains element 'css=input[id="frm-loginForm-email"][class~="has-error"]'.</msg>
+<status status="PASS" endtime="20170521 17:33:37.488" starttime="20170521 17:33:37.465"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>css=span[id="${formId}-${fieldName}_message"][class~="error-message"]</arg>
+</arguments>
+<msg timestamp="20170521 17:33:37.514" level="INFO">Current page contains element 'css=span[id="frm-loginForm-email_message"][class~="error-message"]'.</msg>
+<status status="PASS" endtime="20170521 17:33:37.515" starttime="20170521 17:33:37.489"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:37.516" starttime="20170521 17:33:37.462"></status>
+</kw>
+<kw type="teardown" name="Login user test teardown">
+<kw name="logout user" library="Common">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BaseUrl}${Urls.logout}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:37.525" level="INFO">Opening url 'http://easyminer-frontend/easyminercenter/em/user/logout'</msg>
+<status status="PASS" endtime="20170521 17:33:38.277" starttime="20170521 17:33:37.523"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:38.279" starttime="20170521 17:33:37.520"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:38.280" starttime="20170521 17:33:37.519"></status>
+</kw>
+<tags>
+<tag>User Administration</tag>
+</tags>
+<status status="PASS" endtime="20170521 17:33:38.280" critical="yes" starttime="20170521 17:33:35.348"></status>
+</test>
+<test id="s1-s2-t5" name="[1.2.5] Login with valid username and empty password">
+<kw name="Given login page is opened">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BaseUrl}${Urls.login}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:38.297" level="INFO">Opening url 'http://easyminer-frontend/easyminercenter/em/user/login'</msg>
+<status status="PASS" endtime="20170521 17:33:38.782" starttime="20170521 17:33:38.296"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:38.783" starttime="20170521 17:33:38.290"></status>
+</kw>
+<kw name="When login user as &quot;${UserWithEmptyPassword}&quot;">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="email"][name="email"]</arg>
+<arg>${user.email}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:38.790" level="INFO">Typing text 'valid.user1@gmail.com' into text field 'css=input[type="email"][name="email"]'</msg>
+<status status="PASS" endtime="20170521 17:33:38.957" starttime="20170521 17:33:38.788"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="password"][name="password"]</arg>
+<arg>${user.password}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:38.962" level="INFO">Typing text '' into text field 'css=input[type="password"][name="password"]'</msg>
+<status status="PASS" endtime="20170521 17:33:39.037" starttime="20170521 17:33:38.958"></status>
+</kw>
+<kw name="Confirm standard form" library="Common">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=input[name="_submit"][class~="button"]</arg>
+</arguments>
+<msg timestamp="20170521 17:33:39.043" level="INFO">Clicking element 'css=input[name="_submit"][class~="button"]'.</msg>
+<status status="PASS" endtime="20170521 17:33:39.156" starttime="20170521 17:33:39.040"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:39.158" starttime="20170521 17:33:39.038"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:39.159" starttime="20170521 17:33:38.784"></status>
+</kw>
+<kw name="Then error is displayed on field &quot;password&quot; in form &quot;${LoginFormId}&quot;" library="Common">
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>css=input[id="${formId}-${fieldName}"][class~="has-error"]</arg>
+</arguments>
+<msg timestamp="20170521 17:33:39.178" level="INFO">Current page contains element 'css=input[id="frm-loginForm-password"][class~="has-error"]'.</msg>
+<status status="PASS" endtime="20170521 17:33:39.179" starttime="20170521 17:33:39.165"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>css=span[id="${formId}-${fieldName}_message"][class~="error-message"]</arg>
+</arguments>
+<msg timestamp="20170521 17:33:39.196" level="INFO">Current page contains element 'css=span[id="frm-loginForm-password_message"][class~="error-message"]'.</msg>
+<status status="PASS" endtime="20170521 17:33:39.197" starttime="20170521 17:33:39.180"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:39.198" starttime="20170521 17:33:39.160"></status>
+</kw>
+<kw type="teardown" name="Login user test teardown">
+<kw name="logout user" library="Common">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BaseUrl}${Urls.logout}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:39.204" level="INFO">Opening url 'http://easyminer-frontend/easyminercenter/em/user/logout'</msg>
+<status status="PASS" endtime="20170521 17:33:39.830" starttime="20170521 17:33:39.202"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:39.832" starttime="20170521 17:33:39.200"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:39.832" starttime="20170521 17:33:39.199"></status>
+</kw>
+<tags>
+<tag>User Administration</tag>
+</tags>
+<status status="PASS" endtime="20170521 17:33:39.833" critical="yes" starttime="20170521 17:33:38.286"></status>
+</test>
+<test id="s1-s2-t6" name="[1.2.6] Login with unmatching username and password">
+<kw name="Given login page is opened">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BaseUrl}${Urls.login}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:39.847" level="INFO">Opening url 'http://easyminer-frontend/easyminercenter/em/user/login'</msg>
+<status status="PASS" endtime="20170521 17:33:40.342" starttime="20170521 17:33:39.843"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:40.344" starttime="20170521 17:33:39.841"></status>
+</kw>
+<kw name="When login user as &quot;${UserWithCredentialMissmatch}&quot;">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="email"][name="email"]</arg>
+<arg>${user.email}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:40.353" level="INFO">Typing text 'valid.user1@gmail.com' into text field 'css=input[type="email"][name="email"]'</msg>
+<status status="PASS" endtime="20170521 17:33:40.513" starttime="20170521 17:33:40.350"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="password"][name="password"]</arg>
+<arg>${user.password}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:40.515" level="INFO">Typing text 'Bbbbbbb' into text field 'css=input[type="password"][name="password"]'</msg>
+<status status="PASS" endtime="20170521 17:33:40.625" starttime="20170521 17:33:40.513"></status>
+</kw>
+<kw name="Confirm standard form" library="Common">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=input[name="_submit"][class~="button"]</arg>
+</arguments>
+<msg timestamp="20170521 17:33:40.629" level="INFO">Clicking element 'css=input[name="_submit"][class~="button"]'.</msg>
+<status status="PASS" endtime="20170521 17:33:41.636" starttime="20170521 17:33:40.628"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:41.638" starttime="20170521 17:33:40.625"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:41.645" starttime="20170521 17:33:40.349"></status>
+</kw>
+<kw name="Then error is displayed on form with id &quot;${LoginFormId}&quot;" library="Common">
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>css=form[id="${formId}"] .error</arg>
+</arguments>
+<msg timestamp="20170521 17:33:41.681" level="INFO">Current page contains element 'css=form[id="frm-loginForm"] .error'.</msg>
+<status status="PASS" endtime="20170521 17:33:41.682" starttime="20170521 17:33:41.650"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:41.683" starttime="20170521 17:33:41.648"></status>
+</kw>
+<kw type="teardown" name="Login user test teardown">
+<kw name="logout user" library="Common">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BaseUrl}${Urls.logout}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:41.694" level="INFO">Opening url 'http://easyminer-frontend/easyminercenter/em/user/logout'</msg>
+<status status="PASS" endtime="20170521 17:33:43.042" starttime="20170521 17:33:41.691"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:43.046" starttime="20170521 17:33:41.688"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:43.050" starttime="20170521 17:33:41.685"></status>
+</kw>
+<tags>
+<tag>User Administration</tag>
+</tags>
+<status status="PASS" endtime="20170521 17:33:43.052" critical="yes" starttime="20170521 17:33:39.838"></status>
+</test>
+<kw type="teardown" name="Close All Browsers" library="Selenium2Library">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20170521 17:33:43.137" starttime="20170521 17:33:43.066"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:43.141" starttime="20170521 17:33:11.005"></status>
+</suite>
+<suite source="/Tests/2.1-DatasetUpload.robot" id="s1-s3" name="2.1-DatasetUpload">
+<kw type="setup" name="Dataset upload suite setup">
+<kw name="Delete all users" library="Common">
+<kw name="Run Process" library="Process">
+<doc>Runs a process and waits for it to complete.</doc>
+<arguments>
+<arg>/Tests/Resources/delete-all-users.sh</arg>
+<arg>stdout=${TEMPDIR}/stdout.txt</arg>
+<arg>stderr=${TEMPDIR}/stderr.txt</arg>
+<arg>timeout=10s</arg>
+<arg>shell=True</arg>
+</arguments>
+<assign>
+<var>${result}</var>
+</assign>
+<msg timestamp="20170521 17:33:43.248" level="INFO">Starting process:
+/Tests/Resources/delete-all-users.sh</msg>
+<msg timestamp="20170521 17:33:43.256" level="INFO">Waiting for process to complete.</msg>
+<msg timestamp="20170521 17:33:43.359" level="INFO">Process completed.</msg>
+<msg timestamp="20170521 17:33:43.362" level="INFO">${result} = &lt;result object with rc 0&gt;</msg>
+<status status="PASS" endtime="20170521 17:33:43.362" starttime="20170521 17:33:43.245"></status>
+</kw>
+<kw name="Log Many" library="BuiltIn">
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
+<arguments>
+<arg>stdout: ${result.stdout}</arg>
+<arg>stderr: ${result.stderr}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:43.367" level="INFO">stdout: </msg>
+<msg timestamp="20170521 17:33:43.368" level="INFO">stderr: </msg>
+<status status="PASS" endtime="20170521 17:33:43.369" starttime="20170521 17:33:43.364"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:43.371" starttime="20170521 17:33:43.243"></status>
+</kw>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${BaseUrl}${Urls.home}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:43.376" level="INFO">Opening browser 'ff' to base url 'http://easyminer-frontend/easyminercenter/'</msg>
+<status status="PASS" endtime="20170521 17:33:49.270" starttime="20170521 17:33:43.372"></status>
+</kw>
+<kw name="Sign up user &quot;${ValidUser1}&quot;" library="Common">
+<kw name="sign up page is opened" library="Common">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BaseUrl}${Urls.register}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:49.287" level="INFO">Opening url 'http://easyminer-frontend/easyminercenter/em/user/register'</msg>
+<status status="PASS" endtime="20170521 17:33:50.114" starttime="20170521 17:33:49.284"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:50.115" starttime="20170521 17:33:49.279"></status>
+</kw>
+<kw name="register user as &quot;${user}&quot;" library="Common">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="text"][name="name"]</arg>
+<arg>${user.name}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:50.126" level="INFO">Typing text 'Valid UserOne' into text field 'css=input[type="text"][name="name"]'</msg>
+<status status="PASS" endtime="20170521 17:33:50.492" starttime="20170521 17:33:50.118"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="text"][name="email"]</arg>
+<arg>${user.email}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:50.495" level="INFO">Typing text 'valid.user1@gmail.com' into text field 'css=input[type="text"][name="email"]'</msg>
+<status status="PASS" endtime="20170521 17:33:50.828" starttime="20170521 17:33:50.493"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="password"][name="password"]</arg>
+<arg>${user.password}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:50.839" level="INFO">Typing text 'Aaaaaa' into text field 'css=input[type="password"][name="password"]'</msg>
+<status status="PASS" endtime="20170521 17:33:51.018" starttime="20170521 17:33:50.831"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[type="password"][name="rePassword"]</arg>
+<arg>${user.passwordRepeat}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:51.020" level="INFO">Typing text 'Aaaaaa' into text field 'css=input[type="password"][name="rePassword"]'</msg>
+<status status="PASS" endtime="20170521 17:33:51.207" starttime="20170521 17:33:51.018"></status>
+</kw>
+<kw name="Confirm standard form" library="Common">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=input[name="_submit"][class~="button"]</arg>
+</arguments>
+<msg timestamp="20170521 17:33:51.216" level="INFO">Clicking element 'css=input[name="_submit"][class~="button"]'.</msg>
+<status status="PASS" endtime="20170521 17:33:56.167" starttime="20170521 17:33:51.214"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:56.169" starttime="20170521 17:33:51.209"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:56.173" starttime="20170521 17:33:50.117"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:56.178" starttime="20170521 17:33:49.273"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:56.179" starttime="20170521 17:33:43.234"></status>
+</kw>
+<test id="s1-s3-t1" name="[2.1.1] Upload csv dataset - comma separated">
+<kw name="Given dataset upload page is opened">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BaseUrl}${Urls.upload}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:56.188" level="INFO">Opening url 'http://easyminer-frontend/easyminercenter/em/data/upload'</msg>
+<status status="PASS" endtime="20170521 17:33:57.473" starttime="20170521 17:33:56.185"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:57.475" starttime="20170521 17:33:56.183"></status>
+</kw>
+<kw name="When dataset &quot;titanic-comma.csv&quot; is uploaded">
+<kw name="Choose File" library="Selenium2Library">
+<doc>Inputs the `file_path` into file input field found by `locator`.</doc>
+<arguments>
+<arg>css=#${UploadFileFormId}-file</arg>
+<arg>/Tests/Resources/DatasetFiles/${datasetName}</arg>
+</arguments>
+<status status="PASS" endtime="20170521 17:33:57.572" starttime="20170521 17:33:57.483"></status>
+</kw>
+<kw name="Confirm standard form" library="Common">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=input[name="_submit"][class~="button"]</arg>
+</arguments>
+<msg timestamp="20170521 17:33:57.588" level="INFO">Clicking element 'css=input[name="_submit"][class~="button"]'.</msg>
+<status status="PASS" endtime="20170521 17:33:58.019" starttime="20170521 17:33:57.585"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:58.027" starttime="20170521 17:33:57.576"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:58.029" starttime="20170521 17:33:57.479"></status>
+</kw>
+<kw name="And separator &quot;,&quot; is selected">
+<kw name="Select From List By Value" library="Selenium2Library">
+<doc>Selects `*values` from list identified by `locator`</doc>
+<arguments>
+<arg>css=#${UploadFileConfigFormId}-separator</arg>
+<arg>${separator}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:58.054" level="INFO">Selecting value(s) ',' from list 'css=#frm-uploadConfigForm-separator'.</msg>
+<status status="PASS" endtime="20170521 17:33:58.415" starttime="20170521 17:33:58.050"></status>
+</kw>
+<kw name="Focus" library="Selenium2Library">
+<doc>Sets focus to element identified by `locator`.</doc>
+<arguments>
+<arg>css=#${UploadFileConfigFormId}-name</arg>
+</arguments>
+<status status="PASS" endtime="20170521 17:33:58.562" starttime="20170521 17:33:58.426"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:58.570" starttime="20170521 17:33:58.030"></status>
+</kw>
+<kw name="Then dataset field count should be &quot;${TitanicDatasetFieldCount}&quot;">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>//*[@id="uploadConfigPreviewBlock"]/table/tbody/tr[1]/th[${datasetFieldCount}]</arg>
+</arguments>
+<status status="PASS" endtime="20170521 17:33:59.468" starttime="20170521 17:33:58.592"></status>
+</kw>
+<kw name="Xpath Should Match X Times" library="Selenium2Library">
+<doc>Verifies that the page contains the given number of elements located by the given `xpath`.</doc>
+<arguments>
+<arg>//*[@id="uploadConfigPreviewBlock"]/table/tbody/tr/th</arg>
+<arg>${datasetFieldCount}</arg>
+</arguments>
+<msg timestamp="20170521 17:33:59.530" level="INFO">Current page contains 7 elements matching '//*[@id="uploadConfigPreviewBlock"]/table/tbody/tr/th'.</msg>
+<status status="PASS" endtime="20170521 17:33:59.532" starttime="20170521 17:33:59.477"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:59.536" starttime="20170521 17:33:58.582"></status>
+</kw>
+<kw name="And dataset field headers should contain following fields">
+<arguments>
+<arg>@{TitanicDatasetFields}</arg>
+</arguments>
+<kw type="for" name="${field} IN [ @{datasetFields} ]">
+<kw type="foritem" name="${field} = Is_adult_male">
+<kw name="Table Header Should Contain" library="Selenium2Library">
+<doc>Verifies that the table header, i.e. any &lt;th&gt;...&lt;/th&gt; element, contains `expected`.</doc>
+<arguments>
+<arg>css=#uploadConfigPreviewBlock &gt; table</arg>
+<arg>${field}</arg>
+</arguments>
+<status status="PASS" endtime="20170521 17:33:59.619" starttime="20170521 17:33:59.547"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:59.620" starttime="20170521 17:33:59.545"></status>
+</kw>
+<kw type="foritem" name="${field} = Age">
+<kw name="Table Header Should Contain" library="Selenium2Library">
+<doc>Verifies that the table header, i.e. any &lt;th&gt;...&lt;/th&gt; element, contains `expected`.</doc>
+<arguments>
+<arg>css=#uploadConfigPreviewBlock &gt; table</arg>
+<arg>${field}</arg>
+</arguments>
+<status status="PASS" endtime="20170521 17:33:59.735" starttime="20170521 17:33:59.624"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:33:59.737" starttime="20170521 17:33:59.621"></status>
+</kw>
+<kw type="foritem" name="${field} = Class_Dept">
+<kw name="Table Header Should Contain" library="Selenium2Library">
+<doc>Verifies that the table header, i.e. any &lt;th&gt;...&lt;/th&gt; element, contains `expected`.</doc>
+<arguments>
+<arg>css=#uploadConfigPreviewBlock &gt; table</arg>
+<arg>${field}</arg>
+</arguments>
+<status status="PASS" endtime="20170521 17:34:00.009" starttime="20170521 17:33:59.745"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:34:00.010" starttime="20170521 17:33:59.743"></status>
+</kw>
+<kw type="foritem" name="${field} = Fare">
+<kw name="Table Header Should Contain" library="Selenium2Library">
+<doc>Verifies that the table header, i.e. any &lt;th&gt;...&lt;/th&gt; element, contains `expected`.</doc>
+<arguments>
+<arg>css=#uploadConfigPreviewBlock &gt; table</arg>
+<arg>${field}</arg>
+</arguments>
+<status status="PASS" endtime="20170521 17:34:00.240" starttime="20170521 17:34:00.019"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:34:00.240" starttime="20170521 17:34:00.014"></status>
+</kw>
+<kw type="foritem" name="${field} = Joined">
+<kw name="Table Header Should Contain" library="Selenium2Library">
+<doc>Verifies that the table header, i.e. any &lt;th&gt;...&lt;/th&gt; element, contains `expected`.</doc>
+<arguments>
+<arg>css=#uploadConfigPreviewBlock &gt; table</arg>
+<arg>${field}</arg>
+</arguments>
+<status status="PASS" endtime="20170521 17:34:00.368" starttime="20170521 17:34:00.242"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:34:00.368" starttime="20170521 17:34:00.241"></status>
+</kw>
+<kw type="foritem" name="${field} = Job">
+<kw name="Table Header Should Contain" library="Selenium2Library">
+<doc>Verifies that the table header, i.e. any &lt;th&gt;...&lt;/th&gt; element, contains `expected`.</doc>
+<arguments>
+<arg>css=#uploadConfigPreviewBlock &gt; table</arg>
+<arg>${field}</arg>
+</arguments>
+<status status="PASS" endtime="20170521 17:34:00.499" starttime="20170521 17:34:00.370"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:34:00.500" starttime="20170521 17:34:00.369"></status>
+</kw>
+<kw type="foritem" name="${field} = Survived">
+<kw name="Table Header Should Contain" library="Selenium2Library">
+<doc>Verifies that the table header, i.e. any &lt;th&gt;...&lt;/th&gt; element, contains `expected`.</doc>
+<arguments>
+<arg>css=#uploadConfigPreviewBlock &gt; table</arg>
+<arg>${field}</arg>
+</arguments>
+<status status="PASS" endtime="20170521 17:34:00.657" starttime="20170521 17:34:00.501"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:34:00.658" starttime="20170521 17:34:00.500"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:34:00.658" starttime="20170521 17:33:59.544"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:34:00.659" starttime="20170521 17:33:59.538"></status>
+</kw>
+<tags>
+<tag>Create new miner</tag>
+</tags>
+<status status="PASS" endtime="20170521 17:34:00.660" critical="yes" starttime="20170521 17:33:56.180"></status>
+</test>
+<test id="s1-s3-t2" name="[2.1.2] Upload csv dataset - semicolon separated">
+<kw name="Given dataset upload page is opened">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BaseUrl}${Urls.upload}</arg>
+</arguments>
+<msg timestamp="20170521 17:34:00.670" level="INFO">Opening url 'http://easyminer-frontend/easyminercenter/em/data/upload'</msg>
+<status status="PASS" endtime="20170521 17:34:01.132" starttime="20170521 17:34:00.668"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:34:01.133" starttime="20170521 17:34:00.666"></status>
+</kw>
+<kw name="When dataset &quot;titanic-semicolon.csv&quot; is uploaded">
+<kw name="Choose File" library="Selenium2Library">
+<doc>Inputs the `file_path` into file input field found by `locator`.</doc>
+<arguments>
+<arg>css=#${UploadFileFormId}-file</arg>
+<arg>/Tests/Resources/DatasetFiles/${datasetName}</arg>
+</arguments>
+<status status="PASS" endtime="20170521 17:34:01.185" starttime="20170521 17:34:01.135"></status>
+</kw>
+<kw name="Confirm standard form" library="Common">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=input[name="_submit"][class~="button"]</arg>
+</arguments>
+<msg timestamp="20170521 17:34:01.190" level="INFO">Clicking element 'css=input[name="_submit"][class~="button"]'.</msg>
+<status status="PASS" endtime="20170521 17:34:01.331" starttime="20170521 17:34:01.187"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:34:01.332" starttime="20170521 17:34:01.186"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:34:01.333" starttime="20170521 17:34:01.134"></status>
+</kw>
+<kw name="And separator &quot;;&quot; is selected">
+<kw name="Select From List By Value" library="Selenium2Library">
+<doc>Selects `*values` from list identified by `locator`</doc>
+<arguments>
+<arg>css=#${UploadFileConfigFormId}-separator</arg>
+<arg>${separator}</arg>
+</arguments>
+<msg timestamp="20170521 17:34:01.361" level="INFO">Selecting value(s) ';' from list 'css=#frm-uploadConfigForm-separator'.</msg>
+<status status="PASS" endtime="20170521 17:34:02.135" starttime="20170521 17:34:01.352"></status>
+</kw>
+<kw name="Focus" library="Selenium2Library">
+<doc>Sets focus to element identified by `locator`.</doc>
+<arguments>
+<arg>css=#${UploadFileConfigFormId}-name</arg>
+</arguments>
+<status status="PASS" endtime="20170521 17:34:02.178" starttime="20170521 17:34:02.136"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:34:02.179" starttime="20170521 17:34:01.338"></status>
+</kw>
+<kw name="Then dataset field count should be &quot;${TitanicDatasetFieldCount}&quot;">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>//*[@id="uploadConfigPreviewBlock"]/table/tbody/tr[1]/th[${datasetFieldCount}]</arg>
+</arguments>
+<status status="PASS" endtime="20170521 17:34:02.222" starttime="20170521 17:34:02.183"></status>
+</kw>
+<kw name="Xpath Should Match X Times" library="Selenium2Library">
+<doc>Verifies that the page contains the given number of elements located by the given `xpath`.</doc>
+<arguments>
+<arg>//*[@id="uploadConfigPreviewBlock"]/table/tbody/tr/th</arg>
+<arg>${datasetFieldCount}</arg>
+</arguments>
+<msg timestamp="20170521 17:34:02.256" level="INFO">Current page contains 7 elements matching '//*[@id="uploadConfigPreviewBlock"]/table/tbody/tr/th'.</msg>
+<status status="PASS" endtime="20170521 17:34:02.257" starttime="20170521 17:34:02.223"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:34:02.258" starttime="20170521 17:34:02.180"></status>
+</kw>
+<kw name="And dataset field headers should contain following fields">
+<arguments>
+<arg>@{TitanicDatasetFields}</arg>
+</arguments>
+<kw type="for" name="${field} IN [ @{datasetFields} ]">
+<kw type="foritem" name="${field} = Is_adult_male">
+<kw name="Table Header Should Contain" library="Selenium2Library">
+<doc>Verifies that the table header, i.e. any &lt;th&gt;...&lt;/th&gt; element, contains `expected`.</doc>
+<arguments>
+<arg>css=#uploadConfigPreviewBlock &gt; table</arg>
+<arg>${field}</arg>
+</arguments>
+<status status="PASS" endtime="20170521 17:34:02.298" starttime="20170521 17:34:02.263"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:34:02.299" starttime="20170521 17:34:02.262"></status>
+</kw>
+<kw type="foritem" name="${field} = Age">
+<kw name="Table Header Should Contain" library="Selenium2Library">
+<doc>Verifies that the table header, i.e. any &lt;th&gt;...&lt;/th&gt; element, contains `expected`.</doc>
+<arguments>
+<arg>css=#uploadConfigPreviewBlock &gt; table</arg>
+<arg>${field}</arg>
+</arguments>
+<status status="PASS" endtime="20170521 17:34:02.350" starttime="20170521 17:34:02.300"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:34:02.351" starttime="20170521 17:34:02.299"></status>
+</kw>
+<kw type="foritem" name="${field} = Class_Dept">
+<kw name="Table Header Should Contain" library="Selenium2Library">
+<doc>Verifies that the table header, i.e. any &lt;th&gt;...&lt;/th&gt; element, contains `expected`.</doc>
+<arguments>
+<arg>css=#uploadConfigPreviewBlock &gt; table</arg>
+<arg>${field}</arg>
+</arguments>
+<status status="PASS" endtime="20170521 17:34:02.425" starttime="20170521 17:34:02.353"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:34:02.426" starttime="20170521 17:34:02.352"></status>
+</kw>
+<kw type="foritem" name="${field} = Fare">
+<kw name="Table Header Should Contain" library="Selenium2Library">
+<doc>Verifies that the table header, i.e. any &lt;th&gt;...&lt;/th&gt; element, contains `expected`.</doc>
+<arguments>
+<arg>css=#uploadConfigPreviewBlock &gt; table</arg>
+<arg>${field}</arg>
+</arguments>
+<status status="PASS" endtime="20170521 17:34:02.515" starttime="20170521 17:34:02.427"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:34:02.515" starttime="20170521 17:34:02.426"></status>
+</kw>
+<kw type="foritem" name="${field} = Joined">
+<kw name="Table Header Should Contain" library="Selenium2Library">
+<doc>Verifies that the table header, i.e. any &lt;th&gt;...&lt;/th&gt; element, contains `expected`.</doc>
+<arguments>
+<arg>css=#uploadConfigPreviewBlock &gt; table</arg>
+<arg>${field}</arg>
+</arguments>
+<status status="PASS" endtime="20170521 17:34:02.631" starttime="20170521 17:34:02.516"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:34:02.632" starttime="20170521 17:34:02.516"></status>
+</kw>
+<kw type="foritem" name="${field} = Job">
+<kw name="Table Header Should Contain" library="Selenium2Library">
+<doc>Verifies that the table header, i.e. any &lt;th&gt;...&lt;/th&gt; element, contains `expected`.</doc>
+<arguments>
+<arg>css=#uploadConfigPreviewBlock &gt; table</arg>
+<arg>${field}</arg>
+</arguments>
+<status status="PASS" endtime="20170521 17:34:02.777" starttime="20170521 17:34:02.633"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:34:02.777" starttime="20170521 17:34:02.632"></status>
+</kw>
+<kw type="foritem" name="${field} = Survived">
+<kw name="Table Header Should Contain" library="Selenium2Library">
+<doc>Verifies that the table header, i.e. any &lt;th&gt;...&lt;/th&gt; element, contains `expected`.</doc>
+<arguments>
+<arg>css=#uploadConfigPreviewBlock &gt; table</arg>
+<arg>${field}</arg>
+</arguments>
+<status status="PASS" endtime="20170521 17:34:02.934" starttime="20170521 17:34:02.779"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:34:02.935" starttime="20170521 17:34:02.778"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:34:02.935" starttime="20170521 17:34:02.262"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:34:02.936" starttime="20170521 17:34:02.259"></status>
+</kw>
+<tags>
+<tag>Create new miner</tag>
+</tags>
+<status status="PASS" endtime="20170521 17:34:02.937" critical="yes" starttime="20170521 17:34:00.663"></status>
+</test>
+<test id="s1-s3-t3" name="[2.1.3] Upload csv dataset - vertical line separated">
+<kw name="Given dataset upload page is opened">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BaseUrl}${Urls.upload}</arg>
+</arguments>
+<msg timestamp="20170521 17:34:02.964" level="INFO">Opening url 'http://easyminer-frontend/easyminercenter/em/data/upload'</msg>
+<status status="PASS" endtime="20170521 17:34:03.668" starttime="20170521 17:34:02.946"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:34:03.669" starttime="20170521 17:34:02.944"></status>
+</kw>
+<kw name="When dataset &quot;titanic-verticalLine.csv&quot; is uploaded">
+<kw name="Choose File" library="Selenium2Library">
+<doc>Inputs the `file_path` into file input field found by `locator`.</doc>
+<arguments>
+<arg>css=#${UploadFileFormId}-file</arg>
+<arg>/Tests/Resources/DatasetFiles/${datasetName}</arg>
+</arguments>
+<status status="PASS" endtime="20170521 17:34:03.722" starttime="20170521 17:34:03.676"></status>
+</kw>
+<kw name="Confirm standard form" library="Common">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=input[name="_submit"][class~="button"]</arg>
+</arguments>
+<msg timestamp="20170521 17:34:03.725" level="INFO">Clicking element 'css=input[name="_submit"][class~="button"]'.</msg>
+<status status="PASS" endtime="20170521 17:34:03.854" starttime="20170521 17:34:03.724"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:34:03.855" starttime="20170521 17:34:03.723"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:34:03.856" starttime="20170521 17:34:03.670"></status>
+</kw>
+<kw name="And separator &quot;|&quot; is selected">
+<kw name="Select From List By Value" library="Selenium2Library">
+<doc>Selects `*values` from list identified by `locator`</doc>
+<arguments>
+<arg>css=#${UploadFileConfigFormId}-separator</arg>
+<arg>${separator}</arg>
+</arguments>
+<msg timestamp="20170521 17:34:03.860" level="INFO">Selecting value(s) '|' from list 'css=#frm-uploadConfigForm-separator'.</msg>
+<status status="PASS" endtime="20170521 17:34:04.795" starttime="20170521 17:34:03.859"></status>
+</kw>
+<kw name="Focus" library="Selenium2Library">
+<doc>Sets focus to element identified by `locator`.</doc>
+<arguments>
+<arg>css=#${UploadFileConfigFormId}-name</arg>
+</arguments>
+<status status="PASS" endtime="20170521 17:34:04.826" starttime="20170521 17:34:04.795"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:34:04.827" starttime="20170521 17:34:03.857"></status>
+</kw>
+<kw name="Then dataset field count should be &quot;${TitanicDatasetFieldCount}&quot;">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>//*[@id="uploadConfigPreviewBlock"]/table/tbody/tr[1]/th[${datasetFieldCount}]</arg>
+</arguments>
+<status status="PASS" endtime="20170521 17:34:04.867" starttime="20170521 17:34:04.829"></status>
+</kw>
+<kw name="Xpath Should Match X Times" library="Selenium2Library">
+<doc>Verifies that the page contains the given number of elements located by the given `xpath`.</doc>
+<arguments>
+<arg>//*[@id="uploadConfigPreviewBlock"]/table/tbody/tr/th</arg>
+<arg>${datasetFieldCount}</arg>
+</arguments>
+<msg timestamp="20170521 17:34:04.897" level="INFO">Current page contains 7 elements matching '//*[@id="uploadConfigPreviewBlock"]/table/tbody/tr/th'.</msg>
+<status status="PASS" endtime="20170521 17:34:04.898" starttime="20170521 17:34:04.868"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:34:04.899" starttime="20170521 17:34:04.828"></status>
+</kw>
+<kw name="And dataset field headers should contain following fields">
+<arguments>
+<arg>@{TitanicDatasetFields}</arg>
+</arguments>
+<kw type="for" name="${field} IN [ @{datasetFields} ]">
+<kw type="foritem" name="${field} = Is_adult_male">
+<kw name="Table Header Should Contain" library="Selenium2Library">
+<doc>Verifies that the table header, i.e. any &lt;th&gt;...&lt;/th&gt; element, contains `expected`.</doc>
+<arguments>
+<arg>css=#uploadConfigPreviewBlock &gt; table</arg>
+<arg>${field}</arg>
+</arguments>
+<status status="PASS" endtime="20170521 17:34:04.969" starttime="20170521 17:34:04.907"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:34:04.970" starttime="20170521 17:34:04.906"></status>
+</kw>
+<kw type="foritem" name="${field} = Age">
+<kw name="Table Header Should Contain" library="Selenium2Library">
+<doc>Verifies that the table header, i.e. any &lt;th&gt;...&lt;/th&gt; element, contains `expected`.</doc>
+<arguments>
+<arg>css=#uploadConfigPreviewBlock &gt; table</arg>
+<arg>${field}</arg>
+</arguments>
+<status status="PASS" endtime="20170521 17:34:05.071" starttime="20170521 17:34:04.972"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:34:05.077" starttime="20170521 17:34:04.971"></status>
+</kw>
+<kw type="foritem" name="${field} = Class_Dept">
+<kw name="Table Header Should Contain" library="Selenium2Library">
+<doc>Verifies that the table header, i.e. any &lt;th&gt;...&lt;/th&gt; element, contains `expected`.</doc>
+<arguments>
+<arg>css=#uploadConfigPreviewBlock &gt; table</arg>
+<arg>${field}</arg>
+</arguments>
+<status status="PASS" endtime="20170521 17:34:05.162" starttime="20170521 17:34:05.080"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:34:05.162" starttime="20170521 17:34:05.078"></status>
+</kw>
+<kw type="foritem" name="${field} = Fare">
+<kw name="Table Header Should Contain" library="Selenium2Library">
+<doc>Verifies that the table header, i.e. any &lt;th&gt;...&lt;/th&gt; element, contains `expected`.</doc>
+<arguments>
+<arg>css=#uploadConfigPreviewBlock &gt; table</arg>
+<arg>${field}</arg>
+</arguments>
+<status status="PASS" endtime="20170521 17:34:05.289" starttime="20170521 17:34:05.164"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:34:05.290" starttime="20170521 17:34:05.163"></status>
+</kw>
+<kw type="foritem" name="${field} = Joined">
+<kw name="Table Header Should Contain" library="Selenium2Library">
+<doc>Verifies that the table header, i.e. any &lt;th&gt;...&lt;/th&gt; element, contains `expected`.</doc>
+<arguments>
+<arg>css=#uploadConfigPreviewBlock &gt; table</arg>
+<arg>${field}</arg>
+</arguments>
+<status status="PASS" endtime="20170521 17:34:05.410" starttime="20170521 17:34:05.294"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:34:05.411" starttime="20170521 17:34:05.291"></status>
+</kw>
+<kw type="foritem" name="${field} = Job">
+<kw name="Table Header Should Contain" library="Selenium2Library">
+<doc>Verifies that the table header, i.e. any &lt;th&gt;...&lt;/th&gt; element, contains `expected`.</doc>
+<arguments>
+<arg>css=#uploadConfigPreviewBlock &gt; table</arg>
+<arg>${field}</arg>
+</arguments>
+<status status="PASS" endtime="20170521 17:34:05.530" starttime="20170521 17:34:05.412"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:34:05.531" starttime="20170521 17:34:05.412"></status>
+</kw>
+<kw type="foritem" name="${field} = Survived">
+<kw name="Table Header Should Contain" library="Selenium2Library">
+<doc>Verifies that the table header, i.e. any &lt;th&gt;...&lt;/th&gt; element, contains `expected`.</doc>
+<arguments>
+<arg>css=#uploadConfigPreviewBlock &gt; table</arg>
+<arg>${field}</arg>
+</arguments>
+<status status="PASS" endtime="20170521 17:34:05.682" starttime="20170521 17:34:05.532"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:34:05.683" starttime="20170521 17:34:05.532"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:34:05.683" starttime="20170521 17:34:04.905"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:34:05.684" starttime="20170521 17:34:04.900"></status>
+</kw>
+<tags>
+<tag>Create new miner</tag>
+</tags>
+<status status="PASS" endtime="20170521 17:34:05.685" critical="yes" starttime="20170521 17:34:02.940"></status>
+</test>
+<test id="s1-s3-t4" name="[2.1.5] Upload zip archive with csv dataset - comma separated">
+<kw name="Given dataset upload page is opened">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BaseUrl}${Urls.upload}</arg>
+</arguments>
+<msg timestamp="20170521 17:34:05.697" level="INFO">Opening url 'http://easyminer-frontend/easyminercenter/em/data/upload'</msg>
+<status status="PASS" endtime="20170521 17:34:06.457" starttime="20170521 17:34:05.695"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:34:06.458" starttime="20170521 17:34:05.692"></status>
+</kw>
+<kw name="When dataset &quot;titanic.zip&quot; is uploaded">
+<kw name="Choose File" library="Selenium2Library">
+<doc>Inputs the `file_path` into file input field found by `locator`.</doc>
+<arguments>
+<arg>css=#${UploadFileFormId}-file</arg>
+<arg>/Tests/Resources/DatasetFiles/${datasetName}</arg>
+</arguments>
+<status status="PASS" endtime="20170521 17:34:06.561" starttime="20170521 17:34:06.466"></status>
+</kw>
+<kw name="Confirm standard form" library="Common">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=input[name="_submit"][class~="button"]</arg>
+</arguments>
+<msg timestamp="20170521 17:34:06.564" level="INFO">Clicking element 'css=input[name="_submit"][class~="button"]'.</msg>
+<status status="PASS" endtime="20170521 17:34:06.763" starttime="20170521 17:34:06.563"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:34:06.764" starttime="20170521 17:34:06.562"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:34:06.772" starttime="20170521 17:34:06.461"></status>
+</kw>
+<kw name="And separator &quot;,&quot; is selected">
+<kw name="Select From List By Value" library="Selenium2Library">
+<doc>Selects `*values` from list identified by `locator`</doc>
+<arguments>
+<arg>css=#${UploadFileConfigFormId}-separator</arg>
+<arg>${separator}</arg>
+</arguments>
+<msg timestamp="20170521 17:34:06.779" level="INFO">Selecting value(s) ',' from list 'css=#frm-uploadConfigForm-separator'.</msg>
+<status status="PASS" endtime="20170521 17:34:07.161" starttime="20170521 17:34:06.778"></status>
+</kw>
+<kw name="Focus" library="Selenium2Library">
+<doc>Sets focus to element identified by `locator`.</doc>
+<arguments>
+<arg>css=#${UploadFileConfigFormId}-name</arg>
+</arguments>
+<status status="PASS" endtime="20170521 17:34:07.331" starttime="20170521 17:34:07.161"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:34:07.346" starttime="20170521 17:34:06.774"></status>
+</kw>
+<kw name="Then dataset field count should be &quot;${TitanicDatasetFieldCount}&quot;">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>//*[@id="uploadConfigPreviewBlock"]/table/tbody/tr[1]/th[${datasetFieldCount}]</arg>
+</arguments>
+<status status="PASS" endtime="20170521 17:34:09.201" starttime="20170521 17:34:07.559"></status>
+</kw>
+<kw name="Xpath Should Match X Times" library="Selenium2Library">
+<doc>Verifies that the page contains the given number of elements located by the given `xpath`.</doc>
+<arguments>
+<arg>//*[@id="uploadConfigPreviewBlock"]/table/tbody/tr/th</arg>
+<arg>${datasetFieldCount}</arg>
+</arguments>
+<msg timestamp="20170521 17:34:09.247" level="INFO">Current page contains 7 elements matching '//*[@id="uploadConfigPreviewBlock"]/table/tbody/tr/th'.</msg>
+<status status="PASS" endtime="20170521 17:34:09.248" starttime="20170521 17:34:09.202"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:34:09.249" starttime="20170521 17:34:07.351"></status>
+</kw>
+<kw name="And dataset field headers should contain following fields">
+<arguments>
+<arg>@{TitanicDatasetFields}</arg>
+</arguments>
+<kw type="for" name="${field} IN [ @{datasetFields} ]">
+<kw type="foritem" name="${field} = Is_adult_male">
+<kw name="Table Header Should Contain" library="Selenium2Library">
+<doc>Verifies that the table header, i.e. any &lt;th&gt;...&lt;/th&gt; element, contains `expected`.</doc>
+<arguments>
+<arg>css=#uploadConfigPreviewBlock &gt; table</arg>
+<arg>${field}</arg>
+</arguments>
+<status status="PASS" endtime="20170521 17:34:09.306" starttime="20170521 17:34:09.255"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:34:09.307" starttime="20170521 17:34:09.254"></status>
+</kw>
+<kw type="foritem" name="${field} = Age">
+<kw name="Table Header Should Contain" library="Selenium2Library">
+<doc>Verifies that the table header, i.e. any &lt;th&gt;...&lt;/th&gt; element, contains `expected`.</doc>
+<arguments>
+<arg>css=#uploadConfigPreviewBlock &gt; table</arg>
+<arg>${field}</arg>
+</arguments>
+<status status="PASS" endtime="20170521 17:34:09.395" starttime="20170521 17:34:09.309"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:34:09.396" starttime="20170521 17:34:09.307"></status>
+</kw>
+<kw type="foritem" name="${field} = Class_Dept">
+<kw name="Table Header Should Contain" library="Selenium2Library">
+<doc>Verifies that the table header, i.e. any &lt;th&gt;...&lt;/th&gt; element, contains `expected`.</doc>
+<arguments>
+<arg>css=#uploadConfigPreviewBlock &gt; table</arg>
+<arg>${field}</arg>
+</arguments>
+<status status="PASS" endtime="20170521 17:34:09.538" starttime="20170521 17:34:09.397"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:34:09.539" starttime="20170521 17:34:09.396"></status>
+</kw>
+<kw type="foritem" name="${field} = Fare">
+<kw name="Table Header Should Contain" library="Selenium2Library">
+<doc>Verifies that the table header, i.e. any &lt;th&gt;...&lt;/th&gt; element, contains `expected`.</doc>
+<arguments>
+<arg>css=#uploadConfigPreviewBlock &gt; table</arg>
+<arg>${field}</arg>
+</arguments>
+<status status="PASS" endtime="20170521 17:34:09.779" starttime="20170521 17:34:09.543"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:34:09.779" starttime="20170521 17:34:09.540"></status>
+</kw>
+<kw type="foritem" name="${field} = Joined">
+<kw name="Table Header Should Contain" library="Selenium2Library">
+<doc>Verifies that the table header, i.e. any &lt;th&gt;...&lt;/th&gt; element, contains `expected`.</doc>
+<arguments>
+<arg>css=#uploadConfigPreviewBlock &gt; table</arg>
+<arg>${field}</arg>
+</arguments>
+<status status="PASS" endtime="20170521 17:34:09.975" starttime="20170521 17:34:09.783"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:34:09.975" starttime="20170521 17:34:09.780"></status>
+</kw>
+<kw type="foritem" name="${field} = Job">
+<kw name="Table Header Should Contain" library="Selenium2Library">
+<doc>Verifies that the table header, i.e. any &lt;th&gt;...&lt;/th&gt; element, contains `expected`.</doc>
+<arguments>
+<arg>css=#uploadConfigPreviewBlock &gt; table</arg>
+<arg>${field}</arg>
+</arguments>
+<status status="PASS" endtime="20170521 17:34:10.147" starttime="20170521 17:34:09.976"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:34:10.148" starttime="20170521 17:34:09.976"></status>
+</kw>
+<kw type="foritem" name="${field} = Survived">
+<kw name="Table Header Should Contain" library="Selenium2Library">
+<doc>Verifies that the table header, i.e. any &lt;th&gt;...&lt;/th&gt; element, contains `expected`.</doc>
+<arguments>
+<arg>css=#uploadConfigPreviewBlock &gt; table</arg>
+<arg>${field}</arg>
+</arguments>
+<status status="PASS" endtime="20170521 17:34:10.286" starttime="20170521 17:34:10.149"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:34:10.287" starttime="20170521 17:34:10.148"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:34:10.287" starttime="20170521 17:34:09.253"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:34:10.288" starttime="20170521 17:34:09.250"></status>
+</kw>
+<tags>
+<tag>Create new miner</tag>
+</tags>
+<status status="PASS" endtime="20170521 17:34:10.289" critical="yes" starttime="20170521 17:34:05.688"></status>
+</test>
+<test id="s1-s3-t5" name="[2.1.6] Upload form submission without selecting file to upload">
+<kw name="Given dataset upload page is opened">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BaseUrl}${Urls.upload}</arg>
+</arguments>
+<msg timestamp="20170521 17:34:10.298" level="INFO">Opening url 'http://easyminer-frontend/easyminercenter/em/data/upload'</msg>
+<status status="PASS" endtime="20170521 17:34:10.955" starttime="20170521 17:34:10.296"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:34:10.956" starttime="20170521 17:34:10.295"></status>
+</kw>
+<kw name="When upload form is submitted without selecting file to upload">
+<kw name="Confirm standard form" library="Common">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=input[name="_submit"][class~="button"]</arg>
+</arguments>
+<msg timestamp="20170521 17:34:10.971" level="INFO">Clicking element 'css=input[name="_submit"][class~="button"]'.</msg>
+<status status="PASS" endtime="20170521 17:34:11.222" starttime="20170521 17:34:10.960"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:34:11.223" starttime="20170521 17:34:10.959"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:34:11.224" starttime="20170521 17:34:10.957"></status>
+</kw>
+<kw name="Then error is displayed on field &quot;file&quot; in form &quot;${UploadFileFormId}&quot;" library="Common">
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>css=input[id="${formId}-${fieldName}"][class~="has-error"]</arg>
+</arguments>
+<msg timestamp="20170521 17:34:11.258" level="INFO">Current page contains element 'css=input[id="frm-uploadForm-file"][class~="has-error"]'.</msg>
+<status status="PASS" endtime="20170521 17:34:11.258" starttime="20170521 17:34:11.246"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>css=span[id="${formId}-${fieldName}_message"][class~="error-message"]</arg>
+</arguments>
+<msg timestamp="20170521 17:34:11.271" level="INFO">Current page contains element 'css=span[id="frm-uploadForm-file_message"][class~="error-message"]'.</msg>
+<status status="PASS" endtime="20170521 17:34:11.272" starttime="20170521 17:34:11.259"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:34:11.273" starttime="20170521 17:34:11.243"></status>
+</kw>
+<tags>
+<tag>Create new miner</tag>
+</tags>
+<status status="PASS" endtime="20170521 17:34:11.273" critical="yes" starttime="20170521 17:34:10.292"></status>
+</test>
+<kw type="teardown" name="Dataset upload suite teardown">
+<kw name="logout user" library="Common">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BaseUrl}${Urls.logout}</arg>
+</arguments>
+<msg timestamp="20170521 17:34:11.282" level="INFO">Opening url 'http://easyminer-frontend/easyminercenter/em/user/logout'</msg>
+<status status="PASS" endtime="20170521 17:34:11.842" starttime="20170521 17:34:11.280"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:34:11.843" starttime="20170521 17:34:11.279"></status>
+</kw>
+<kw name="Close All Browsers" library="Selenium2Library">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20170521 17:34:11.897" starttime="20170521 17:34:11.844"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:34:11.898" starttime="20170521 17:34:11.278"></status>
+</kw>
+<status status="PASS" endtime="20170521 17:34:11.898" starttime="20170521 17:33:43.157"></status>
+</suite>
+<status status="PASS" endtime="20170521 17:34:11.916" starttime="20170521 17:32:27.804"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="19">Critical Tests</stat>
+<stat fail="0" pass="19">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="5">Create new miner</stat>
+<stat fail="0" pass="14">User administration</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Tests" pass="19">Tests</stat>
+<stat fail="0" id="s1-s1" name="1.1-RegisterUser" pass="8">Tests.1.1-RegisterUser</stat>
+<stat fail="0" id="s1-s2" name="1.2-LoginUser" pass="6">Tests.1.2-LoginUser</stat>
+<stat fail="0" id="s1-s3" name="2.1-DatasetUpload" pass="5">Tests.2.1-DatasetUpload</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

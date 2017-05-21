@@ -9,3 +9,5 @@ install:
 
 script:
   - ./run-tests.sh
+deploy:
+  - ./export-results-to-gh-pages.sh

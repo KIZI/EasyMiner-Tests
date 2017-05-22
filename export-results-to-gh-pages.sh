@@ -4,5 +4,5 @@ cd gh-pages
 ./update-links.sh
 ./update-index-page.sh
 git add .
-git -c user.name='TravisCI' -c user.email='travis' commit -m "Autoupdate test result for $TRAVIS_BRANCH-$TRAVIS_COMMIT-$TRAVIS_COMMIT_MESSAGE"
-git push -f -q https://soulekamil:${GH_TOKEN}@github.com/soulekamil/EasyMiner-WebUITests.git gh-pages &2>/dev/null
+git -c user.name='TravisCI' -c user.email='travis@travis.org' commit -m "Autoupdate test result for $TRAVIS_BRANCH-$TRAVIS_COMMIT-$TRAVIS_COMMIT_MESSAGE"
+git push

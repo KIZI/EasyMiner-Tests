@@ -1,9 +1,10 @@
 git clone -b gh-pages --single-branch https://github.com/soulekamil/EasyMiner-WebUITests.git gh-pages
 cd gh-pages
 exportToDirectory=./TestResults/$TRAVIS_COMMIT
-mkdir -p ./TestResults/
+mkdir -p ./TestResults
 docker ps
 docker cp easyminer-web-ui-tests:/TestResults/ $exportToDirectory
+ls $exportToDirectory
 ./update-links.sh
 ./update-index-page.sh
 git add .

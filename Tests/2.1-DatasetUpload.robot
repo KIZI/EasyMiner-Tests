@@ -5,7 +5,7 @@ Force Tags        Create new miner
 Resource          Resources/CreateNewMiner.robot
 
 *** Variables ***
-@{TitanicDatasetFields}    Is_adult_male    Age    Class_Dept    Fare    Joined    Job    Survived
+@{TitanicDatasetFields}    Is adult male    Age    Class/Dept    Fare    Joined    Job    Survived
 ${TitanicDatasetFieldCount}    7
 ${UploadFileFormId}    frm-uploadForm
 ${UploadFileConfigFormId}    frm-uploadConfigForm
@@ -67,14 +67,13 @@ dataset upload page is opened
 dataset field headers should contain following fields
     [Arguments]    @{datasetFields}
     : FOR    ${field}    IN    @{datasetFields}
-    \    Table Header Should Contain    css=#uploadConfigPreviewBlock > table    ${field}
+    \    Table Header Should Contain    css=#uploadConfigPreviewBlock table    ${field}
 
 dataset "${datasetName}" is uploaded
     Choose File    css=#${UploadFileFormId}-file    /Tests/Resources/DatasetFiles/${datasetName}
     Confirm standard form
 
 dataset field count should be "${datasetFieldCount}"
-    Sleep    2s
     Wait Until Page Contains Element    //*[@id="uploadConfigPreviewBlock"]/table/tbody/tr[1]/th[${datasetFieldCount}]
     Xpath Should Match X Times    //*[@id="uploadConfigPreviewBlock"]/table/tbody/tr/th    ${datasetFieldCount}
 

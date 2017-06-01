@@ -74,6 +74,7 @@ dataset "${datasetName}" is uploaded
     Confirm standard form
 
 dataset field count should be "${datasetFieldCount}"
+    Sleep    2s
     Wait Until Page Contains Element    //*[@id="uploadConfigPreviewBlock"]/table/tbody/tr[1]/th[${datasetFieldCount}]
     Xpath Should Match X Times    //*[@id="uploadConfigPreviewBlock"]/table/tbody/tr/th    ${datasetFieldCount}
 

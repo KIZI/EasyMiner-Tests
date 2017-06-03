@@ -1,8 +1,8 @@
 *** Settings ***
 Suite Setup       Dataset upload suite setup
 Suite Teardown    Dataset upload suite teardown
-Force Tags        Create new miner
-Resource          Resources/CreateNewMiner.robot
+Force Tags        Dataset upload
+Resource          Resources/DatasetUpload.robot
 
 *** Variables ***
 @{TitanicDatasetFields}    Is adult male    Age    Class/Dept    Fare    Joined    Job    Survived

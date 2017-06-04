@@ -1,10 +1,10 @@
 #!/bin/bash
 #Stops and deletes all Easyminer containers
-docker stop easyminer-mysql
-docker stop easyminer-frontend
-docker stop easyminer-backend
-docker stop easyminer-scorer
-docker rm easyminer-mysql
-docker rm easyminer-frontend
-docker rm easyminer-backend
-docker rm easyminer-scorer
+docker stop easyminer-mysql 2>/dev/null     
+docker stop easyminer-frontend 2>/dev/null
+docker stop easyminer-backend 2>/dev/null
+docker stop easyminer-scorer 2>/dev/null
+docker rm easyminer-mysql 2>/dev/null
+docker rm easyminer-frontend 2>/dev/null
+docker rm easyminer-backend 2>/dev/null
+docker rm easyminer-scorer 2>/dev/null

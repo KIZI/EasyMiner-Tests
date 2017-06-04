@@ -5,7 +5,7 @@ services:
   - docker
 
 install:
-  - ./start-easyminer-dev.sh 
+  - ./start-easyminer-stable.sh 
 
 script:
   - ./run-tests.sh

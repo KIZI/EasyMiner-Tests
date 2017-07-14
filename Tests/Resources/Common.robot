@@ -1,6 +1,7 @@
 *** Settings ***
 Library           Selenium2Library    10    10
 Library           Process
+Library           String
 
 *** Variables ***
 ${BaseUrl}        http://easyminer-frontend
@@ -10,7 +11,16 @@ ${Browser}        ff
 
 *** Keywords ***
 Confirm standard form
-    Click Element    css=input[name="_submit"][class~="button"]
+    Wait Until Element Is Enabled    css=input[type="submit"]
+    Click Element    css=input[type="submit"]
+
+Confirm standard form with id "${formId}"
+    Wait Until Element Is Enabled    css=#${formId} input[type="submit"]
+    Click Element    css=#${formId} input[type="submit"]
+
+Iframe confirm standard form with id "${formId}" 
+    Wait Until Element Is Enabled    css=#${formId} input[type="submit"]
+    Iframe click on element "css=#${formId} input[type="submit"]"
 
 Delete all users
     ${result}=    Run Process    /Tests/Resources/delete-all-users.sh    stdout=${TEMPDIR}/stdout.txt    stderr=${TEMPDIR}/stderr.txt    timeout=10s    shell=True
@@ -51,3 +61,6 @@ server error page is displayed
 
 logout user
     Go To    ${BaseUrl}${Urls.logout}
+
+IFrame click on element "${elementSelector}"
+    Press Key	${elementSelector}	\\13

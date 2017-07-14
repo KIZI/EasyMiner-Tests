@@ -5,4 +5,6 @@
 #    export-directory    Destination directory for export
 exportToDirectory=${1:-./TestResults}
 mkdir -p $exportToDirectory
-docker cp easyminer-web-ui-tests:/TestResults/ $exportToDirectory/TestResults-`date +%Y-%m-%d-%H_%M_%S`
+ExportPath=$exportToDirectory/TestResults-`date +%Y-%m-%d-%H_%M_%S`
+docker cp easyminer-web-ui-tests:/TestResults/ $ExportPath
+echo "Report was exported to directory $ExportPath "

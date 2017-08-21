@@ -1,7 +1,7 @@
-GH_PAGES_REPO=$(echo $TRAVIS_REPO_SLUG | cut -d / -f1)
-git clone -b gh-pages --single-branch https://github.com/$GH_PAGES_REPO/EasyMiner-WebUITests.git gh-pages
+git clone -b gh-pages --single-branch https://github.com/soulekamil/EasyMiner-WebUITests.git gh-pages
 cd gh-pages
 ./export-test-results.sh
+./export-web-logs.sh
 ./update-links.sh
 ./update-index-page.sh
 git add .

@@ -1,13 +1,19 @@
 language: generic
 sudo: false
 
+before_install:
+  - git clone -b $TRAVIS_BRANCH --single-branch https://github.com/soulekamil/EasyMiner-WebUITests.git $TRAVIS_BRANCH
+  - cd $TRAVIS_BRANCH
+
 services:
   - docker
 
 install:
+  - pwd
   - ./start-easyminer-stable.sh 
 
 script:
+  - pwd
   - ./run-tests.sh
 
 after_script:

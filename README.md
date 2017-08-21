@@ -2,8 +2,7 @@
 This repository contains web UI tests for [EasyMiner project](http://easyminer.eu).
 Tests are written in [Robot Framework](http://robotframework.org/). Test suite can be executed using provided docker image, that supports testing against Firefox and Xvfb. 
 
-[![Build Status](https://travis-ci.org/soulekamil/EasyMiner-WebUITests.png)](https://travis-ci.org/soulekamil/EasyMiner-WebUITests)
-
+![Build Status](https://travis-ci.org/KIZI/EasyMiner-Tests.svg?branch=master)
 # How to execute tests locally
 ## Requirements
 - Docker 1.12+ 

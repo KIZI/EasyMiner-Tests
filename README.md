@@ -10,17 +10,21 @@ Tests are written in [Robot Framework](http://robotframework.org/). Test suite c
 - Bash shell - for Windows users: MinGW (shipped with Git for Windows or standalone) is sufficient
 ## Test execution
 To run tests locally follow these steps:
-- Start EasyMiner locally (web is available at *http://\<docker-machine ip\>:8894*)
+- Start EasyMiner locally. (web is available at *http://\<docker-machine ip\>:8894*)
 ```
- ./start-easyminer.sh 
+ ./start-easyminer-stable.sh 
 ```
 - Run tests - execute script
 ```
 ./run-tests.sh
 ```
-- [Optional] Export html report from of latest test run to local
+- [Optional] Export html report of latest test run to local directory
 ```
  ./export-test-results.sh 
+```
+- [Optional] Export logs from web application for easier debugging
+```
+ ./export-web-logs.sh
 ```
 - Clean up tests 
 ```

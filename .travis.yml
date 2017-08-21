@@ -9,11 +9,9 @@ services:
   - docker
 
 install:
-  - pwd
-  - ./start-easyminer-stable.sh 
+  - ./start-easyminer-dev.sh 
 
 script:
-  - pwd
   - ./run-tests.sh
 
 after_script:

@@ -1,8 +1,8 @@
 #!/bin/bash
-HISTORYLENGHT=10
+HISTORYLENGHT=50
 #<th>Branch</th><th>Commit</th><th>Commit message</th><th>Test result</th><th>Test report</th>
 # Add link to report to the table
-echo  "<tr>    <td>$TRAVIS_BRANCH</td>    <td><a href=\"https://github.com/KIZI/EasyMiner-Tests/commit/$TRAVIS_COMMIT\" title=\"See the commit on GitHub\" >$(echo $TRAVIS_COMMIT |  cut -c 1-5)</a></td>    <td>$TRAVIS_COMMIT_MESSAGE</td>    <td><a href=\"https://travis-ci.org/$TRAVIS_REPO_SLUG/builds/$TRAVIS_BUILD_ID\" title=\"See the build on Travis\" ><img src=\"./Resources/$TRAVIS_TEST_RESULT.svg\" /></a></td>    <td><a href=\"./TestResults/$TRAVIS_COMMIT/report.html\">Show report</a></td> <td><a href=\"./WebLogs/EasyMiner-Web-Log-$TRAVIS_COMMIT.zip\">Download log</a></td></tr>" >> links.html
+echo  "<tr>   <td><a href=\"https://github.com/$TRAVIS_REPO_SLUG.git#$TRAVIS_BRANCH\" title=\"See the repository on GitHub\" >$(echo $TRAVIS_REPO_SLUG | cut -d / -f2)</a></td> <td>$TRAVIS_BRANCH</td>    <td><a href=\"https://github.com/soulekamil/EasyMiner-WebUITests/commit/$TRAVIS_COMMIT\" title=\"See the commit on GitHub\" >$(echo $TRAVIS_COMMIT |  cut -c 1-5)</a></td>    <td>$TRAVIS_COMMIT_MESSAGE Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</td>    <td><a href=\"https://travis-ci.org/$TRAVIS_REPO_SLUG/builds/$TRAVIS_BUILD_ID\" title=\"See the build on Travis\" ><img src=\"./Resources/$TRAVIS_TEST_RESULT.svg\" /></a></td>    <td><a href=\"./TestResults/$TRAVIS_COMMIT/report.html\">Show report</a></td> <td><a href=\"./WebLogs/EasyMiner-Web-Log-$TRAVIS_COMMIT.zip\">Download log</a></td></tr>" >> links.html
 # Add commit to history of commits 
 echo $TRAVIS_COMMIT >> commit-history.txt
 # Preserve only $HISTORYLENGHT reports

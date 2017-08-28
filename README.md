@@ -1,18 +1,26 @@
 # Introduction
-This repository contains web UI tests for [EasyMiner project](http://easyminer.eu).
-Tests are written in [Robot Framework](http://robotframework.org/). Test suite can be executed using provided docker image, that supports testing against Firefox and Xvfb. 
-
 ![Build Status](https://travis-ci.org/KIZI/EasyMiner-Tests.svg?branch=master)
+
+This repository contains web UI tests for [EasyMiner project](http://easyminer.eu).
+Tests are written in [Robot Framework](http://robotframework.org/).
+Test suite can be executed using provided docker image.
+Tests are performed against Firefox browser.
+Xvfb as an in-memory display.
+
+ **Additional build results info available [here](https://kizi.github.io/EasyMiner-Tests/)**
 # How to execute tests locally
 ## Requirements
-- Docker 1.12+ 
+- [Docker 1.12+](https://docs.docker.com/engine/installation/)
+- [Docker Compose](https://docs.docker.com/compose/install/#prerequisites)
 - Bash shell - for Windows users: MinGW (shipped with Git for Windows or standalone) is sufficient
 ## Test execution
 To run tests locally follow these steps:
-- Start EasyMiner locally. (web is available at *http://\<docker-machine ip\>:8894*)
+- Start EasyMiner locally (web is then available at *http://\<docker-machine ip\>:8894*).
+  If you want to use local Easyminer Docker images, change sources for services in docker-compose.yml
 ```
- ./start-easyminer-stable.sh 
+ ./start-easyminer.sh 
 ```
+
 - Run tests - execute script
 ```
 ./run-tests.sh

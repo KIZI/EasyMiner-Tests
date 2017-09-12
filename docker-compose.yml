@@ -57,7 +57,18 @@ services:
       interval: 30s
       retries: 5
 
-networks:
-  default:
-    external:
-      name: easyminer
+  easyminer-tests:
+    container_name: easyminer-tests
+    image: soulekamil/robotframework-ff
+    volumes:
+      - ./Tests/:/Tests/ 
+      - ./TestResults/:/TestResults/ 
+    depends_on:
+      easyminer-frontend:
+        condition: service_healthy 
+      easyminer-backend:
+        condition: service_healthy 
+      easyminer-scorer:
+        condition: service_healthy 
+      easyminer-mysql:  
+        condition: service_healthy

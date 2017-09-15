@@ -23,13 +23,13 @@ Dataset upload suite setup
 
 Dataset upload suite teardown
     Logout user
-    Close All Browsers
+    Close all browsers
 
 Dataset upload page is opened
     Go To    ${BaseUrl}${Urls.upload}
 
 Dataset "${datasetName}" is uploaded
-    Choose File    css=#${UploadFileFormId}-file    /Tests/Resources/DatasetFiles/${datasetName}
+    Choose file    css=#${UploadFileFormId}-file    /Tests/Resources/DatasetFiles/${datasetName}
     Confirm standard form with id "${UploadFileFormId}"
 
 Separator "${separator}" is selected

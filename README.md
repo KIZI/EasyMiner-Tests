@@ -1,2 +1,2 @@
-# EasyMiner-WebUITests
-This repository contains web UI tests results for [EasyMiner project](https://github.com/KIZI/EasyMiner).
+# EasyMiner-Tests
+This branch contains test results and additional info from Travis CI integrations of tests from this repository.

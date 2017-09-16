@@ -12,7 +12,7 @@ services:
   
   easyminer-frontend:
     container_name: easyminer-frontend
-    image: kizi/easyminer-frontend:v2.4
+    image: kizi/easyminer-frontend:dev
     # To run EasyMiner-frontend from local EasyMinerCenter Docker image, comment line above and uncomment one of following lines.
     # To use custom image, use line below. Change 'custom_easyminer_image_name' to the name of your image. 
     #image: custom_easyminer_image_name

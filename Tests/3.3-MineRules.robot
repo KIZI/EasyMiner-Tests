@@ -58,7 +58,7 @@ Rule mining is started
     Wait for element and click  css=#start-mining
 
 Miner should find rules
-    Wait until page contains element  css=.solved    60s
+    Wait until page contains element  css=.solved    30s
     Found rules should contain rule "${ExpectedRules[0]}"
     Found rules count should be "${ExpectedRulesCount}"
     Found rule "${ExpectedRules[0]}" should have measure "Confidence" with value "${ExpectedConfidence[0]}"

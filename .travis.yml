@@ -5,7 +5,7 @@ git:
 
 before_install:
   - git clone -b $TRAVIS_BRANCH --single-branch https://github.com/KIZI/EasyMiner-Tests.git $TRAVIS_BRANCH
-  - docker build -t kizi/easyminer-frontend:v2.4 https://github.com/KIZI/EasyMiner-EasyMinerCenter.git#v2.4:/
+  - docker build -t kizi/easyminer-frontend:dev https://github.com/KIZI/EasyMiner-EasyMinerCenter.git#master:/
   - cd $TRAVIS_BRANCH
 
 services:

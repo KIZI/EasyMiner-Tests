@@ -6,46 +6,45 @@ Force Tags        UserAdministration
 Resource          Resources/UserAdministration.robot
 
 *** Variables ***
-&{UserWithCredentialMissmatch}    name=${ValidUser1.name}    email=${ValidUser1.email}    password=${ValidUser2.password}    passwordRepeat=${ValidUser2.passwordRepeat}
-&{UserWithEmptyPassword}    name=${ValidUser1.name}    email=${ValidUser1.email}    password=    passwordRepeat=
-&{UserWithEmptyUsername}    name=${ValidUser2.name}    email=    password=${ValidUser2.password}    passwordRepeat=${ValidUser2.passwordRepeat}
-&{UnRegisteredUser}    name=Unregistered user    email=abcdefgh@seznam.cz    password=aaaaaaaa    passwordRepeat=aaaaaaaa
 ${LoginFormId}    frm-loginForm
+&{ValidUser1}     name=Valid UserOne    email=user1.2.1@gmail.com    password=Aaaaaa    passwordRepeat=Aaaaaa
+&{ValidUser2}     name=Valid UserTwo    email=user1.2.2@seznam.cz    password=Bbbbbbb    passwordRepeat=Bbbbbbb
+&{UnRegisteredUser}    name=Unregistered user    email=abcdefgh@gmail.com    password=aaaaaaaa    passwordRepeat=aaaaaaaa
+&{UserWithCredentialMissmatch}    name=${ValidUser1.name}    email=${ValidUser1.email}    password=${ValidUser2.password}    passwordRepeat=${ValidUser2.passwordRepeat}
 
 *** Test Cases ***
 [1.2.1] Login as valid user 1
-      Given login page is opened
-      When login user as "${ValidUser1}"
-      Then user is logged in as "${ValidUser1}"
+       Given login page is opened
+       When login user as "${ValidUser1}"
+       Then user is logged in as "${ValidUser1}"
 
 [1.2.2] Login as valid user 2
-      Given login page is opened
-      When login user as "${ValidUser2}"
-      Then user is logged in as "${ValidUser2}"
+       Given login page is opened
+       When login user as "${ValidUser2}"
+       Then user is logged in as "${ValidUser2}"
 
 [1.2.3] Login as unregistered user
-      Given login page is opened
-      When login user as "${UnRegisteredUser}"
-      Then error is displayed on form with id "${LoginFormId}"
+       Given login page is opened
+       When login user as "${UnRegisteredUser}"
+       Then error is displayed on form with id "${LoginFormId}"
 
 [1.2.4] Login with empty username and filled password
-      Given login page is opened
-      When login user as "${UserWithEmptyUsername}"
-      Then error is displayed on field "email" in form "${LoginFormId}"
+       Given login page is opened
+       When login user as "${InvalidUserEmptyUsername}"
+       Then error is displayed on field "email" in form "${LoginFormId}"
 
 [1.2.5] Login with valid username and empty password
-      Given login page is opened
-      When login user as "${UserWithEmptyPassword}"
-      Then error is displayed on field "password" in form "${LoginFormId}"
+       Given login page is opened
+       When login user as "${InvalidUserEmptyPassword}"
+       Then error is displayed on field "password" in form "${LoginFormId}"
 
 [1.2.6] Login with unmatching username and password
-      Given login page is opened
-      When login user as "${UserWithCredentialMissmatch}"
-      Then error is displayed on form with id "${LoginFormId}"
+       Given login page is opened
+       When login user as "${UserWithCredentialMissmatch}"
+       Then error is displayed on form with id "${LoginFormId}"
 
 *** Keywords ***
 Login user suite setup
-    Delete all users
     Open browser    ${BaseUrl}${Urls.home}    ${Browser}
     Sign up user "${ValidUser1}"
     Logout user

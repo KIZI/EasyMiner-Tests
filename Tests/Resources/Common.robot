@@ -8,7 +8,11 @@ Library           Collections
 ${BaseUrl}        http://easyminer-frontend
 ${Browser}        ff
 &{Urls}           newMiner=/easyminercenter/em/data/upload    register=/easyminercenter/em/user/register    home=/easyminercenter/    login=/easyminercenter/em/user/login    upload=/easyminercenter/em/data/upload    logout=/easyminercenter/em/user/logout
-&{ValidUser1}     name=Valid UserOne    email=valid.user1@gmail.com    password=Aaaaaa    passwordRepeat=Aaaaaa
+&{User21}     name=Suite 21    email=valid.user21@gmail.com    password=Aaaaaa    passwordRepeat=Aaaaaa
+&{User22}     name=Suite 22    email=valid.user22@gmail.com    password=Aaaaaa    passwordRepeat=Aaaaaa
+&{User31}     name=Suite 31    email=valid.user31@gmail.com    password=Aaaaaa    passwordRepeat=Aaaaaa
+&{User32}     name=Suite 32    email=valid.user32@gmail.com    password=Aaaaaa    passwordRepeat=Aaaaaa
+&{User33}     name=Suite 33    email=valid.user33@gmail.com    password=Aaaaaa    passwordRepeat=Aaaaaa
 
 *** Keywords ***
 Confirm standard form
@@ -22,10 +26,6 @@ IFrame confirm standard form with id "${formId}"
     Wait until element is enabled    css=#${formId} input[type="submit"]
     IFrame click on element "css=#${formId} input[type="submit"]"
 
-Delete all users
-    ${result}=    Run Process    /Tests/Resources/delete-all-users.sh    stdout=${TEMPDIR}/stdout.txt    stderr=${TEMPDIR}/stderr.txt    timeout=20s    shell=True
-    Log many    stdout: ${result.stdout}    stderr: ${result.stderr}
-
 Error is displayed on element with id "${elementId}"
     Page should contain element    css=input[id="${elementId}"][class~="has-error"]
     Page should contain element    css=span[id="${elementId}_message"][class~="error-message"]
@@ -36,11 +36,6 @@ Error is displayed on form with id "${formId}"
 Error is displayed on field "${fieldName}" in form "${formId}"
     Page should contain element    css=input[id="${formId}-${fieldName}"][class~="has-error"]
     Page should contain element    css=span[id="${formId}-${fieldName}_message"][class~="error-message"]
-
-Valid user is already registered
-    Sign up page is opened
-    Register user as "${ValidUser1}"
-    Logout user
 
 Sign up page is opened
     Go To    ${BaseUrl}${Urls.register}

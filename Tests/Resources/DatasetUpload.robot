@@ -15,13 +15,12 @@ ${UploadFileConfigFormId}    frm-uploadConfigForm
 ${NewMinerFormId}    frm-newMinerForm
 
 *** Keywords ***
-Dataset upload suite setup
-    Delete all users
+Dataset upload suite setup "${user}"
     Open Browser    ${BaseUrl}${Urls.home}    ${Browser}
-    Sign up user "${ValidUser1}"
+    Sign up user "${user}"
     Wait for user registration to complete
 
-Dataset upload suite teardown
+Logout and close browsers
     Logout user
     Close all browsers
 
@@ -33,5 +32,6 @@ Dataset "${datasetName}" is uploaded
     Confirm standard form with id "${UploadFileFormId}"
 
 Separator "${separator}" is selected
+    Wait until page contains element    css=#${UploadFileConfigFormId}-separator
     Select From List By Value    css=#${UploadFileConfigFormId}-separator    ${separator}
     Focus    css=#${UploadFileConfigFormId}-name

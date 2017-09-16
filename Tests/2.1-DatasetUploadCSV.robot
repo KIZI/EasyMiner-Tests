@@ -1,6 +1,6 @@
 *** Settings ***
-Suite Setup       Dataset upload suite setup
-Suite Teardown    Dataset upload suite teardown
+Suite Setup       Suite setup
+Suite Teardown    Logout and close browsers
 Force Tags        DatasetUpload
 Resource          Resources/DatasetUpload.robot
 
@@ -8,52 +8,55 @@ Resource          Resources/DatasetUpload.robot
 
 *** Test Cases ***
 [2.1.1] Upload csv dataset - comma separated
-      Given dataset upload page is opened
-      When dataset "titanic-comma.csv" is uploaded
-      And separator "," is selected
-      Then dataset field count should be "${TitanicDatasetFieldCount}"
-      And dataset field headers should contain following fields    @{TitanicDatasetFields}
+       Given dataset upload page is opened
+       When dataset "titanic-comma.csv" is uploaded
+       And separator "," is selected
+       Then dataset field count should be "${TitanicDatasetFieldCount}"
+       And dataset field headers should contain following fields    @{TitanicDatasetFields}
 
 [2.1.2] Upload csv dataset - semicolon separated
-      Given dataset upload page is opened
-      When dataset "titanic-semicolon.csv" is uploaded
-      And separator ";" is selected
-      Then dataset field count should be "${TitanicDatasetFieldCount}"
-      And dataset field headers should contain following fields    @{TitanicDatasetFields}
+       Given dataset upload page is opened
+       When dataset "titanic-semicolon.csv" is uploaded
+       And separator ";" is selected
+       Then dataset field count should be "${TitanicDatasetFieldCount}"
+       And dataset field headers should contain following fields    @{TitanicDatasetFields}
 
 [2.1.3] Upload csv dataset - vertical line separated
-      Given dataset upload page is opened
-      When dataset "titanic-verticalLine.csv" is uploaded
-      And separator "|" is selected
-      Then dataset field count should be "${TitanicDatasetFieldCount}"
-      And dataset field headers should contain following fields    @{TitanicDatasetFields}
+       Given dataset upload page is opened
+       When dataset "titanic-verticalLine.csv" is uploaded
+       And separator "|" is selected
+       Then dataset field count should be "${TitanicDatasetFieldCount}"
+       And dataset field headers should contain following fields    @{TitanicDatasetFields}
 
 [2.1.4] Upload csv dataset - tab separated
-      Given dataset upload page is opened
-      When dataset "titanic-tab.csv" is uploaded
-      And separator "\t" is selected
-      Then dataset field count should be "${TitanicDatasetFieldCount}"
-      And dataset field headers should contain following fields    @{TitanicDatasetFields}
+       Given dataset upload page is opened
+       When dataset "titanic-tab.csv" is uploaded
+       And separator "\t" is selected
+       Then dataset field count should be "${TitanicDatasetFieldCount}"
+       And dataset field headers should contain following fields    @{TitanicDatasetFields}
 
 [2.1.5] Upload zip archive with csv dataset - comma separated
-      Given dataset upload page is opened
-      When dataset "titanic.zip" is uploaded
-      And separator "," is selected
-      Then dataset field count should be "${TitanicDatasetFieldCount}"
-      And dataset field headers should contain following fields    @{TitanicDatasetFields}
+       Given dataset upload page is opened
+       When dataset "titanic.zip" is uploaded
+       And separator "," is selected
+       Then dataset field count should be "${TitanicDatasetFieldCount}"
+       And dataset field headers should contain following fields    @{TitanicDatasetFields}
 
 [2.1.6] Upload form submission without selecting file to upload
-      Given dataset upload page is opened
-      When upload form is submitted without selecting file to upload
-      Then error is displayed on field "file" in form "${UploadFileFormId}"
+       Given dataset upload page is opened
+       When upload form is submitted without selecting file to upload
+       Then error is displayed on field "file" in form "${UploadFileFormId}"
 
 [2.1.7] Upload form submission - default column names
-      Given configuration for "titanic-comma.csv" is opened
-      When separator "," is selected
-      And dataset configuration is submitted
-      Then dataset column configuration page should appear with configuration for following fields    @{TitanicDatasetFields}
+       Given configuration for "titanic-comma.csv" is opened
+       When separator "," is selected
+       And dataset configuration is submitted
+       Then dataset column configuration page should appear with configuration for following fields    @{TitanicDatasetFields}
 
 *** Keywords ***
+Suite setup
+      Dataset upload suite setup "${User21}"
+
 Dataset field headers should contain following fields
     [Arguments]    @{datasetFields}
     : FOR    ${field}    IN    @{datasetFields}
@@ -71,7 +74,7 @@ Dataset configuration is submitted
 
 Configuration for "${datasetName}" is opened
     Dataset upload page is opened
-    Dataset "titanic-comma.csv" is uploaded
+    Dataset "${datasetName}" is uploaded
 
 Dataset column configuration page should appear with configuration for following fields
     [Arguments]    @{datasetFields}

@@ -1,11 +1,12 @@
 *** Settings ***
-Suite Setup       Rule pattern suite setup
-Suite Teardown    Mining process suite teardown
+Suite Setup       Suite Setup
+Suite Teardown    Logout and close browsers
 Force Tags        MiningProcess
 Resource          Resources/MiningProcess.robot
 Resource          Resources/RulePattern.robot
 
 *** Variables ***
+${Miner}    titanic-3.3
 ${Confidence}   0.784
 ${RuleLength}   2
 @{ExpectedRules}    isadultmale(TRUE) → survived(FALSE)     job(General Labourer) → survived(FALSE)
@@ -37,8 +38,11 @@ ${RuleTabsSectionId}  marked-rules
     Then rule "${ExpectedRules[0]}" should not appear in rule clipboard
     
 *** Keywords ***
+Suite setup
+    Rule pattern suite setup "${User33}" "${Miner}"
+
 Rule pattern is created on miner page
-    Miner page is opened
+    Miner "${Miner}" page is opened
     Antecedent is created from attributes  @{AntecedentAttributes}
     Antecedent in rule pattern section contains following attributes   @{AntecedentAttributes} 
     Consequent is created from attributes  @{ConsequentAttributes} 

@@ -1,6 +1,6 @@
 *** Settings ***
-Suite Setup       Dataset upload suite setup
-Suite Teardown    Dataset upload suite teardown
+Suite Setup       Suite setup
+Suite Teardown    Logout and close browsers
 Force Tags        DatasetUpload
 Resource          Resources/DatasetUpload.robot
 
@@ -12,24 +12,27 @@ Resource          Resources/DatasetUpload.robot
 
 *** Test Cases ***
 [2.2.1] Configure dataset columns - type options
-      Given dataset upload column configuration page is opened
-      When correct column datatypes are selected
-      And column configuration form is submitted
-      Then create new miner page for datasource with name "${TitanicDatasourceName}" is shown
+       Given dataset upload column configuration page is opened
+       When correct column datatypes are selected
+       And column configuration form is submitted
+       Then create new miner page for datasource with name "${TitanicDatasourceName}" is shown
 
 [2.2.2] Configure dataset columns - rename columns
-      Given dataset upload column configuration page is opened
-      When some columns are renamed     
-      And new miner with name "titanic-test-2.2.2" is created
-      Then miner should have datafields with following names    @{NewColumnNames}
+       Given dataset upload column configuration page is opened
+       When some columns are renamed     
+       And new miner with name "titanic-test-2.2.2" is created
+       Then miner should have datafields with following names    @{NewColumnNames}
 
 [2.2.3] Configure dataset columns - set column type as ignored
-      Given dataset upload column configuration page is opened
-      When some columns are set as ignored
-      And new miner with name "titanic-test-2.2.3" is created
-      Then miner should only contain not ignored datafields
+       Given dataset upload column configuration page is opened
+       When some columns are set as ignored
+       And new miner with name "titanic-test-2.2.3" is created
+       Then miner should only contain not ignored datafields
 
 *** Keywords ***
+Suite setup
+    Dataset upload suite setup "${User22}"
+
 Dataset upload column configuration page is opened
     Dataset upload page is opened
     Dataset "titanic-comma.csv" is uploaded

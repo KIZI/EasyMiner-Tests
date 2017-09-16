@@ -3,4 +3,4 @@
 docker-compose pull
 docker-compose -v down
 docker-compose down
-docker-compose up --force-recreate easyminer-tests
+docker-compose up --exit-code-from easyminer-tests --force-recreate easyminer-tests

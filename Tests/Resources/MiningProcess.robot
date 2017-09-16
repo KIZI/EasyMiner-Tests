@@ -5,15 +5,20 @@ Resource          DatasetUpload.robot
 *** Variables ***
 ${NewMinerFormId}    frm-newMinerForm
 ${MinerPageUrl}    /easyminercenter/em/data/open-miner/1
+${MinersSelectionPageUrl}    /easyminercenter/em/data
 ${NewAtributeFormId}    frm-newAttributeForm
 ${NewAttributeIframeSelector}   css=iframe[src*="/attributes/add-attribute"]
 *** Keywords ***
-Miner page is opened
-    Go to    ${BaseUrl}${MinerPageUrl}
+Miner "${miner}" page is opened
+    Go to    ${BaseUrl}${MinersSelectionPageUrl}
+    Open miner "${miner}"
     Wait until miner is ready   
 
+Open miner "${miner}"
+    Wait for element and click  xpath=//*[@class="existingMiner"][contains(string(),"${miner}")] 
+
 Wait until miner is ready
-    Wait Until Element Is Not Visible   css=#overlay
+    Wait Until Element Is Not Visible   css=#overlay    30s
 
 Column names are simplified
     Set column name to "${TitanicDatasetFieldsSimplified[0]}" for column number "0"
@@ -104,19 +109,16 @@ Attributes derived from fields are available in attributes section
     \    ${datafieldName} =    Convert to lowercase    ${datafieldName}
     \    Miner has "${datafieldName}" attribute
 
-Attribute creation suite setup
-    Dataset upload suite setup
+Attribute creation suite setup "${user}" "${miner}"
+    Dataset upload suite setup "${user}"
     Dataset upload column configuration page is opened
     Column names are simplified
     Correct column datatypes are selected
     Column configuration form is submitted
-    New miner with name "titanic-miner-test-123" is created
+    New miner with name "${miner}" is created
 
-Rule pattern suite setup
-    Attribute creation suite setup
-    Miner page is opened
+Rule pattern suite setup "${user}" "${miner}"
+    Attribute creation suite setup "${user}" "${miner}"
+    Miner "${miner}" page is opened
     Attributes are created from all dataset fields
     Attributes derived from fields are available in attributes section
-
-Mining process suite teardown
-    Dataset upload suite teardown

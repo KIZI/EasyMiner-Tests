@@ -60,7 +60,6 @@ services:
   easyminer-tests:
     container_name: easyminer-tests
     image: soulekamil/robotframework-ff
-    #build: ./robotframework-ff
     volumes:
       - ./Tests/:/Tests/ 
       - ./TestResults/:/TestResults/ 
@@ -73,3 +72,16 @@ services:
         condition: service_healthy 
       easyminer-mysql:  
         condition: service_healthy
+
+  easyminer:
+    image: busybox:1
+    command: /bin/true
+    depends_on:
+      easyminer-frontend:
+        condition: service_healthy 
+      easyminer-backend:
+        condition: service_healthy 
+      easyminer-scorer:
+        condition: service_healthy 
+      easyminer-mysql:  
+        condition: service_healthy      

@@ -7,36 +7,57 @@ Resource          Resources/RulePattern.robot
 
 *** Variables ***
 ${Miner}    titanic-3.3
-${Confidence}   0.784
+${Confidence}   0.782
 ${RuleLength}   2
-@{ExpectedRules}    isadultmale(TRUE) → survived(FALSE)     job(General Labourer) → survived(FALSE)
-@{ExpectedConfidence}    0.801     0.969
-@{ExpectedSupport}    0.576      0.071
-${ExpectedRulesCount}    2
+@{ExpectedRules}    isadultmale(TRUE) → survived(FALSE)     job(General Labourer) → survived(FALSE)     joined(Belfast) → survived(FALSE)    
+@{ExpectedConfidence}    0.801     0.969    0.783
+@{ExpectedSupport}    0.576      0.071    0.07
+${ExpectedRulesCount}    3
 ${FoundRulesSectionId}  found-rules-rules
 ${RuleTabsSectionId}  marked-rules
+${AddToRuleClipboardIcon}  unmark
+${InterestingRuleIcon}   kbRemovePositive
+${NotInterestingRuleIcon}   kbRemoveNegative
+${AddToRuleClipboardAction}  mark
+${InterestingRuleAction}   kbAddPositive
+${NotInterestingRuleAction}   kbAddNegative
 
 *** Test Cases ***
-[3.3.1] Miner rules - find rules
+[3.3.1] Mine rules - find rules
     Given rule pattern is created on miner page
     When rule mining is started
     Then miner should find rules
 
-[3.3.2] Miner rules - show rule details
+[3.3.2] Mine rules - show rule details
     Given rules are found on miner page
     When is clicked on found rule "${ExpectedRules[0]}" details button
     Then rule "${ExpectedRules[0]}" details should appear
 
-[3.3.3] Miner rules - add to rule to clipboard
+[3.3.3] Mine rules - add to rule to clipboard
     Given rules are found on miner page
     When rule "${ExpectedRules[0]}" from found rules is added to rule clipboard
-    Then rule "${ExpectedRules[0]}" should appear in rule clipboard
+    Then rule "${ExpectedRules[0]}" with confidence "${ExpectedConfidence[0]}" and support "${ExpectedSupport[0]}" should appear in rule clipboard
 
-[3.3.4] Miner rules - remove rule from clipboard
+[3.3.4] Mine rules - remove rule from clipboard
     Given rule "${ExpectedRules[0]}" is in rule clipboard
     When rule "${ExpectedRules[0]}" is removed from rule clipboard
     Then rule "${ExpectedRules[0]}" should not appear in rule clipboard
     
+[3.3.5] Mine rules - add to rule to knowledge base as interesting
+    Given rules are found on miner page
+    When rule "${ExpectedRules[0]}" from found rules is added to knowledge base as interesting
+    Then rule "${ExpectedRules[0]}" with confidence "${ExpectedConfidence[0]}" and support "${ExpectedSupport[0]}" should appear in knowledge base
+
+[3.3.6] Mine rules - add to rule to knowledge base as not interesting
+    Given rules are found on miner page
+    When rule "${ExpectedRules[1]}" from found rules is added to knowledge base as not interesting
+    Then rule "${ExpectedRules[1]}" with confidence "${ExpectedConfidence[1]}" and support "${ExpectedSupport[1]}" should appear in knowledge base
+
+[3.3.7] Mine rules - remove rule from knowledge base
+    Given rule "${ExpectedRules[2]}" is in rule clipboard
+    When rule "${ExpectedRules[2]}" is removed from rule clipboard
+    Then rule "${ExpectedRules[2]}" should not appear in in knowledge base
+
 *** Keywords ***
 Suite setup
     Rule pattern suite setup "${User33}" "${Miner}"
@@ -58,17 +79,20 @@ Rule mining is started
     Wait for element and click  css=#start-mining
 
 Miner should find rules
-    Wait until page contains element  css=.solved    30s
+    Wait until page contains element  css=.solved    60s
     Found rules should contain rule "${ExpectedRules[0]}"
     Found rules count should be "${ExpectedRulesCount}"
-    Found rule "${ExpectedRules[0]}" should have measure "Confidence" with value "${ExpectedConfidence[0]}"
-    Found rule "${ExpectedRules[0]}" should have measure "Support" with value "${ExpectedSupport[0]}"
-    Found rules should contain rule "${ExpectedRules[1]}"
-    Found rule "${ExpectedRules[1]}" should have measure "Confidence" with value "${ExpectedConfidence[1]}"
-    Found rule "${ExpectedRules[1]}" should have measure "Support" with value "${ExpectedSupport[1]}"
+    Rule "${ExpectedRules[0]}" with confidence "${ExpectedConfidence[0]}" and support "${ExpectedSupport[0]}" should appear in found rules
+    Rule "${ExpectedRules[1]}" with confidence "${ExpectedConfidence[1]}" and support "${ExpectedSupport[1]}" should appear in found rules
+    Rule "${ExpectedRules[2]}" with confidence "${ExpectedConfidence[2]}" and support "${ExpectedSupport[2]}" should appear in found rules
 
 Found rules count should be "${foundRulesCount}"
     Page should contain element     xpath=//*[@id="found-rules-task-name"]//*[@class="count"][contains(string(),"${foundRulesCount}") ]
+
+Rule "${rule}" with confidence "${confidence}" and support "${support}" should appear in found rules
+    Found rules should contain rule "${rule}"
+    Found rule "${rule}" should have measure "Confidence" with value "${confidence}"
+    Found rule "${rule}" should have measure "Support" with value "${support}"
 
 Select rule clipboard tab
     Wait for element and click  css=h2.marked-rules-tasks
@@ -124,14 +148,14 @@ Page should contain confusion matrix with values
     Page should contain element    xpath=//*[@class="rule4ftTable"]//tbody/tr[3]/td[2][contains(string(),"${values[2]}")]
     Page should contain element    xpath=//*[@class="rule4ftTable"]//tbody/tr[3]/td[3][contains(string(),"${values[3]}")]
 
-Rule "${rule}" from found rules is added to rule clipboard
-    Select rule action "mark" for "${rule}" in section "${FoundRulesSectionId}"
-
-Rule "${rule}" should appear in rule clipboard
+Rule "${rule}" should be in rule clipboard
     Select rule clipboard tab
     Section "${RuleTabsSectionId}" should contain "${rule}"
-    Rule "${rule}" in section "${RuleTabsSectionId}" should have measure "Confidence" with value "${ExpectedConfidence[0]}"
-    Rule "${rule}" in section "${RuleTabsSectionId}" should have measure "Support" with value "${ExpectedSupport[0]}"
+
+Rule "${rule}" with confidence "${confidence}" and support "${support}" should appear in rule clipboard
+    Rule "${rule}" should be in rule clipboard
+    Rule "${rule}" in section "${RuleTabsSectionId}" should have measure "Confidence" with value "${confidence}"
+    Rule "${rule}" in section "${RuleTabsSectionId}" should have measure "Support" with value "${support}"
 
 Remove rule "${rule}" from rule clipboard
     Select rule action "clear" for "${rule}" in section "${RuleTabsSectionId}"
@@ -144,7 +168,42 @@ Rule "${rule}" should not appear in rule clipboard
     Select rule clipboard tab
     Section "${RuleTabsSectionId}" should not contain "${rule}"
 
+Rule "${rule}" should not appear in in knowledge base
+    Select rule knowledge base tab
+    Section "${RuleTabsSectionId}" should not contain "${rule}"
+
 Rule "${rule}" is in rule clipboard
     Rules are found on miner page
     Rule "${rule}" from found rules is added to rule clipboard
-    Rule "${rule}" should appear in rule clipboard
+    Rule "${rule}" should be in rule clipboard
+
+Rule "${rule}" is in knowledge base as interesting
+    Rules are found on miner page
+    Rule "${rule}" from found rules is added to knowledge base as interesting
+    Rule "${rule}" should be in knowledge base
+
+Rule "${rule}" from found rules is added to rule clipboard
+    Select rule action "${AddToRuleClipboardAction}" for "${rule}" in section "${FoundRulesSectionId}"
+    Rule "${rule}" from found rules is tagged with "${AddToRuleClipboardIcon}"
+
+Rule "${rule}" from found rules is added to knowledge base as interesting
+    Select rule action "${InterestingRuleAction}" for "${rule}" in section "${FoundRulesSectionId}"
+    Rule "${rule}" from found rules is tagged with "${InterestingRuleIcon}"
+
+Rule "${rule}" from found rules is added to knowledge base as not interesting
+    Select rule action "${NotInterestingRuleAction}" for "${rule}" in section "${FoundRulesSectionId}"
+    Rule "${rule}" from found rules is tagged with "${NotInterestingRuleIcon}"
+
+Rule "${rule}" from found rules is tagged with "${tag}"
+    Mouse over  css=#found-rules-multi-controls
+    Element should be visible   xpath=//*[@id="${FoundRulesSectionId}"]//*[@class="rule"][contains(string(),"${rule}")]//following::*[@class="ruleActions"]/*[@class="${tag}"]
+
+Rule "${rule}" should be in knowledge base
+    Select rule knowledge base tab
+    Section "${RuleTabsSectionId}" should contain "${rule}"
+    Capture page screenshot
+
+Rule "${rule}" with confidence "${confidence}" and support "${support}" should appear in knowledge base
+    Rule "${rule}" should be in knowledge base
+    Rule "${rule}" in section "${RuleTabsSectionId}" should have measure "Confidence" with value "${confidence}"
+    Rule "${rule}" in section "${RuleTabsSectionId}" should have measure "Support" with value "${support}"

@@ -11,9 +11,6 @@ before_install:
 services:
   - docker
 
-install:
-  - ./start-easyminer.sh 
-
 script:
   - ./run-tests.sh
 

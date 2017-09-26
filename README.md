@@ -15,13 +15,15 @@ Xvfb as an in-memory display.
 - Bash shell - for Windows users: MinGW (shipped with Git for Windows or standalone) is sufficient
 ## Test execution
 To run tests locally follow these steps:
-- Run tests - execute script. This script will start EasyMiner and run tests in Docker container.
-Test results are exported to folder TestResults, that is shared with Docker (via Docker volume).
-After test execution ends, EasyMiner system is still running (to allow easier investigation of possible test failures).
-If you want to use local Easyminer Docker images, change sources for services in docker-compose.yml
+- Run tests - execute script:
 ```
 ./run-tests.sh
 ```
+This script will start EasyMiner and run tests in Docker container.
+Test results are exported to folder TestResults, that is shared with Docker (via Docker volume).
+After test execution ends, EasyMiner system is still running (to allow easier investigation of possible test failures).
+If you want to use local Easyminer Docker images, change sources for services in docker-compose.yml
+
 - [Optional] Export logs from web application for easier debugging.
 ```
  ./export-web-logs.sh

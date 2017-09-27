@@ -13,32 +13,32 @@ ${RuleLength}   6
 @{AttributesAfterRemove}    isadultmale    joined    job    survived
 
 *** Test Cases ***
-[3.2.1] Miner setup - Add antecedent
+[3.2.1] Add antecedent
       Given miner "${Miner}" page is opened
       When antecedent is created from attributes  @{AntecedentAttributes} 
       Then antecedent in rule pattern section contains following attributes   @{AntecedentAttributes}   
 
-[3.2.2] Miner setup - Add consequent
+[3.2.2] Add consequent
       Given miner "${Miner}" page is opened
       When consequent is created from attributes  @{ConsequentAttributes} 
       Then consequent in rule pattern section contains following attributes   @{ConsequentAttributes}     
 
-[3.2.3] Miner setup - Add interest measures
+[3.2.3] Add interest measures
      Given miner "${Miner}" page is opened
      When add interest measures lift and rule length
      Then lift and rule length are shown in interest measure section  
 
-[3.2.4] Miner setup - Remove antecedent
+[3.2.4] Remove antecedent
      Given miner has following antecedent attributes    @{AllAttributes}
      When antecedent atributtes are removed  @{AttributesToRemove} 
      Then antecedent in rule pattern section contains following attributes   @{AttributesAfterRemove}
 
-[3.2.5] Miner setup - Remove consequent
+[3.2.5] Remove consequent
      Given miner has following consequent attributes    @{AllAttributes}
      When consequent atributtes are removed  @{AttributesToRemove} 
      Then consequent in rule pattern section contains following attributes   @{AttributesAfterRemove}
 
-[3.2.6] Miner setup - Remove interest measures
+[3.2.6] Remove interest measures
      Given miner "${Miner}" page is opened
      When remove interest measures confidence and support
      Then interest measure section should not contain confidence and support measure

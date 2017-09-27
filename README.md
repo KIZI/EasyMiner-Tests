@@ -1,13 +1,12 @@
 # Introduction
 ![Build Status](https://travis-ci.org/KIZI/EasyMiner-Tests.svg?branch=master)
+**Additional build results info available [here](https://kizi.github.io/EasyMiner-Tests/)**
 
 This repository contains web UI tests for [EasyMiner project](http://easyminer.eu).
 Tests are written in [Robot Framework](http://robotframework.org/).
 Test suite can be executed using provided docker image.
-Tests are performed against Firefox browser.
-Xvfb as an in-memory display.
+Tests are performed against Firefox browser, using Xvfb as an in-memory display.
 
-**Additional build results info available [here](https://kizi.github.io/EasyMiner-Tests/)**
 # How to execute tests locally
 ## Requirements
 - [Docker 1.12+](https://docs.docker.com/engine/installation/)
@@ -19,21 +18,22 @@ To run tests locally follow these steps:
 ```
 ./run-tests.sh
 ```
-This script will start EasyMiner and run tests in Docker container.
-Test results are exported to folder TestResults, that is shared with Docker (via Docker volume).
-After test execution ends, EasyMiner system is still running (to allow easier investigation of possible test failures).
-If you want to use local Easyminer Docker images, change sources for services in docker-compose.yml
+This script will start EasyMiner and run tests in Docker container. Test results are exported to folder TestResults, that is shared with Docker (via Docker volume). After test execution ends, EasyMiner system is still running (to allow easier investigation of possible test failures).
 
-- [Optional] Export logs from web application for easier debugging.
+EasyMiner GUI is available at http://'<docker-machiner>':8894/easyminercenter
+
+If you want to use local Easyminer Docker images, simply change sources for services in docker-compose.yml
+
+- [Optional] Export logs from web application for easier debugging. Exports are available at WebLogs folder.
 ```
  ./export-web-logs.sh
 ```
-- Clean up tests
+- Clean up tests - stop all associated services using this script:
 ```
  ./cleanup-tests.sh 
 ```
 ## Starting Easyminer
-Easyminer can be started separately without test execution via script:
+Easyminer can be started separately without test execution via script (GUI available at http://<docker-machiner>:8894/easyminercenter):
 ```
  ./start-easyminer.sh 
 ```
@@ -44,12 +44,7 @@ Easyminer can be started separately without test execution via script:
 
 # How to add and edit tests
 Robot framework tests can be edited via plugins for common IDEs or standalone editor, all available [here](http://robotframework.org/#tools-editors).<br />
-All tests have to:
-- Be added to /Test directory
-- Use only Firefox as browser<br />
-
-Provided docker container for test execution enables
-- Using bash scripts (because test are executed in [Alpine Linux](https://hub.docker.com/r/gliderlabs/alpine/) based container)
+All tests have to follow conventions described [here](HowToWriteTests.md).
 
 # Notes
-Since this is in develoment as part of individual school project, pull requests won't be accepted.
+Since this is in development as part of individual school project, pull requests won't be accepted at the moment.

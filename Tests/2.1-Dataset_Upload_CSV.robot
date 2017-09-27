@@ -35,7 +35,7 @@ Resource          Resources/DatasetUpload.robot
        Then dataset field count should be "${TitanicDatasetFieldCount}"
        And dataset field headers should contain following fields    @{TitanicDatasetFields}
 
-[2.1.5] Upload zip archive with csv dataset - comma separated
+[2.1.5] Upload zip archive with comma separated csv dataset
        Given dataset upload page is opened
        When dataset "titanic.zip" is uploaded
        And separator "," is selected

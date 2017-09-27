@@ -49,7 +49,7 @@ Login user suite setup
     Sign up user "${ValidUser1}"
     Logout user
     Sign up user "${ValidUser2}"
-    Logout user
+    Logout user 
 
 Login user as "${user}"
     Input text    css=input[type="email"][name="email"]    ${user.email}
@@ -61,3 +61,4 @@ User is logged in as "${user}"
 
 Login page is opened
     Go To    ${BaseUrl}${Urls.login}
+

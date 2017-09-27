@@ -23,37 +23,37 @@ ${InterestingRuleAction}   kbAddPositive
 ${NotInterestingRuleAction}   kbAddNegative
 
 *** Test Cases ***
-[3.3.1] Mine rules - find rules
+[3.3.1] Mine rules
     Given rule pattern is created on miner page
     When rule mining is started
     Then miner should find rules
 
-[3.3.2] Mine rules - show rule details
+[3.3.2] Show rule details
     Given rules are found on miner page
     When is clicked on found rule "${ExpectedRules[0]}" details button
     Then rule "${ExpectedRules[0]}" details should appear
 
-[3.3.3] Mine rules - add to rule to clipboard
+[3.3.3] Add to rule to clipboard
     Given rules are found on miner page
     When rule "${ExpectedRules[0]}" from found rules is added to rule clipboard
     Then rule "${ExpectedRules[0]}" with confidence "${ExpectedConfidence[0]}" and support "${ExpectedSupport[0]}" should appear in rule clipboard
 
-[3.3.4] Mine rules - remove rule from clipboard
+[3.3.4] Remove rule from clipboard
     Given rule "${ExpectedRules[0]}" is in rule clipboard
     When rule "${ExpectedRules[0]}" is removed from rule clipboard
     Then rule "${ExpectedRules[0]}" should not appear in rule clipboard
     
-[3.3.5] Mine rules - add to rule to knowledge base as interesting
+[3.3.5] Add to rule to knowledge base as interesting
     Given rules are found on miner page
     When rule "${ExpectedRules[0]}" from found rules is added to knowledge base as interesting
     Then rule "${ExpectedRules[0]}" with confidence "${ExpectedConfidence[0]}" and support "${ExpectedSupport[0]}" should appear in knowledge base
 
-[3.3.6] Mine rules - add to rule to knowledge base as not interesting
+[3.3.6] Add to rule to knowledge base as not interesting
     Given rules are found on miner page
     When rule "${ExpectedRules[1]}" from found rules is added to knowledge base as not interesting
     Then rule "${ExpectedRules[1]}" with confidence "${ExpectedConfidence[1]}" and support "${ExpectedSupport[1]}" should appear in knowledge base
 
-[3.3.7] Mine rules - remove rule from knowledge base
+[3.3.7] Remove rule from knowledge base
     Given rule "${ExpectedRules[2]}" is in rule clipboard
     When rule "${ExpectedRules[2]}" is removed from rule clipboard
     Then rule "${ExpectedRules[2]}" should not appear in in knowledge base
@@ -201,7 +201,6 @@ Rule "${rule}" from found rules is tagged with "${tag}"
 Rule "${rule}" should be in knowledge base
     Select rule knowledge base tab
     Section "${RuleTabsSectionId}" should contain "${rule}"
-    Capture page screenshot
 
 Rule "${rule}" with confidence "${confidence}" and support "${support}" should appear in knowledge base
     Rule "${rule}" should be in knowledge base

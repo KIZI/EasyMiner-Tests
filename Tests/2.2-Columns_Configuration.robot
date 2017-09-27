@@ -11,19 +11,19 @@ Resource          Resources/DatasetUpload.robot
 @{IgnoredColumnNames}    New attribute name 1    New attribute name 3    New attribute name 4    New attribute name 6
 
 *** Test Cases ***
-[2.2.1] Configure dataset columns - type options
+[2.2.1] Configure dataset columns types
        Given dataset upload column configuration page is opened
        When correct column datatypes are selected
        And column configuration form is submitted
        Then create new miner page for datasource with name "${TitanicDatasourceName}" is shown
 
-[2.2.2] Configure dataset columns - rename columns
+[2.2.2] Rename dataset columns
        Given dataset upload column configuration page is opened
        When some columns are renamed     
        And new miner with name "titanic-test-2.2.2" is created
        Then miner should have datafields with following names    @{NewColumnNames}
 
-[2.2.3] Configure dataset columns - set column type as ignored
+[2.2.3] Set dataset column type as ignored
        Given dataset upload column configuration page is opened
        When some columns are set as ignored
        And new miner with name "titanic-test-2.2.3" is created

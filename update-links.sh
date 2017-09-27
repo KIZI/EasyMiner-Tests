@@ -1,4 +1,7 @@
 #!/bin/bash
+#This value defines how many latest test results are stored.
+#Before changing this value, keep in mind that this repository has to be downloaded on each Travis CI build,
+#so very large history can affect build time
 HISTORYLENGHT=50
 #<th>Branch</th><th>Commit</th><th>Commit message</th><th>Test result</th><th>Test report</th>
 # Add link to report to the table

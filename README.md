@@ -45,6 +45,3 @@ Easyminer can be started separately without test execution via script (GUI avail
 # How to add and edit tests
 Robot framework tests can be edited via plugins for common IDEs or standalone editor, all available [here](http://robotframework.org/#tools-editors).<br />
 All tests have to follow conventions described [here](HowToWriteTests.md).
-
-# Notes
-Since this is in development as part of individual school project, pull requests won't be accepted at the moment.

@@ -33,7 +33,7 @@ If you want to use local Easyminer Docker images, simply change sources for serv
  ./cleanup-tests.sh 
 ```
 ## Starting Easyminer
-Easyminer can be started separately without test execution via script (GUI available at http://<docker-machiner>:8894/easyminercenter):
+Easyminer can be started separately without test execution via script (GUI available at http://'docker-machine':8894/easyminercenter):
 ```
  ./start-easyminer.sh 
 ```

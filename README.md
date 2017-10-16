@@ -20,7 +20,7 @@ To run tests locally follow these steps:
 ```
 This script will start EasyMiner and run tests in Docker container. Test results are exported to folder TestResults, that is shared with Docker (via Docker volume). After test execution ends, EasyMiner system is still running (to allow easier investigation of possible test failures).
 
-EasyMiner GUI is available at http://'<docker-machiner>':8894/easyminercenter
+EasyMiner GUI is available at http://'docker-machine':8894/easyminercenter , where 'docker-machine' is address of used docker machine
 
 If you want to use local Easyminer Docker images, simply change sources for services in docker-compose.yml
 
@@ -33,7 +33,7 @@ If you want to use local Easyminer Docker images, simply change sources for serv
  ./cleanup-tests.sh 
 ```
 ## Starting Easyminer
-Easyminer can be started separately without test execution via script (GUI available at http://<docker-machiner>:8894/easyminercenter):
+Easyminer can be started separately without test execution via script (GUI available at http://'docker-machine':8894/easyminercenter):
 ```
  ./start-easyminer.sh 
 ```

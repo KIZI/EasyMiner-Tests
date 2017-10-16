@@ -44,7 +44,7 @@ use custom selector
 Latter is less fragile, because it does not matter if button is inside div.action element or not.
 
 ## Test data
-If possible, use test data that are already used elsewhere. Check [EasyMiner tutorial](http://www.easyminer.eu/tutorial) or [REST-API Tests] before creating test data on your own.
+If possible, use test data that are already used elsewhere. Check [EasyMiner tutorial](http://www.easyminer.eu/tutorial) or [REST-API Tests](https://github.com/KIZI/EasyMiner-Evaluation) before creating test data on your own.
 
 # Adding new tests to repository
 This repository has two branches for test definitions - *master* and *v2.4*.
